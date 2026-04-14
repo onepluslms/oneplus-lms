@@ -303,6 +303,7 @@ input,select,textarea{font-family:var(--sans);font-size:14px;outline:none}
       <button class="qa-btn" onclick="goTo('s-eod')"><div class="qa-icon">&#128202;</div><div class="qa-label">EOD Report</div><div class="qa-sub">WhatsApp summary</div></button>
       <button class="qa-btn" onclick="goTo('s-preanalytical')"><div class="qa-icon">&#128300;</div><div class="qa-label">Pre-Analytical</div><div class="qa-sub">Sample guide & rejections</div></button>
       <button class="qa-btn" id="field-btn" style="display:none" onclick="goTo('s-field')"><div class="qa-icon">&#128664;</div><div class="qa-label">Field Tasks</div><div class="qa-sub">Home collection list</div></button>
+      <button class="qa-btn" id="assign-btn" style="display:none" onclick="goTo('s-assign')"><div class="qa-icon">&#128203;</div><div class="qa-label">Assign Tasks</div><div class="qa-sub">Allocate phlebotomists</div></button>
       <button class="qa-btn" id="admin-btn" style="display:none" onclick="goTo('s-admin')"><div class="qa-icon">&#9881;&#65039;</div><div class="qa-label">Admin</div><div class="qa-sub">Staff &amp; roles</div></button>
       <button class="qa-btn" id="review-btn" style="display:none" onclick="goTo('s-review')"><div class="qa-icon">&#128101;</div><div class="qa-label">Phlebo Review</div><div class="qa-sub">Performance stats</div></button>
     </div>
@@ -360,6 +361,7 @@ input,select,textarea{font-family:var(--sans);font-size:14px;outline:none}
       </div>
       <div id="home-collection-fields" style="display:none">
         <div class="field"><label>Patient Address</label><input type="text" id="pt-address" placeholder="House no., street, locality"></div>
+        <div class="field"><label>Google Maps Link <span style="font-size:10px;color:var(--text3)">(optional — paste link shared by patient)</span></label><input type="url" id="pt-maps-link" placeholder="https://maps.google.com/..."></div>
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
           <button type="button" class="btn" style="flex:1;font-size:13px" onclick="captureGPS()">&#128205; Capture GPS Location</button>
           <div id="gps-status" style="font-size:11px;font-family:var(--mono);color:var(--text3);flex:1;line-height:1.4">Not captured</div>
@@ -918,6 +920,21 @@ input,select,textarea{font-family:var(--sans);font-size:14px;outline:none}
     <div class="modal-handle"></div>
     <div class="modal-title" id="field-modal-title">Mark Sample Collected</div>
     <div class="modal-sub" id="field-modal-sub"></div>
+    <div id="field-pay-section" style="display:none;margin-bottom:12px">
+      <div class="edit-section-lbl">Collect Payment</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:8px">
+        <button type="button" class="tog" id="fpay-cash" onclick="setFieldPay('cash')">&#128181; Cash</button>
+        <button type="button" class="tog" id="fpay-upi" onclick="setFieldPay('upi')">&#128242; UPI</button>
+        <button type="button" class="tog" id="fpay-skip" onclick="setFieldPay('skip')">Skip</button>
+      </div>
+      <input type="number" id="field-pay-amt" inputmode="numeric" placeholder="Amount collected"
+        style="width:100%;padding:9px 11px;border:0.5px solid var(--border-strong);border-radius:var(--radius);font-size:14px;display:none;margin-bottom:4px">
+    </div>
+    <div class="edit-section-lbl">GPS at Collection Site (optional)</div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+      <button type="button" class="btn" style="flex:1;font-size:13px" onclick="captureFieldGPS()">&#128205; Capture GPS</button>
+      <div id="field-gps-status" style="font-size:11px;font-family:var(--mono);color:var(--text3);flex:1;line-height:1.4">Optional</div>
+    </div>
     <div class="edit-section-lbl">Collection Notes (optional)</div>
     <div class="field"><input type="text" id="field-col-notes" placeholder="Tubes collected, issues, remarks..."></div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
@@ -1332,6 +1349,10 @@ input,select,textarea{font-family:var(--sans);font-size:14px;outline:none}
       <label>Password (min 6 chars)</label>
       <div style="position:relative"><input type="password" id="sm-pass" placeholder="Set login password" style="width:100%;box-sizing:border-box;padding-right:36px"><button type="button" onclick="toggleEye('sm-pass',this)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:16px;color:var(--text3);padding:0;line-height:1">👁</button></div>
     </div>
+    <div class="field" id="sm-admin-pass-field">
+      <label>Your Password <span style="font-size:10px;color:var(--text3)">(to stay signed in)</span></label>
+      <input type="password" id="sm-admin-pass" placeholder="Your own login password">
+    </div>
     <div class="field">
       <label>Role</label>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px" id="sm-role-grid">
@@ -1656,6 +1677,7 @@ function routeAfterPin(role) {
     var reviewBtn = document.getElementById('review-btn');
     var fieldBtn = document.getElementById('field-btn');
     if (adminBtn) adminBtn.style.display = (role==='admin'||role==='pathologist') ? 'block' : 'none';
+    var assignBtn=document.getElementById('assign-btn'); if(assignBtn) assignBtn.style.display=(role==='admin'||role==='pathologist'||role==='manager')?'block':'none';
     if (reviewBtn) reviewBtn.style.display = (role==='admin'||role==='manager') ? 'block' : 'none';
     if (fieldBtn) fieldBtn.style.display = 'block'; // all roles see field tasks
     // Manager sees staff list (read-only) via admin screen but no add/edit buttons
@@ -1751,8 +1773,9 @@ function renderPhleboDash(orders) {
     var statusColor = isDelivered ? '#059669' : isCollected ? '#1D4ED8' : o.urgent ? '#DC2626' : '#D97706';
     var statusLabel = isDelivered ? 'Delivered' : isCollected ? 'Collected' : o.urgent ? 'URGENT' : 'Pending';
 
-    var mapLink = o.gps
-      ? ' <a href="https://maps.google.com/?q='+o.gps.lat+','+o.gps.lng+'" target="_blank" style="font-size:11px;color:var(--blue)">&#128205; Maps</a>' : '';
+    var mapLink = '';
+    if (o.gps) mapLink = '<a href="https://maps.google.com/?q='+o.gps.lat+','+o.gps.lng+'" target="_blank" style="font-size:11px;color:#1D4ED8">&#128205; GPS Location</a>';
+    else if (o.mapsLink) mapLink = '<a href="'+o.mapsLink+'" target="_blank" style="font-size:11px;color:#1D4ED8">&#128205; Open in Maps</a>';
 
     var tubeMap = {};
     (o.tests||[]).forEach(function(t) {
@@ -1809,6 +1832,31 @@ function renderPhleboDash(orders) {
 }
 
 // ── TIME TRACKING: patch fieldConfirm to save timestamps ─────────────────
+var _fieldGPS = null;
+var _fieldPayMode = null;
+
+function captureFieldGPS() {
+  var el = document.getElementById('field-gps-status');
+  el.textContent = 'Locating...';
+  navigator.geolocation.getCurrentPosition(function(pos) {
+    _fieldGPS = {lat:pos.coords.latitude.toFixed(6), lng:pos.coords.longitude.toFixed(6), accuracy:Math.round(pos.coords.accuracy)};
+    el.textContent = '✓ '+_fieldGPS.lat+', '+_fieldGPS.lng+' ±'+_fieldGPS.accuracy+'m';
+    el.style.color = 'var(--accent)';
+  }, function() {
+    el.textContent = 'Could not get location';
+    el.style.color = 'var(--red)';
+  }, {enableHighAccuracy:true, timeout:10000});
+}
+
+function setFieldPay(mode) {
+  _fieldPayMode = mode;
+  ['cash','upi','skip'].forEach(function(m){
+    var b=document.getElementById('fpay-'+m); if(b) b.className='tog'+(m===mode?' on':'');
+  });
+  var a=document.getElementById('field-pay-amt');
+  if(a) a.style.display = mode==='skip' ? 'none' : 'block';
+}
+
 var _origFieldConfirm = fieldConfirm;
 fieldConfirm = function() {
   if (!fieldPendingAction) return;
@@ -1826,6 +1874,13 @@ fieldConfirm = function() {
   if (action === 'collect') update.collectedAt = firebase.firestore.FieldValue.serverTimestamp();
   if (action === 'deliver') update.deliveredAt = firebase.firestore.FieldValue.serverTimestamp();
   if (notes) update.fieldNotes = notes;
+  if (action==='collect' && _fieldGPS) { update.gps=_fieldGPS; _fieldGPS=null; }
+  if (action==='collect' && _fieldPayMode && _fieldPayMode!=='skip') {
+    var _amt=parseFloat(document.getElementById('field-pay-amt').value)||fieldPendingAction.dueAmount||0;
+    update.paidAmount=_amt; update.dueAmount=0; update.status='paid';
+    update.payMode=_fieldPayMode; update.collectedByPhlebo=byName;
+    _fieldPayMode=null;
+  }
   closeFieldModal();
   db.collection('orders').doc(orderId).update(update)
     .then(function(){ toast(action==='collect'?'Sample collected ✓':'Delivered ✓','ok'); })
@@ -1948,6 +2003,65 @@ function setReviewPeriod(period) {
   if (period !== 'custom') loadReview();
 }
 
+
+// ── TASK ASSIGNMENT SCREEN ─────────────────────────────────────────────────
+function loadAssignScreen() {
+  var today = todayStr();
+  document.getElementById('assign-date').textContent = today;
+  var el = document.getElementById('assign-list');
+  el.innerHTML = '<div class="empty">Loading...</div>';
+  db.collection('staff').where('active','==',true).get().then(function(staffSnap) {
+    var phlebos = [];
+    staffSnap.forEach(function(d) {
+      var s = d.data();
+      if (s.role === 'phlebotomist') phlebos.push({uid:d.id, name:s.name});
+    });
+    db.collection('orders').where('date','==',today).get().then(function(snap) {
+      var orders = [];
+      snap.forEach(function(d) {
+        var o = d.data();
+        if (o.source === 'Home Collection' || o.source === 'Hospital Collection') {
+          orders.push(Object.assign({id:d.id}, o));
+        }
+      });
+      orders.sort(function(a,b){ return (a.createdAt&&a.createdAt.toMillis?a.createdAt.toMillis():0)-(b.createdAt&&b.createdAt.toMillis?b.createdAt.toMillis():0); });
+      if (!orders.length) { el.innerHTML = '<div class="empty">No field collection orders today</div>'; return; }
+      el.innerHTML = orders.map(function(o) {
+        var statusColor = o.fieldStatus==='collected'?'var(--accent)':o.fieldStatus==='delivered'?'#059669':'var(--gold)';
+        var statusLabel = o.fieldStatus==='collected'?'Collected':o.fieldStatus==='delivered'?'Delivered':'Pending';
+        var payBadge = o.status==='paid'
+          ? '<span style="font-size:10px;font-family:var(--mono);background:var(--accent-light);color:var(--accent);padding:2px 7px;border-radius:20px;margin-left:6px">PAID</span>'
+          : '<span style="font-size:10px;font-family:var(--mono);background:var(--gold-light);color:var(--gold);padding:2px 7px;border-radius:20px;margin-left:6px">CREDIT</span>';
+        var mapsBtn = o.gps ? '<a href="https://maps.google.com/?q='+o.gps.lat+','+o.gps.lng+'" target="_blank" style="font-size:11px;color:#1D4ED8">&#128205; GPS</a>'
+          : (o.mapsLink ? '<a href="'+o.mapsLink+'" target="_blank" style="font-size:11px;color:#1D4ED8">&#128205; Maps</a>' : '');
+        var phleboOpts = '<option value="">Unassigned</option>' + phlebos.map(function(p){
+          return '<option value="'+p.uid+'" data-name="'+esc(p.name)+'"'+(o.fieldAssignedToUid===p.uid?' selected':'')+'>'+esc(p.name)+'</option>';
+        }).join('');
+        return '<div class="card" style="margin-bottom:10px">'
+          + '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">'
+          + '<div style="font-size:15px;font-weight:500">'+esc(o.patientName||'-')+'</div>'
+          + '<span style="font-size:10px;font-family:var(--mono);background:'+statusColor+'22;color:'+statusColor+';padding:2px 8px;border-radius:20px;font-weight:600">'+statusLabel+'</span>'
+          + '</div>'
+          + '<div style="font-size:12px;color:var(--text2);margin-bottom:2px">'+(o.age||'-')+'yr &middot; '+esc(o.phone||'-')+'</div>'
+          + '<div style="font-size:12px;color:var(--text2);margin-bottom:8px">'+esc(o.address||'No address')+' '+mapsBtn+payBadge+'</div>'
+          + '<select onchange="assignPhlebo(\'' + o.id + '\',this)" style="width:100%;padding:8px 10px;border:0.5px solid var(--border-strong);border-radius:var(--radius);background:var(--surface);color:var(--text);font-size:13px">' + phleboOpts + '</select>'
+          + '</div>';
+      }).join('');
+    });
+  }).catch(function(){ el.innerHTML = '<div class="empty">Error loading</div>'; });
+}
+
+function assignPhlebo(orderId, selectEl) {
+  var uid = selectEl.value;
+  var name = uid ? (selectEl.options[selectEl.selectedIndex].dataset.name||'') : '';
+  db.collection('orders').doc(orderId).update({
+    fieldAssignedToUid: uid||null,
+    fieldAssignedToName: name||null,
+    fieldAssignedAt: uid ? firebase.firestore.FieldValue.serverTimestamp() : null
+  }).then(function(){ toast(uid ? name+' assigned' : 'Unassigned','ok'); })
+   .catch(function(e){ toast('Failed: '+e.message,'err'); });
+}
+
 function loadReview() {
   var today = todayStr();
   var from, to;
@@ -2043,7 +2157,7 @@ function renderReview(byPhlebo) {
 function set(id,v){ var el=document.getElementById(id); if(el) el.textContent=v; }
 
 
-var APP_VERSION = 'v19.19';
+var APP_VERSION = 'v19.22';
 // ── ASYNC DATA LOADER ──────────────────────────────────────────────────
 // Loads heavy JSON files after login so login screen renders instantly
 var _dataLoaded = false;
@@ -2174,6 +2288,7 @@ function showScreen(id) {
   if (id === 's-order' && !_fromEstimate) { curOrder={}; selTests=[]; curPanel='standard'; showStep(1); renderTests(); setPanelButtons(); }
   if (id === 's-estimate') { initEstimateScreen(); }
   if (id === 's-review') { loadReview(); }
+  if (id === 's-assign') { loadAssignScreen(); }
   if (id === 's-phlebo') { startPhleboDash(); }
 }
 function goTo(id, push) {
@@ -2322,11 +2437,14 @@ function doRegister() {
   if (!/^[0-9]{4}$/.test(pin)) { err.textContent='PIN must be 4 digits'; return; }
   btn.disabled=true; btn.textContent='Creating...';
   hashPin(pin).then(function(pinHash){
+  var _adminEmail1 = curUser.email;
   auth.createUserWithEmailAndPassword(email, pass).then(function(cred){
     return db.collection('staff').doc(cred.user.uid).set({
       name:name, email:email, role:selRole, pin:pinHash, uid:cred.user.uid,
       createdAt:firebase.firestore.FieldValue.serverTimestamp(), active:true
     });
+  }).then(function(){
+    return auth.signInWithEmailAndPassword(_adminEmail1, pass);
   }).then(function(){ toast('Account created!','ok'); })
   .catch(function(e){ err.textContent=authErr(e.code); btn.disabled=false; btn.textContent='Create Account'; });
   });
@@ -2788,7 +2906,8 @@ function step1Next() {
   }
   curOrder.source=document.getElementById('pt-source').value||'Walk-in';
   curOrder.address=document.getElementById('pt-address').value.trim()||'';
-  curOrder.gps=curGPS||null;
+  var _mll=document.getElementById('pt-maps-link'); curOrder.mapsLink=(_mll?_mll.value.trim():'')||'';
+curOrder.gps=curGPS||null;
   curHistory=resetHistory();
   // Pre-set collection time to now
   var now=new Date();
@@ -3631,6 +3750,7 @@ function submitOrder() {
     tests:       curOrder.tests       || selTests,
     source:      curOrder.source      || 'Walk-in',
     address:     curOrder.address     || '',
+    mapsLink:    curOrder.mapsLink    || '',
     gps:         curOrder.gps         || null,
     totalAmount:  curOrder.totalAmount  || 0,
     testTotal:    curOrder.testTotal    || curOrder.totalAmount || 0,
@@ -3695,6 +3815,7 @@ function newOrder() {
   });
   document.getElementById('pt-sex').value='';
   document.getElementById('pt-source').value='Walk-in';
+  var _ml=document.getElementById('pt-maps-link'); if(_ml) _ml.value='';
   // Auto-set Doctor Clinic + referring doctor if staff has a default doctor configured
   var effectiveDoctor = curProfile && (curProfile.effectiveDoctor || curProfile.defaultDoctor);
   if (effectiveDoctor) {
@@ -4868,6 +4989,18 @@ function fieldActionIdx(idx, action) {
   var sub = document.getElementById('field-modal-sub');
   var okBtn = document.getElementById('field-modal-ok');
   document.getElementById('field-col-notes').value = '';
+  _fieldGPS = null;
+  var _fgs=document.getElementById('field-gps-status'); if(_fgs){_fgs.textContent='Optional';_fgs.style.color='var(--text3)';}
+  var _fps=document.getElementById('field-pay-section');
+  var _fo=fieldOrders[idx];
+  if (_fps && action==='collect' && (_fo.status==='pending'||(_fo.dueAmount&&_fo.dueAmount>0))) {
+    _fps.style.display='block';
+    var _fpa=document.getElementById('field-pay-amt');
+    if(_fpa){_fpa.style.display='none';_fpa.value='';_fpa.placeholder='Amount: Rs.'+(_fo.netAmount||_fo.totalAmount||0);}
+    _fieldPayMode=null;
+    ['fpay-cash','fpay-upi','fpay-skip'].forEach(function(b){var el=document.getElementById(b);if(el)el.className='tog';});
+    fieldPendingAction.dueAmount=_fo.netAmount||_fo.totalAmount||0;
+  } else if (_fps) { _fps.style.display='none'; }
   if (action === 'collect') {
     title.textContent = 'Mark Sample Collected';
     sub.textContent = 'Confirm sample collected from ' + patientName;
@@ -5966,6 +6099,7 @@ function showAddStaff() {
   var defdr = document.getElementById('sm-defdr'); if(defdr) defdr.value = '';
   document.getElementById('sm-err').textContent = '';
   document.getElementById('sm-pass-field').style.display = 'block';
+  var _apf=document.getElementById('sm-admin-pass-field'); if(_apf){_apf.style.display='block'; var _api=document.getElementById('sm-admin-pass'); if(_api) _api.value='';}
   document.getElementById('sm-email-note').textContent = 'A Firebase account will be created';
   document.getElementById('sm-deactivate-row').style.display = 'none';
   document.getElementById('sm-deactivate-btn').style.display = 'block';
@@ -5994,6 +6128,7 @@ async function editStaff(id) {
     var defdr = document.getElementById('sm-defdr'); if(defdr) defdr.value = s.defaultDoctor || '';
     document.getElementById('sm-err').textContent = '';
     document.getElementById('sm-pass-field').style.display = 'block';
+    var _apf2=document.getElementById('sm-admin-pass-field'); if(_apf2){_apf2.style.display='none'; var _api2=document.getElementById('sm-admin-pass'); if(_api2) _api2.value='';}
     document.getElementById('sm-email-note').textContent = 'Leave password blank to keep existing';
     document.getElementById('sm-deactivate-row').style.display = 'block';
     document.getElementById('sm-deactivate-btn').style.display = s.active===false ? 'none' : 'block';
@@ -6041,6 +6176,8 @@ async function saveStaff() {
       // NEW STAFF — create Firebase Auth account
       if (!pass || pass.length < 6) { err.textContent = 'Password must be at least 6 characters'; btn.disabled=false; btn.textContent='Create Account'; return; }
       if (!pin) { err.textContent = 'PIN is required for new staff'; btn.disabled=false; btn.textContent='Create Account'; return; }
+      var _adminEmail2 = curUser.email;
+      var _adminPass2 = document.getElementById('sm-admin-pass') ? document.getElementById('sm-admin-pass').value : '';
       var cred = await auth.createUserWithEmailAndPassword(email, pass);
       var defDr = (document.getElementById('sm-defdr').value||'').trim();
       var pinHash = await hashPin(pin);
@@ -6052,7 +6189,9 @@ async function saveStaff() {
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
         createdBy: curUser.uid
       });
-      toast('Staff account created', 'ok');
+      // Re-sign admin in (Firebase auto-signs in newly created user)
+      if (_adminPass2) await auth.signInWithEmailAndPassword(_adminEmail2, _adminPass2);
+      toast('Staff account created ✓', 'ok');
     } else {
       // EDIT EXISTING
       var defDr = (document.getElementById('sm-defdr').value||'').trim();

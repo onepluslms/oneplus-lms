@@ -3190,41 +3190,45 @@ function inlineDoctorSearch(val, inputId, listId) {
     val = corrected;
   }
   var el = document.getElementById(listId);
-  if (!val || val.trim().length < 2) { el.style.display = 'none'; return; }
+  if (!val || val.trim().length < 1) { el.style.display = 'none'; return; }
 
-  // Strip Dr prefix for query
-  var q = val.trim();
-  var qClean = q.replace(/^dr\.?\s*/i,'').trim();
-  if (!qClean) { el.style.display = 'none'; return; }
-
-  clearTimeout(_drSearchTimer);
-  _drSearchTimer = setTimeout(function() {
-    var qUpper = qClean.charAt(0).toUpperCase() + qClean.slice(1);
-    var qLower = qClean.charAt(0).toLowerCase() + qClean.slice(1);
-    var q1 = db.collection('doctors').orderBy('name').startAt(qUpper).endAt(qUpper + '\uf8ff').limit(15).get();
-    var q2 = db.collection('doctors').orderBy('name').startAt(qLower).endAt(qLower + '\uf8ff').limit(15).get();
-    Promise.all([q1, q2])
-      .then(function(snaps) {
-        var seen = {};
-        var results = [];
-        snaps.forEach(function(snap) {
-          snap.forEach(function(d) {
-            var data = d.data();
-            if (!seen[d.id]) { seen[d.id] = true; results.push(data); }
-          });
-        });
-        renderInlineList(val, el, inputId, listId, results);
-      })
-      .catch(function(e) {
-        console.warn('Doctor search error:', e.message);
-        el.style.display = 'none';
-      });
-  }, 250);
+  if (allDoctorsCache) {
+    renderInlineList(val, el, inputId, listId);
+  } else if (doctorCacheLoading) {
+    el.innerHTML = '<div style="padding:10px 14px;font-size:12px;color:var(--text3)">Loading doctors...</div>';
+    el.style.display = 'block';
+    var t = setInterval(function() {
+      if (allDoctorsCache) { clearInterval(t); renderInlineList(val, el, inputId, listId); }
+    }, 200);
+    setTimeout(function(){ clearInterval(t); }, 8000);
+  } else {
+    // Load on first use — avoids fetching at login
+    el.innerHTML = '<div style="padding:10px 14px;font-size:12px;color:var(--text3)">Loading doctors...</div>';
+    el.style.display = 'block';
+    doctorCacheLoading = true;
+    db.collection('doctors').orderBy('name').get().then(function(snap) {
+      allDoctorsCache = [];
+      snap.forEach(function(d){ allDoctorsCache.push(d.data()); });
+      doctorCacheLoading = false;
+      renderInlineList(val, el, inputId, listId);
+    }).catch(function(e) {
+      console.warn('Doctor load error:', e.message);
+      doctorCacheLoading = false;
+      el.style.display = 'none';
+    });
+  }
 }
 
-function renderInlineList(val, el, inputId, listId, results) {
-  // results passed directly from server query
-  if (!results || !results.length) { el.style.display = 'none'; return; }
+function renderInlineList(val, el, inputId, listId) {
+  var q = val.toLowerCase().trim();
+  var qStripped = q.replace(/^dr\.?\s*/i,'').trim();
+  var results = !qStripped ? [] : allDoctorsCache.filter(function(d) {
+    if (!d.name) return false;
+    var n = d.name.toLowerCase();
+    var nClean = n.replace(/([a-z])\.([a-z])/g,'$1 $2').replace(/([a-z])\./g,'$1').replace(/\s{2,}/g,' ');
+    return n.indexOf(qStripped) >= 0 || n.indexOf(q) >= 0 || nClean.indexOf(qStripped) >= 0;
+  });
+  if (!results.length) { el.style.display = 'none'; return; }
   var shown = results.slice(0, 80);
   el.innerHTML = shown.map(function(d) {
     var safe = esc(d.name).replace(/'/g,"&#39;");

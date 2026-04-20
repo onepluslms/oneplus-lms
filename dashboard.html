@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LabFlow Dashboard v19.3 — OnePLUS</title>
+<title>LabFlow Dashboard v19.48 — OnePLUS</title>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
@@ -17,6 +17,8 @@
   --mono:'DM Mono',monospace;--serif:'Fraunces',serif;--r:8px;--rl:12px;
 }
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+
+/* ── Login ── */
 #login{display:flex;align-items:center;justify-content:center;min-height:100vh}
 .lbox{background:var(--accent);border-radius:16px;padding:32px;width:360px;color:#fff}
 .lbox h1{font-family:var(--serif);font-size:22px;font-weight:300;margin-bottom:4px}
@@ -25,6 +27,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .lbox input::placeholder{opacity:.5}
 .lbtn{width:100%;padding:11px;background:#fff;color:var(--accent);border:none;border-radius:var(--r);font-weight:600;font-size:14px;cursor:pointer}
 .lerr{font-size:12px;color:#FCA5A5;margin-top:8px;min-height:16px}
+
+/* ── Shell ── */
 #main{display:none;flex-direction:column;min-height:100vh}
 .topbar{background:var(--accent);color:#fff;padding:0 28px;height:56px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
 .tb-brand{font-family:var(--serif);font-size:18px;font-weight:300}
@@ -33,66 +37,114 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .live{width:8px;height:8px;border-radius:50%;background:#4ADE80;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 .sout{font-size:12px;font-family:var(--mono);color:rgba(255,255,255,.6);background:none;border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:4px 10px;cursor:pointer}
-.content{flex:1;padding:22px 28px;overflow-x:auto}
-.alert{border-radius:var(--r);padding:10px 14px;margin-bottom:14px;font-size:13px;display:flex;align-items:center;gap:8px}
-.alert.red{background:#FEF2F2;border:1px solid #FCA5A5;color:#991B1B}
-.alert.amber{background:#FFFBEB;border:1px solid #FCD34D;color:#92400E}
-.stats{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;margin-bottom:16px}
-.sc{background:var(--surface);border:0.5px solid var(--border);border-radius:var(--rl);padding:13px 15px}
-.sc.red{border-color:#FCA5A5;background:#FFF5F5}
-.sc.amber{border-color:#FCD34D;background:#FFFBEB}
-.sc.blue{border-color:#93C5FD;background:#EFF6FF}
-.sl{font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}
-.sv{font-family:var(--serif);font-size:24px;font-weight:500;color:var(--accent)}
-.sc.red .sv{color:var(--red)}.sc.amber .sv{color:var(--amber)}.sc.blue .sv{color:var(--blue)}
-.ss{font-size:10px;color:var(--text3);margin-top:2px}
-.rev{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--border);border-radius:var(--rl);overflow:hidden;border:0.5px solid var(--border);margin-bottom:16px}
-.rc{background:var(--surface);padding:11px 14px}
-.rl2{font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;margin-bottom:4px}
-.rv{font-family:var(--serif);font-size:19px;font-weight:500}
-.grid{display:grid;grid-template-columns:1fr 390px;gap:16px}
-.lcol,.rcol{display:flex;flex-direction:column;gap:16px}
-.card{background:var(--surface);border:0.5px solid var(--border);border-radius:var(--rl);overflow:hidden}
-.ch{padding:11px 16px;border-bottom:0.5px solid var(--border);display:flex;align-items:center;justify-content:space-between}
-.ct{font-size:13px;font-weight:600}
-.cc2{font-size:11px;font-family:var(--mono);color:var(--text3);background:var(--surface2);padding:2px 8px;border-radius:20px}
-.ot{width:100%;border-collapse:collapse}
-.ot th{padding:7px 11px;font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;text-align:left;border-bottom:0.5px solid var(--border);background:var(--surface2);white-space:nowrap}
-.ot td{padding:8px 11px;font-size:12px;border-bottom:0.5px solid var(--border);vertical-align:middle}
-.ot tr:last-child td{border-bottom:none}
-.ot tr:hover td{background:var(--surface2)}
-.b{display:inline-block;font-size:9px;font-family:var(--mono);font-weight:600;text-transform:uppercase;padding:2px 6px;border-radius:20px}
-.bg{background:#D1FAE5;color:#065F46}.bgo{background:#FEF3C7;color:#92400E}
-.bb{background:#DBEAFE;color:#1D4ED8}.br{background:#FEE2E2;color:#991B1B;border:1px solid #FCA5A5}
-.bp{background:#EDE9FE;color:#5B21B6}.bpend{background:#FEF3C7;color:#92400E;border:1px solid #FCD34D}
-.bacc{background:#D1FAE5;color:#065F46}.brej{background:#FEE2E2;color:#991B1B}
-.li{padding:10px 15px;border-bottom:0.5px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
-.li:last-child{border-bottom:none}
-.lin{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.lim{font-size:11px;color:var(--text3);font-family:var(--mono);margin-top:2px}
-.dr{display:flex;align-items:center;gap:10px;padding:7px 15px;border-bottom:0.5px solid var(--border)}
-.dr:last-child{border-bottom:none}
-.dbb{flex:1;height:5px;background:var(--surface2);border-radius:3px;overflow:hidden}
-.dbf{height:100%;background:var(--accent);border-radius:3px}
-.ai{padding:8px 15px;border-bottom:0.5px solid var(--border);display:flex;gap:9px;align-items:flex-start}
-.ai:last-child{border-bottom:none}
-.ad{width:8px;height:8px;border-radius:50%;margin-top:4px;flex-shrink:0}
-.empty{padding:18px;text-align:center;color:var(--text3);font-size:13px}
+
+/* ── Range bar ── */
 .range-bar{background:var(--surface2);border-bottom:0.5px solid var(--border);padding:8px 28px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .rqb{font-size:11px;font-family:var(--mono);padding:5px 12px;border-radius:20px;border:1px solid var(--border-strong);background:var(--surface);color:var(--text2);cursor:pointer;white-space:nowrap}
 .rqb.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 .range-sep{color:var(--text3);font-size:12px;margin:0 2px}
 .rdates{display:flex;align-items:center;gap:6px;margin-left:auto}
 .rdates input[type=date]{font-size:11px;font-family:var(--mono);border:1px solid var(--border-strong);border-radius:6px;padding:4px 8px;background:var(--surface);color:var(--text);cursor:pointer}
+
+/* ── Content ── */
+.content{flex:1;padding:22px 28px;overflow-x:auto}
+.alert{border-radius:var(--r);padding:10px 14px;margin-bottom:14px;font-size:13px;display:flex;align-items:center;gap:8px}
+.alert.red{background:#FEF2F2;border:1px solid #FCA5A5;color:#991B1B}
+.alert.amber{background:#FFFBEB;border:1px solid #FCD34D;color:#92400E}
+
+/* ── Stats grid — 9 tiles ── */
+.stats{display:grid;grid-template-columns:repeat(9,1fr);gap:10px;margin-bottom:16px}
+.sc{background:var(--surface);border:0.5px solid var(--border);border-radius:var(--rl);padding:13px 15px}
+.sc.red{border-color:#FCA5A5;background:#FFF5F5}
+.sc.amber{border-color:#FCD34D;background:#FFFBEB}
+.sc.blue{border-color:#93C5FD;background:#EFF6FF}
+.sc.green{border-color:#6EE7B7;background:#ECFDF5}
+.sl{font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}
+.sv{font-family:var(--serif);font-size:24px;font-weight:500;color:var(--accent)}
+.sc.red .sv{color:var(--red)}.sc.amber .sv{color:var(--amber)}.sc.blue .sv{color:var(--blue)}.sc.green .sv{color:var(--green)}
+.ss{font-size:10px;color:var(--text3);margin-top:2px}
+
+/* ── Revenue strip ── */
+.rev{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--border);border-radius:var(--rl);overflow:hidden;border:0.5px solid var(--border);margin-bottom:16px}
+.rc{background:var(--surface);padding:11px 14px}
+.rl2{font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;margin-bottom:4px}
+.rv{font-family:var(--serif);font-size:19px;font-weight:500}
+
+/* ── Payment filter chips ── */
+.pay-filters{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.pf{font-size:11px;font-family:var(--mono);padding:4px 12px;border-radius:20px;border:1px solid var(--border-strong);background:var(--surface);color:var(--text2);cursor:pointer}
+.pf.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* ── Lab status strip ── */
+.lab-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-radius:var(--rl);overflow:hidden;border:0.5px solid var(--border);margin-bottom:16px}
+.lsc{background:var(--surface);padding:10px 14px;text-align:center;cursor:pointer}
+.lsc:hover{background:var(--surface2)}
+.lsl{font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;margin-bottom:3px}
+.lsv{font-family:var(--serif);font-size:20px;font-weight:500}
+
+/* ── Range summary ── */
 .range-summary{display:none;gap:10px;margin-bottom:16px;flex-wrap:wrap}
 .range-summary.show{display:flex}
 .rsc{background:var(--surface);border:0.5px solid var(--border);border-radius:var(--rl);padding:11px 15px;flex:1;min-width:120px}
 .rsc .sl{font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
 .rsc .sv{font-family:var(--serif);font-size:20px;font-weight:500;color:var(--accent)}
+
+/* ── Grid layout ── */
+.grid{display:grid;grid-template-columns:1fr 390px;gap:16px}
+.lcol,.rcol{display:flex;flex-direction:column;gap:16px}
+.card{background:var(--surface);border:0.5px solid var(--border);border-radius:var(--rl);overflow:hidden}
+.ch{padding:11px 16px;border-bottom:0.5px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.ct{font-size:13px;font-weight:600}
+.cc2{font-size:11px;font-family:var(--mono);color:var(--text3);background:var(--surface2);padding:2px 8px;border-radius:20px}
+
+/* ── Orders table ── */
+.ot{width:100%;border-collapse:collapse}
+.ot th{padding:7px 11px;font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;text-align:left;border-bottom:0.5px solid var(--border);background:var(--surface2);white-space:nowrap}
+.ot td{padding:8px 11px;font-size:12px;border-bottom:0.5px solid var(--border);vertical-align:middle}
+.ot tr:last-child td{border-bottom:none}
+.ot tr:hover td{background:var(--surface2)}
+
+/* ── Badges ── */
+.b{display:inline-block;font-size:9px;font-family:var(--mono);font-weight:600;text-transform:uppercase;padding:2px 6px;border-radius:20px}
+.bg{background:#D1FAE5;color:#065F46}
+.bgo{background:#FEF3C7;color:#92400E}
+.bpart{background:#FEF3C7;color:#92400E;border:1px solid #FCD34D}
+.bb{background:#DBEAFE;color:#1D4ED8}
+.br{background:#FEE2E2;color:#991B1B;border:1px solid #FCA5A5}
+.bp{background:#EDE9FE;color:#5B21B6}
+.bpend{background:#FEF3C7;color:#92400E;border:1px solid #FCD34D}
+.bacc{background:#D1FAE5;color:#065F46}
+.brej{background:#FEE2E2;color:#991B1B}
+
+/* ── List items ── */
+.li{padding:10px 15px;border-bottom:0.5px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.li:last-child{border-bottom:none}
+.lin{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lim{font-size:11px;color:var(--text3);font-family:var(--mono);margin-top:2px}
+
+/* ── Dept bars ── */
+.dr{display:flex;align-items:center;gap:10px;padding:7px 15px;border-bottom:0.5px solid var(--border)}
+.dr:last-child{border-bottom:none}
+.dbb{flex:1;height:5px;background:var(--surface2);border-radius:3px;overflow:hidden}
+.dbf{height:100%;background:var(--accent);border-radius:3px}
+
+/* ── Activity feed ── */
+.ai{padding:8px 15px;border-bottom:0.5px solid var(--border);display:flex;gap:9px;align-items:flex-start}
+.ai:last-child{border-bottom:none}
+.ad{width:8px;height:8px;border-radius:50%;margin-top:4px;flex-shrink:0}
+.empty{padding:18px;text-align:center;color:var(--text3);font-size:13px}
+
+/* ── Day breakdown ── */
 .day-row{display:flex;justify-content:space-between;align-items:center;padding:6px 15px;border-bottom:0.5px solid var(--border);font-size:12px}
 .day-row:last-child{border-bottom:none}
 .day-row:hover{background:var(--surface2)}
 
+/* ── Lab status filter modal ── */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:100;align-items:center;justify-content:center}
+.modal-overlay.open{display:flex}
+.modal-box{background:var(--surface);border-radius:var(--rl);padding:20px;width:460px;max-height:70vh;overflow-y:auto}
+.modal-title{font-size:15px;font-weight:600;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center}
+.modal-close{background:none;border:none;font-size:18px;cursor:pointer;color:var(--text3)}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono&family=Fraunces:wght@300;500&display=swap" rel="stylesheet">
 </head>
@@ -111,8 +163,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 
 <div id="main">
   <div class="topbar">
-    <div><div class="tb-brand">OnePLUS Ultrasound Lab &mdash; LabFlow <span style="font-size:11px;font-family:var(--mono);background:rgba(255,255,255,0.18);border-radius:4px;padding:1px 6px;vertical-align:middle">v19.3</span></div>
-    <div class="tb-meta">47 Harsh Vihar, Pitampura &middot; Real-time Dashboard</div></div>
+    <div>
+      <div class="tb-brand">OnePLUS Ultrasound Lab &mdash; LabFlow
+        <span style="font-size:11px;font-family:var(--mono);background:rgba(255,255,255,0.18);border-radius:4px;padding:1px 6px;vertical-align:middle">v19.48</span>
+      </div>
+      <div class="tb-meta">47 Harsh Vihar, Pitampura &middot; Real-time Dashboard</div>
+    </div>
     <div class="tb-right">
       <div class="live" title="Live"></div>
       <span id="ddate" class="tb-meta"></span>
@@ -123,11 +179,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 
   <!-- Range bar -->
   <div class="range-bar">
-    <button class="rqb active" id="rqb-today" onclick="setQuickRange('today')">Today</button>
-    <button class="rqb" id="rqb-yesterday" onclick="setQuickRange('yesterday')">Yesterday</button>
-    <button class="rqb" id="rqb-week" onclick="setQuickRange('week')">This Week</button>
-    <button class="rqb" id="rqb-month" onclick="setQuickRange('month')">This Month</button>
-    <button class="rqb" id="rqb-custom" onclick="setQuickRange('custom')">Custom</button>
+    <button class="rqb active" id="rqb-today"     onclick="setQuickRange('today')">Today</button>
+    <button class="rqb"        id="rqb-yesterday"  onclick="setQuickRange('yesterday')">Yesterday</button>
+    <button class="rqb"        id="rqb-week"        onclick="setQuickRange('week')">This Week</button>
+    <button class="rqb"        id="rqb-month"       onclick="setQuickRange('month')">This Month</button>
+    <button class="rqb"        id="rqb-custom"      onclick="setQuickRange('custom')">Custom</button>
     <div class="rdates">
       <input type="date" id="range-from" onchange="onCustomRange()">
       <span class="range-sep">&rarr;</span>
@@ -138,7 +194,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
   <div class="content">
     <div id="alerts"></div>
 
-    <!-- Range summary (shown for multi-day views) -->
+    <!-- Range summary -->
     <div class="range-summary" id="range-summary">
       <div class="rsc"><div class="sl">Total Orders</div><div class="sv" id="rs-orders">—</div></div>
       <div class="rsc"><div class="sl">Revenue</div><div class="sv" id="rs-rev">—</div></div>
@@ -146,66 +202,90 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
       <div class="rsc"><div class="sl">UPI</div><div class="sv" id="rs-upi">—</div></div>
       <div class="rsc"><div class="sl">Card</div><div class="sv" id="rs-card">—</div></div>
       <div class="rsc"><div class="sl">Credit Due</div><div class="sv" id="rs-credit" style="color:var(--amber)">—</div></div>
+      <div class="rsc"><div class="sl">Partial Due</div><div class="sv" id="rs-partial" style="color:var(--amber)">—</div></div>
       <div class="rsc"><div class="sl">Collection</div><div class="sv" id="rs-coll" style="color:var(--blue)">—</div></div>
     </div>
 
-    <!-- Day-by-day breakdown (range only) -->
+    <!-- Day-by-day breakdown -->
     <div id="range-days-card" style="display:none;margin-bottom:16px" class="card">
       <div class="ch"><div class="ct" id="range-days-title">Daily Breakdown</div></div>
       <div id="range-days-body"></div>
     </div>
 
+    <!-- Stats tiles — 9 columns -->
     <div class="stats">
       <div class="sc"><div class="sl" id="stat-orders-label">Orders</div><div class="sv" id="sord">&#8212;</div><div class="ss" id="sords">Loading</div></div>
-      <div class="sc red" id="scurg" style="display:none"><div class="sl">&#128680; Urgent</div><div class="sv" id="surg">0</div><div class="ss">Priority processing</div></div>
-      <div class="sc"><div class="sl">Revenue</div><div class="sv" id="srev">&#8212;</div><div class="ss" id="srevs">Tests + collection</div></div>
-      <div class="sc amber"><div class="sl">Pending Bills</div><div class="sv" id="spend">&#8212;</div><div class="ss" id="spends">Credit due</div></div>
+      <div class="sc red" id="scurg" style="display:none"><div class="sl">&#128680; Urgent</div><div class="sv" id="surg">0</div><div class="ss">Priority</div></div>
+      <div class="sc"><div class="sl">Revenue</div><div class="sv" id="srev">&#8212;</div><div class="ss" id="srevs">Collected</div></div>
+      <div class="sc amber"><div class="sl">Credit</div><div class="sv" id="spend">&#8212;</div><div class="ss" id="spends">Full credit</div></div>
+      <div class="sc amber"><div class="sl">Partial Due</div><div class="sv" id="spartial">&#8212;</div><div class="ss" id="spartials">Balance pending</div></div>
       <div class="sc blue"><div class="sl">Home Collections</div><div class="sv" id="shome">&#8212;</div><div class="ss" id="shomes">Today</div></div>
-      <div class="sc amber" id="sctrans" style="display:none"><div class="sl">&#8644; Transfers</div><div class="sv" id="strans">0</div><div class="ss">Awaiting acceptance</div></div>
+      <div class="sc amber" id="sctrans" style="display:none"><div class="sl">&#8644; Transfers</div><div class="sv" id="strans">0</div><div class="ss">Awaiting accept</div></div>
       <div class="sc"><div class="sl">Cash in Hand</div><div class="sv" id="scash">&#8212;</div><div class="ss" id="scashs">After handovers</div></div>
-      <div class="sc"><div class="sl">Amended Today</div><div class="sv" id="samend">&#8212;</div><div class="ss">Orders edited</div></div>
+      <div class="sc green"><div class="sl">Reported</div><div class="sv" id="sreported">&#8212;</div><div class="ss">Lab complete</div></div>
     </div>
 
+    <!-- Revenue breakdown — 6 cols including Partial -->
     <div class="rev">
       <div class="rc"><div class="rl2">Cash</div><div class="rv" id="rcash">&#8212;</div></div>
       <div class="rc"><div class="rl2">UPI</div><div class="rv" id="rupi">&#8212;</div></div>
       <div class="rc"><div class="rl2">Card</div><div class="rv" id="rcard">&#8212;</div></div>
       <div class="rc"><div class="rl2">Collection Charges</div><div class="rv" id="rcoll" style="color:var(--blue)">&#8212;</div></div>
-      <div class="rc"><div class="rl2">Credit (Due)</div><div class="rv" id="rcredit" style="color:var(--amber)">&#8212;</div></div>
+      <div class="rc"><div class="rl2">Credit (Full)</div><div class="rv" id="rcredit" style="color:var(--amber)">&#8212;</div></div>
+      <div class="rc"><div class="rl2">Partial Due</div><div class="rv" id="rpartial" style="color:var(--amber)">&#8212;</div></div>
+    </div>
+
+    <!-- Lab status strip -->
+    <div class="lab-strip" id="lab-strip">
+      <div class="lsc" onclick="showLabFilter('registered')"><div class="lsl">Registered</div><div class="lsv" id="ls-registered" style="color:#DC2626">&#8212;</div></div>
+      <div class="lsc" onclick="showLabFilter('collected')"><div class="lsl">Sample Collected</div><div class="lsv" id="ls-collected" style="color:#1D4ED8">&#8212;</div></div>
+      <div class="lsc" onclick="showLabFilter('processing')"><div class="lsl">Processing</div><div class="lsv" id="ls-processing" style="color:#D97706">&#8212;</div></div>
+      <div class="lsc" onclick="showLabFilter('reported')"><div class="lsl">Reported</div><div class="lsv" id="ls-reported" style="color:#059669">&#8212;</div></div>
     </div>
 
     <div class="grid">
       <div class="lcol">
+        <!-- Orders table with payment filter chips -->
         <div class="card">
           <div class="ch">
-            <div class="ct">Today&rsquo;s Orders</div>
-            <input type="text" id="sq" placeholder="Search patient..." oninput="filterTable(this.value)"
-              style="padding:5px 10px;border:0.5px solid var(--border-strong);border-radius:6px;font-size:12px;background:var(--surface2);width:180px">
+            <div class="ct">Orders</div>
+            <div class="pay-filters">
+              <button class="pf on"  id="pf-all"     onclick="setPayFilter('all')">All</button>
+              <button class="pf"     id="pf-paid"    onclick="setPayFilter('paid')">&#10003; Paid</button>
+              <button class="pf"     id="pf-partial" onclick="setPayFilter('partial')">&#9680; Partial</button>
+              <button class="pf"     id="pf-credit"  onclick="setPayFilter('credit')">&#128218; Credit</button>
+              <button class="pf"     id="pf-due"     onclick="setPayFilter('due')">&#9888; Any Due</button>
+            </div>
+            <input type="text" id="sq" placeholder="Search name, mobile, doctor..."
+              oninput="applyTableFilter()"
+              style="padding:5px 10px;border:0.5px solid var(--border-strong);border-radius:6px;font-size:12px;background:var(--surface2);width:220px">
           </div>
           <div style="overflow-x:auto">
             <table class="ot">
               <thead><tr>
-                <th>Patient</th><th>Tests</th><th>Source</th>
-                <th>Amount</th><th>+Coll.</th><th>Mode</th>
-                <th>By</th><th>Rx</th><th>Status</th><th>Time</th>
+                <th>Patient</th><th>Serial</th><th>Tests</th><th>Source</th>
+                <th>Amount</th><th>Due</th><th>+Coll.</th><th>Mode</th>
+                <th>Lab</th><th>By</th><th>Status</th><th>Time</th>
               </tr></thead>
-              <tbody id="otbody"><tr><td colspan="10" class="empty">Loading...</td></tr></tbody>
+              <tbody id="otbody"><tr><td colspan="12" class="empty">Loading...</td></tr></tbody>
             </table>
           </div>
         </div>
 
+        <!-- Home Collections -->
         <div class="card">
           <div class="ch">
-            <div class="ct">&#128664; Home Collections</div>
+            <div class="ct">&#128664; Home &amp; Hospital Collections</div>
             <div style="display:flex;gap:6px">
               <span class="cc2" id="fpc" style="background:#FEF3C7;color:#92400E">0 pending</span>
               <span class="cc2" id="fcc" style="background:#D1FAE5;color:#065F46">0 collected</span>
               <span class="cc2" id="fdc">0 delivered</span>
             </div>
           </div>
-          <div id="flist"><div class="empty">No home collections today</div></div>
+          <div id="flist"><div class="empty">No field collections today</div></div>
         </div>
 
+        <!-- Cash Handovers -->
         <div class="card">
           <div class="ch"><div class="ct">Cash Handovers</div><span class="cc2" id="hoc">0</span></div>
           <div id="holist"><div class="empty">No handovers today</div></div>
@@ -213,11 +293,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
       </div>
 
       <div class="rcol">
+        <!-- Department breakdown -->
         <div class="card">
           <div class="ch"><div class="ct">Department Breakdown</div></div>
           <div id="dlist"><div class="empty">Loading...</div></div>
         </div>
 
+        <!-- Pending transfers -->
         <div class="card" id="tcard" style="display:none">
           <div class="ch">
             <div class="ct">&#8644; Pending Sample Transfers</div>
@@ -226,12 +308,24 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
           <div id="tlist"></div>
         </div>
 
+        <!-- Activity Feed -->
         <div class="card">
           <div class="ch"><div class="ct">Activity Feed</div><span class="cc2" id="afc">0</span></div>
           <div id="afeed" style="max-height:420px;overflow-y:auto"><div class="empty">Loading...</div></div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Lab status modal -->
+<div class="modal-overlay" id="lab-modal">
+  <div class="modal-box">
+    <div class="modal-title">
+      <span id="lab-modal-title">Orders</span>
+      <button class="modal-close" onclick="closeLabModal()">&#10005;</button>
+    </div>
+    <div id="lab-modal-body"></div>
   </div>
 </div>
 
@@ -246,28 +340,38 @@ firebase.initializeApp({
 });
 var auth=firebase.auth(), db=firebase.firestore();
 var allOrders=[], allHandovers=[], uO=null, uH=null;
+var dashPayFilter = 'all';
 
+// ── Auth ──────────────────────────────────────────────────────────────────
 function doLogin(){
-  var e=document.getElementById('em').value.trim(),p=document.getElementById('pw').value;
+  var e=document.getElementById('em').value.trim(), p=document.getElementById('pw').value;
   var err=document.getElementById('lerr');
   if(!e||!p){err.textContent='Enter email and password';return;}
   err.textContent='Signing in…';
   auth.signInWithEmailAndPassword(e,p).catch(function(x){err.textContent=x.message;});
 }
-function doSignOut(){if(uO)uO();if(uH)uH();auth.signOut();}
+function doSignOut() {
+  // Clear inactivity timer
+  clearTimeout(_inactivityTimer); _inactivityTimer = null;
+  // Unsubscribe all real-time listeners
+  if (uO) { uO(); uO = null; }
+  if (uH) { uH(); uH = null; }
+  // Clear all session state
+  allOrders = []; allHandovers = [];
+  auth.signOut();
+}
 document.getElementById('pw').addEventListener('keydown',function(e){if(e.key==='Enter')doLogin();});
-
-var ALLOWED_ROLES = ['admin','pathologist'];
 
 auth.onAuthStateChanged(function(user){
   if(user){
     db.collection('staff').doc(user.uid).get().then(function(snap){
       var data = snap.exists ? snap.data() : {};
-      var allowed = data.dashboardAccess === true;
+      // dashboardAccess OR admin/pathologist role can view
+      var role = data.role || '';
+      var allowed = data.dashboardAccess === true || role === 'admin' || role === 'pathologist' || role === 'manager';
       if(!allowed){
         auth.signOut();
-        document.getElementById('lerr').textContent =
-          'Access denied. You have not been granted dashboard access. Contact Admin.';
+        document.getElementById('lerr').textContent = 'Access denied. Contact Admin to enable dashboard access.';
         document.getElementById('login').style.display='flex';
         document.getElementById('main').style.display='none';
         return;
@@ -276,9 +380,11 @@ auth.onAuthStateChanged(function(user){
       document.getElementById('login').style.display='none';
       document.getElementById('main').style.display='flex';
       startDash();
+      initInactivityWatcher();
     }).catch(function(){
+      // Never grant silent admin — sign out on Firestore failure
       auth.signOut();
-      document.getElementById('lerr').textContent='Could not verify account. Check connection and try again.';
+      document.getElementById('lerr').textContent='Cannot load staff profile. Check connection and try again.';
     });
   } else {
     document.getElementById('login').style.display='flex';
@@ -286,249 +392,222 @@ auth.onAuthStateChanged(function(user){
   }
 });
 
+// ── Utilities ─────────────────────────────────────────────────────────────
 function td(){var d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
 function fmt(n){return 'Rs.'+(n||0).toLocaleString('en-IN');}
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function set(id,v){var el=document.getElementById(id);if(el)el.textContent=v;}
+function fmtDate(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function isMultiDay(){return dashFrom!==dashTo;}
 
-var dashDate = td();
-var dashMode = 'today';  // today | yesterday | week | month | custom
-var dashFrom = td();
-var dashTo   = td();
-var dashViewLabel = 'today';
-var allOrdersRange = []; // for multi-day aggregation
+var dashFrom=td(), dashTo=td(), dashViewLabel='today', dashMode='today';
 
+// ── Range control ─────────────────────────────────────────────────────────
+
+// ── INACTIVITY AUTO-LOCK ─────────────────────────────────────────────────
+var _inactivityTimer = null;
+var INACTIVITY_TIMEOUT_MS = 15 * 60 * 1000; // 15 minutes for desktop
+
+function resetInactivityTimer() {
+  clearTimeout(_inactivityTimer);
+  _inactivityTimer = setTimeout(function() {
+    // Sign out and return to login
+    if (uO) { uO(); uO = null; }
+    if (uH) { uH(); uH = null; }
+    allOrders = []; allHandovers = [];
+    auth.signOut();
+    document.getElementById('lerr').textContent = 'Signed out due to inactivity.';
+  }, INACTIVITY_TIMEOUT_MS);
+}
+
+function initInactivityWatcher() {
+  ['mousemove', 'mousedown', 'keydown', 'scroll', 'touchstart'].forEach(function(evt) {
+    document.addEventListener(evt, resetInactivityTimer, { passive: true });
+  });
+  resetInactivityTimer();
+}
+// ─────────────────────────────────────────────────────────────────────────
 function startDash(){
-  dashDate = td();
-  dashFrom = td(); dashTo = td();
-  var today = td();
-  var rf = document.getElementById('range-from');
-  var rt = document.getElementById('range-to');
-  if (rf) { rf.max = today; rf.value = today; }
-  if (rt) { rt.max = today; rt.value = today; }
+  var today=td();
+  var rf=document.getElementById('range-from');
+  var rt=document.getElementById('range-to');
+  if(rf){rf.max=today;rf.value=today;}
+  if(rt){rt.max=today;rt.value=today;}
   setQuickRange('today');
 }
 
-function setQuickRange(mode) {
-  dashMode = mode;
-  var today = td();
-  var d = new Date();
-  ['today','yesterday','week','month','custom'].forEach(function(id) {
-    var btn = document.getElementById('rqb-'+id);
-    if (btn) btn.className = 'rqb' + (id === mode ? ' active' : '');
+function setQuickRange(mode){
+  dashMode=mode;
+  var today=td(); var d=new Date();
+  ['today','yesterday','week','month','custom'].forEach(function(id){
+    var btn=document.getElementById('rqb-'+id);
+    if(btn)btn.className='rqb'+(id===mode?' active':'');
   });
-  var rf = document.getElementById('range-from');
-  var rt = document.getElementById('range-to');
-  if (mode === 'today') {
-    dashFrom = dashTo = today; dashViewLabel = 'today';
-  } else if (mode === 'yesterday') {
-    var y = new Date(d); y.setDate(y.getDate()-1);
-    dashFrom = dashTo = fmtDate(y); dashViewLabel = 'yesterday';
-  } else if (mode === 'week') {
-    var mon = new Date(d); mon.setDate(d.getDate() - ((d.getDay()+6)%7));
-    dashFrom = fmtDate(mon); dashTo = today; dashViewLabel = 'this week';
-  } else if (mode === 'month') {
-    dashFrom = today.slice(0,8)+'01'; dashTo = today; dashViewLabel = 'this month';
-  } else if (mode === 'custom') {
-    dashFrom = rf ? rf.value || today : today;
-    dashTo   = rt ? rt.value || today : today;
-    dashViewLabel = 'selected range';
-  }
-  if (rf && mode !== 'custom') rf.value = dashFrom;
-  if (rt && mode !== 'custom') rt.value = dashTo;
-  loadRange(dashFrom, dashTo);
+  var rf=document.getElementById('range-from');
+  var rt=document.getElementById('range-to');
+  if(mode==='today'){dashFrom=dashTo=today;dashViewLabel='today';}
+  else if(mode==='yesterday'){var y=new Date(d);y.setDate(y.getDate()-1);dashFrom=dashTo=fmtDate(y);dashViewLabel='yesterday';}
+  else if(mode==='week'){var mon=new Date(d);mon.setDate(d.getDate()-((d.getDay()+6)%7));dashFrom=fmtDate(mon);dashTo=today;dashViewLabel='this week';}
+  else if(mode==='month'){dashFrom=today.slice(0,8)+'01';dashTo=today;dashViewLabel='this month';}
+  else if(mode==='custom'){dashFrom=rf?rf.value||today:today;dashTo=rt?rt.value||today:today;dashViewLabel='selected range';}
+  if(rf&&mode!=='custom')rf.value=dashFrom;
+  if(rt&&mode!=='custom')rt.value=dashTo;
+  loadRange(dashFrom,dashTo);
 }
 
-function onCustomRange() {
-  var rf = document.getElementById('range-from');
-  var rt = document.getElementById('range-to');
-  if (!rf || !rt || !rf.value || !rt.value) return;
-  if (rf.value > rt.value) { rt.value = rf.value; }
-  dashMode = 'custom';
-  ['today','yesterday','week','month','custom'].forEach(function(id) {
-    var btn = document.getElementById('rqb-'+id);
-    if (btn) btn.className = 'rqb' + (id === 'custom' ? ' active' : '');
+function onCustomRange(){
+  var rf=document.getElementById('range-from');
+  var rt=document.getElementById('range-to');
+  if(!rf||!rt||!rf.value||!rt.value)return;
+  if(rf.value>rt.value)rt.value=rf.value;
+  dashMode='custom';
+  ['today','yesterday','week','month','custom'].forEach(function(id){
+    var btn=document.getElementById('rqb-'+id);
+    if(btn)btn.className='rqb'+(id==='custom'?' active':'');
   });
-  dashFrom = rf.value; dashTo = rt.value; dashViewLabel = 'selected range';
-  loadRange(dashFrom, dashTo);
+  dashFrom=rf.value;dashTo=rt.value;dashViewLabel='selected range';
+  loadRange(dashFrom,dashTo);
 }
 
-function fmtDate(d) {
-  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
-}
+function loadRange(from,to){
+  if(uO){uO();uO=null;} if(uH){uH();uH=null;}
+  var today=td();
+  var isToday=from===today&&to===today;
+  var label=isToday?new Date().toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short',year:'numeric'})+' (Today)'
+    :from===to?new Date(from+'T00:00:00').toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short',year:'numeric'})
+    :new Date(from+'T00:00:00').toLocaleDateString('en-IN',{day:'2-digit',month:'short'})+' — '+new Date(to+'T00:00:00').toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});
+  set('ddate',label);
+  set('stat-orders-label',isMultiDay()?'Total Orders':'Orders');
+  var rs=document.getElementById('range-summary');
+  var rdc=document.getElementById('range-days-card');
+  if(rs)rs.className='range-summary'+(isMultiDay()?' show':'');
+  if(rdc)rdc.style.display=isMultiDay()?'block':'none';
+  // Lab strip only relevant for single-day
+  var ls=document.getElementById('lab-strip');
+  if(ls)ls.style.display=isMultiDay()?'none':'grid';
 
-function isMultiDay() { return dashFrom !== dashTo; }
-
-function loadRange(from, to) {
-  if (uO) { uO(); uO=null; }
-  if (uH) { uH(); uH=null; }
-  var today = td();
-  var isToday = from === today && to === today;
-  // Update header label
-  var label = isToday ? new Date().toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short',year:'numeric'})+' (Today)'
-    : from === to ? new Date(from+'T00:00:00').toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short',year:'numeric'})
-    : new Date(from+'T00:00:00').toLocaleDateString('en-IN',{day:'2-digit',month:'short'})
-      +' — '+new Date(to+'T00:00:00').toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});
-  set('ddate', label);
-  set('stat-orders-label', isMultiDay() ? 'Total Orders' : 'Orders');
-  // Range summary visibility
-  var rs = document.getElementById('range-summary');
-  var rdc = document.getElementById('range-days-card');
-  if (rs) rs.className = 'range-summary' + (isMultiDay() ? ' show' : '');
-  if (rdc) rdc.style.display = isMultiDay() ? 'block' : 'none';
-
-  if (!isMultiDay()) {
-    // Single day — use realtime listener
-    dashDate = from;
-    uO = db.collection('orders').where('date','==',from).onSnapshot(function(snap){
+  if(!isMultiDay()){
+    uO=db.collection('orders').where('date','==',from).onSnapshot(function(snap){
       allOrders=[];
       snap.forEach(function(doc){allOrders.push(Object.assign({id:doc.id},doc.data()));});
       allOrders.sort(function(a,b){return(b.createdAt&&b.createdAt.toMillis?b.createdAt.toMillis():0)-(a.createdAt&&a.createdAt.toMillis?a.createdAt.toMillis():0);});
       renderAll();
       set('drefresh','Updated '+new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'}));
     });
-    if (isToday) {
-      uH = db.collection('handovers').where('date','==',from).onSnapshot(function(snap){
+    if(isToday){
+      uH=db.collection('handovers').where('date','==',from).onSnapshot(function(snap){
         allHandovers=[];
         snap.forEach(function(doc){allHandovers.push(Object.assign({id:doc.id},doc.data()));});
-        renderHandovers(); updateCash();
+        renderHandovers();updateCash();
       });
     }
   } else {
-    // Multi-day — one-time fetch
     set('drefresh','Loading…');
-    db.collection('orders').where('date','>=',from).where('date','<=',to)
-      .get().then(function(snap) {
-        allOrders=[];
-        snap.forEach(function(doc){allOrders.push(Object.assign({id:doc.id},doc.data()));});
-        allOrders.sort(function(a,b){return(b.createdAt&&b.createdAt.toMillis?b.createdAt.toMillis():0)-(a.createdAt&&a.createdAt.toMillis?a.createdAt.toMillis():0);});
-        allHandovers=[];
-        renderAll();
-        set('drefresh',allOrders.length+' orders · '+new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'}));
-      });
+    db.collection('orders').where('date','>=',from).where('date','<=',to).get().then(function(snap){
+      allOrders=[];
+      snap.forEach(function(doc){allOrders.push(Object.assign({id:doc.id},doc.data()));});
+      allOrders.sort(function(a,b){return(b.createdAt&&b.createdAt.toMillis?b.createdAt.toMillis():0)-(a.createdAt&&a.createdAt.toMillis?a.createdAt.toMillis():0);});
+      allHandovers=[];
+      renderAll();
+      set('drefresh',allOrders.length+' orders · '+new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'}));
+    });
   }
 }
 
-function renderRangeSummary() {
-  if (!isMultiDay()) return;
-  var cash=0,upi=0,card=0,credit=0,coll=0;
+function renderAll(){
+  renderStats();
+  applyTableFilter();
+  renderDepts();
+  renderField();
+  renderTransfers();
+  renderActivity();
+  renderAlerts();
+  renderRangeSummary();
+  renderLabStrip();
+}
+
+// ── Payment filter ─────────────────────────────────────────────────────────
+function setPayFilter(f){
+  dashPayFilter=f;
+  ['all','paid','partial','credit','due'].forEach(function(id){
+    var btn=document.getElementById('pf-'+id);
+    if(btn)btn.className='pf'+(id===f?' on':'');
+  });
+  applyTableFilter();
+}
+
+function applyTableFilter(){
+  var q=(document.getElementById('sq')&&document.getElementById('sq').value)||'';
+  var lq=q.toLowerCase();
+  var filtered=allOrders.filter(function(o){
+    // Text search: name, mobile, refBy (doctor)
+    if(q){
+      var match=(o.patientName&&o.patientName.toLowerCase().indexOf(lq)>=0)
+        ||(o.phone&&o.phone.indexOf(q)>=0)
+        ||(o.refBy&&o.refBy.toLowerCase().indexOf(lq)>=0);
+      if(!match)return false;
+    }
+    // Payment filter
+    if(dashPayFilter==='all')return true;
+    var due=o.dueAmount||0;
+    var isCredit=o.payMode==='credit'&&o.status==='pending';
+    var isPartial=!isCredit&&due>0&&(o.paidAmount||0)>0;
+    var isPaid=o.status==='paid'&&due<=0;
+    if(dashPayFilter==='paid')    return isPaid;
+    if(dashPayFilter==='partial') return isPartial;
+    if(dashPayFilter==='credit')  return isCredit;
+    if(dashPayFilter==='due')     return due>0;
+    return true;
+  });
+  renderTable(filtered);
+}
+
+// ── Stats ─────────────────────────────────────────────────────────────────
+function renderStats(){
+  var cash=0,upi=0,card=0,credit=0,partialDue=0,pend=0,partial=0,home=0,urg=0,coll=0,amend=0,trans=0,reported=0;
   allOrders.forEach(function(o){
     var paid=o.paidAmount||0;
+    var due=o.dueAmount||0;
     if(o.payMode==='split'&&o.splitPayments){cash+=(o.splitPayments.cash||0);upi+=(o.splitPayments.upi||0);card+=(o.splitPayments.card||0);}
     else if(o.payMode==='cash')cash+=paid;
     else if(o.payMode==='upi')upi+=paid;
     else if(o.payMode==='card')card+=paid;
-    if(o.payMode==='credit')credit+=(o.totalAmount||0);
-    coll+=(o.collectionCharge||0);
-  });
-  set('rs-orders', allOrders.length);
-  set('rs-rev', fmt(cash+upi+card));
-  set('rs-cash', fmt(cash)); set('rs-upi', fmt(upi)); set('rs-card', fmt(card));
-  set('rs-credit', fmt(credit)); set('rs-coll', fmt(coll));
-
-  // Day-by-day breakdown
-  var byDay = {};
-  allOrders.forEach(function(o){
-    var day = o.date || '';
-    if (!byDay[day]) byDay[day] = {orders:0,rev:0,cash:0,upi:0,card:0,credit:0,coll:0};
-    var b = byDay[day]; b.orders++;
-    var paid = o.paidAmount||0;
-    if(o.payMode==='split'&&o.splitPayments){b.cash+=(o.splitPayments.cash||0);b.upi+=(o.splitPayments.upi||0);b.card+=(o.splitPayments.card||0);}
-    else if(o.payMode==='cash')b.cash+=paid;
-    else if(o.payMode==='upi')b.upi+=paid;
-    else if(o.payMode==='card')b.card+=paid;
-    if(o.payMode==='credit')b.credit+=(o.totalAmount||0);
-    b.coll+=(o.collectionCharge||0);
-    b.rev=b.cash+b.upi+b.card;
-  });
-  var days = Object.keys(byDay).sort().reverse();
-  set('range-days-title', 'Daily Breakdown (' + days.length + ' days)');
-  var el = document.getElementById('range-days-body');
-  if (!el) return;
-  if (!days.length) { el.innerHTML = '<div class="empty">No orders</div>'; return; }
-  el.innerHTML = '<div class="day-row" style="background:var(--surface2);font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase">'
-    +'<span style="width:100px">Date</span><span style="width:50px;text-align:right">Orders</span>'
-    +'<span style="width:90px;text-align:right">Revenue</span><span style="width:80px;text-align:right">Cash</span>'
-    +'<span style="width:80px;text-align:right">UPI</span><span style="width:80px;text-align:right">Card</span>'
-    +'<span style="width:80px;text-align:right">Credit</span></div>'
-    + days.map(function(day){
-      var b = byDay[day];
-      var isToday = day === td();
-      var dayLabel = new Date(day+'T00:00:00').toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short'});
-      return '<div class="day-row">'
-        +'<span style="width:100px;font-weight:'+(isToday?'600':'400')+'">'+dayLabel+(isToday?' ★':'')+'</span>'
-        +'<span style="width:50px;text-align:right;font-family:var(--mono)">'+b.orders+'</span>'
-        +'<span style="width:90px;text-align:right;font-family:var(--mono);font-weight:500">'+fmt(b.rev)+'</span>'
-        +'<span style="width:80px;text-align:right;font-family:var(--mono);color:var(--text2)">'+fmt(b.cash)+'</span>'
-        +'<span style="width:80px;text-align:right;font-family:var(--mono);color:var(--text2)">'+fmt(b.upi)+'</span>'
-        +'<span style="width:80px;text-align:right;font-family:var(--mono);color:var(--text2)">'+fmt(b.card)+'</span>'
-        +'<span style="width:80px;text-align:right;font-family:var(--mono);color:var(--amber)">'+fmt(b.credit)+'</span>'
-        +'</div>';
-    }).join('');
-}
-
-
-function loadDashDate(date){
-  var d = new Date(date+'T00:00:00');
-  var isToday = date === td();
-  document.getElementById('ddate').textContent = d.toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short',year:'numeric'})+(isToday?' (Today)':'');
-  // Limit date picker to today
-  var picker = document.getElementById('dash-date-picker');
-  if (picker) { picker.max = td(); picker.value = date; }
-  uO=db.collection('orders').where('date','==',date).onSnapshot(function(snap){
-    allOrders=[];
-    snap.forEach(function(doc){allOrders.push(Object.assign({id:doc.id},doc.data()));});
-    allOrders.sort(function(a,b){return(b.createdAt&&b.createdAt.toMillis?b.createdAt.toMillis():0)-(a.createdAt&&a.createdAt.toMillis?a.createdAt.toMillis():0);});
-    renderAll();
-    document.getElementById('drefresh').textContent='Updated '+new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
-  });
-  uH=db.collection('handovers').where('date','==',date).onSnapshot(function(snap){
-    allHandovers=[];
-    snap.forEach(function(doc){allHandovers.push(Object.assign({id:doc.id},doc.data()));});
-    renderHandovers();
-    updateCash();
-  });
-}
-
-function renderAll(){renderStats();filterTable(document.getElementById('sq').value);renderDepts();renderField();renderTransfers();renderActivity();renderAlerts();renderRangeSummary();}
-
-function renderStats(){
-  var cash=0,upi=0,card=0,credit=0,pend=0,home=0,urg=0,coll=0,amend=0,trans=0;
-  allOrders.forEach(function(o){
-    var paid=o.paidAmount||0;
-    if(o.payMode==='split'&&o.splitPayments){
-      cash+=(o.splitPayments.cash||0);
-      upi+=(o.splitPayments.upi||0);
-      card+=(o.splitPayments.card||0);
-    } else if(o.payMode==='cash')cash+=paid;
-    else if(o.payMode==='upi')upi+=paid;
-    else if(o.payMode==='card')card+=paid;
-    if(o.payMode==='credit'){credit+=(o.totalAmount||0);pend++;}
-    if(o.source==='Home Collection')home++;
+    // Credit = full credit (nothing collected)
+    if(o.payMode==='credit'&&o.status==='pending'){credit+=(o.totalAmount||0);pend++;}
+    // Partial = cash collected but balance remaining
+    if(due>0&&paid>0&&o.payMode!=='credit'){partialDue+=due;partial++;}
+    if(o.source==='Home Collection'||o.source==='Hospital Collection')home++;
     if(o.urgent)urg++;
     coll+=(o.collectionCharge||0);
     if(o.amendments&&o.amendments.length)amend++;
     if(o.fieldTransferPending)trans++;
+    if((o.labStatus||'registered')==='reported')reported++;
   });
   var rev=cash+upi+card;
-  set('sord',allOrders.length);set('sords',allOrders.length+' order'+(allOrders.length!==1?'s':'')+' '+dashViewLabel);
-  set('srev',fmt(rev));set('srevs','+ Rs.'+coll.toLocaleString('en-IN')+' collection');
-  set('spend',pend);set('spends',fmt(credit)+' due');
+  set('sord',allOrders.length);
+  set('sords',allOrders.length+' order'+(allOrders.length!==1?'s':'')+' '+dashViewLabel);
+  set('srev',fmt(rev));
+  set('srevs','+ Rs.'+coll.toLocaleString('en-IN')+' collection');
+  set('spend',pend);
+  set('spends',fmt(credit)+' full credit');
+  set('spartial',partial);
+  set('spartials',fmt(partialDue)+' due');
   set('shome',home);
-  var hcoll=allOrders.filter(function(o){return o.source==='Home Collection'&&o.fieldStatus;}).length;
-  set('shomes',hcoll+' collected / '+home+' total'); set('sord',allOrders.length);
+  var hcoll=allOrders.filter(function(o){return (o.source==='Home Collection'||o.source==='Hospital Collection')&&o.fieldStatus;}).length;
+  set('shomes',hcoll+' collected / '+home+' total');
   set('samend',amend);
-  set('rcash',fmt(cash));set('rupi',fmt(upi));set('rcard',fmt(card));set('rcoll',fmt(coll));set('rcredit',fmt(credit));
-  document.getElementById('scurg').style.display=urg>0?'block':'none'; set('surg',urg);
-  document.getElementById('sctrans').style.display=trans>0?'block':'none'; set('strans',trans);
+  set('sreported',reported);
+  set('rcash',fmt(cash));set('rupi',fmt(upi));set('rcard',fmt(card));
+  set('rcoll',fmt(coll));set('rcredit',fmt(credit));set('rpartial',fmt(partialDue));
+  document.getElementById('scurg').style.display=urg>0?'block':'none';set('surg',urg);
+  document.getElementById('sctrans').style.display=trans>0?'block':'none';set('strans',trans);
 }
-
-function set(id,v){var el=document.getElementById(id);if(el)el.textContent=v;}
 
 function updateCash(){
   var cashTotal=allOrders.reduce(function(s,o){
     var c=0;
-    if(o.payMode==='split'&&o.splitPayments) c=o.splitPayments.cash||0;
-    else if(o.payMode==='cash') c=o.paidAmount||0;
+    if(o.payMode==='split'&&o.splitPayments)c=o.splitPayments.cash||0;
+    else if(o.payMode==='cash')c=o.paidAmount||0;
     return s+c+(o.collectionCharge||0);
   },0);
   var ho=allHandovers.filter(function(h){return h.custodyStatus==='ACCEPTED';}).reduce(function(s,h){return s+(h.amount||0);},0);
@@ -536,20 +615,51 @@ function updateCash(){
   set('scashs','Total: '+fmt(cashTotal)+' | HO: '+fmt(ho));
 }
 
+// ── Lab status strip ──────────────────────────────────────────────────────
+function renderLabStrip(){
+  if(isMultiDay())return;
+  var counts={registered:0,collected:0,processing:0,reported:0};
+  allOrders.forEach(function(o){
+    var s=o.labStatus||'registered';
+    if(counts[s]!==undefined)counts[s]++;
+  });
+  Object.keys(counts).forEach(function(s){set('ls-'+s,counts[s]);});
+}
+
+function showLabFilter(status){
+  var labels={registered:'Registered',collected:'Sample Collected',processing:'Processing',reported:'Reported'};
+  var orders=allOrders.filter(function(o){return (o.labStatus||'registered')===status;});
+  document.getElementById('lab-modal-title').textContent=labels[status]+' — '+orders.length+' orders';
+  document.getElementById('lab-modal-body').innerHTML=orders.length
+    ?orders.map(function(o){
+        var time=o.createdAt&&o.createdAt.toDate?o.createdAt.toDate().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'}):'';
+        return '<div class="li" style="flex-direction:column;align-items:stretch">'\
+          +'<div style="display:flex;justify-content:space-between">'\
+          +'<span style="font-size:13px;font-weight:500">'+esc(o.patientName)+(o.urgent?' <span class="b br">URG</span>':'')+'</span>'\
+          +'<span style="font-size:11px;font-family:var(--mono);color:var(--text3)">'+time+'</span>'\
+          +'</div>'\
+          +'<div style="font-size:11px;color:var(--text3);margin-top:2px">'+esc((o.tests||[]).slice(0,3).map(function(t){return t.name;}).join(', '))+((o.tests||[]).length>3?' +'+((o.tests||[]).length-3):'')+'</div>'\
+          +'</div>';
+      }).join('')
+    :'<div class="empty">No orders in this status</div>';
+  document.getElementById('lab-modal').classList.add('open');
+}
+function closeLabModal(){document.getElementById('lab-modal').classList.remove('open');}
+
+// ── Alerts ────────────────────────────────────────────────────────────────
 function renderAlerts(){
   var html='';
   var urg=allOrders.filter(function(o){return o.urgent;});
   if(urg.length)html+='<div class="alert red">&#128680; '+urg.length+' URGENT order'+(urg.length>1?'s':'')+' &mdash; '+urg.map(function(o){return esc(o.patientName);}).join(', ')+'</div>';
   var tr=allOrders.filter(function(o){return o.fieldTransferPending;});
-  if(tr.length)html+='<div class="alert amber">&#8644; '+tr.length+' sample transfer'+(tr.length>1?'s':'')+' awaiting acceptance by receiving phlebotomist</div>';
+  if(tr.length)html+='<div class="alert amber">&#8644; '+tr.length+' sample transfer'+(tr.length>1?'s':'')+' awaiting acceptance</div>';
+  // Critical dues alert
+  var overdue=allOrders.filter(function(o){return (o.dueAmount||0)>0;});
+  if(overdue.length)html+='<div class="alert amber">&#9888; '+overdue.length+' order'+(overdue.length>1?'s':'')+' with outstanding dues</div>';
   document.getElementById('alerts').innerHTML=html;
 }
 
-function filterTable(q){
-  var orders=q?allOrders.filter(function(o){return o.patientName&&o.patientName.toLowerCase().indexOf(q.toLowerCase())>=0;}):allOrders;
-  renderTable(orders);
-}
-
+// ── Orders table ──────────────────────────────────────────────────────────
 function toggleRow(id){
   var el=document.getElementById('xr-'+id);
   if(!el)return;
@@ -561,62 +671,70 @@ function toggleRow(id){
 
 function renderTable(orders){
   var tb=document.getElementById('otbody');
-  if(!orders.length){tb.innerHTML='<tr><td colspan="10" class="empty">No orders found</td></tr>';return;}
+  if(!orders.length){tb.innerHTML='<tr><td colspan="12" class="empty">No orders found</td></tr>';return;}
   tb.innerHTML=orders.map(function(o){
     var rid=o.id;
-    var time='';
-    if(o.createdAt&&o.createdAt.toDate)time=o.createdAt.toDate().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
+    var time=o.createdAt&&o.createdAt.toDate?o.createdAt.toDate().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'}):'';
     var allTests=o.tests||[];
     var preview=allTests.slice(0,2).map(function(t){return esc(t.name);}).join(', ');
     var hasMore=allTests.length>2;
-    var moreBtn=hasMore?' <span id="xb-'+rid+'" onclick="toggleRow(\'' +rid+ '\')" style="cursor:pointer;color:var(--blue);font-size:10px;font-family:var(--mono);user-select:none">▸ +'+(allTests.length-2)+'</span>':'';
-    var testsCell=preview+moreBtn;
+    var moreBtn=hasMore?' <span id="xb-'+rid+'" onclick="toggleRow(\''+rid+'\')" style="cursor:pointer;color:var(--blue);font-size:10px;font-family:var(--mono)">▸ +'+(allTests.length-2)+'</span>':'';
     var fullTests=allTests.map(function(t,i){
-      return '<div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:0.5px solid var(--border);font-size:11px">'
-        +'<span>'+(i+1)+'. '+esc(t.name)+'</span>'
-        +(t.rate?'<span style="font-family:var(--mono);color:var(--text3)">Rs.'+t.rate+'</span>':'')
-        +'</div>';
+      return '<div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:0.5px solid var(--border);font-size:11px">'\
+        +'<span>'+(i+1)+'. '+esc(t.name)+'</span>'\
+        +(t.rate?'<span style="font-family:var(--mono);color:var(--text3)">Rs.'+t.rate+'</span>':'')+'</div>';
     }).join('');
-    var src=o.source&&o.source!=='Walk-in'?'<span class="b bb">'+(o.source==='Home Collection'?'Home':esc(o.source))+'</span>'+(o.gps?' 📍':''):'Walk-in';
+    var src=o.source&&o.source!=='Walk-in'?'<span class="b bb">'+(o.source==='Home Collection'?'Home':o.source==='Hospital Collection'?'Hosp':esc(o.source))+'</span>'+(o.gps?' 📍':''):'Walk-in';
     var ub=o.urgent?'<span class="b br">URG</span> ':'';
-    var sb=o.payMode==='credit'?'<span class="b bgo">Credit</span>':'<span class="b bg">Paid</span>';
-    if(o.amendments&&o.amendments.length)sb+=' <span style="font-size:10px;color:var(--amber)" title="Amended">✎</span>';
-    var panelNames={jk:'JK Gupta',du:'DU Panel',sh:'Shalini Gupta'};
-    var panelBadge=(o.panel&&o.panel!=='standard'&&panelNames[o.panel])?'<span style="font-size:9px;font-family:var(--mono);background:#EEF2FF;color:#3730A3;border-radius:4px;padding:1px 5px;margin-left:4px">'+panelNames[o.panel]+'</span>':'';
-    var rxp=(o.rxPhotos&&o.rxPhotos.length)?o.rxPhotos.length:(o.rxPhoto?1:0);
+    var due=o.dueAmount||0;
+    var isCredit=o.payMode==='credit'&&o.status==='pending';
+    var isPartial=!isCredit&&due>0&&(o.paidAmount||0)>0;
+    var sb=isCredit?'<span class="b bgo">Credit</span>'
+      :isPartial?'<span class="b bpart">Partial</span>'
+      :'<span class="b bg">Paid</span>';
+    if(o.amendments&&o.amendments.length)sb+=' <span style="font-size:10px;color:var(--amber)">✎</span>';
+    var labColors={registered:'#DC2626',collected:'#1D4ED8',processing:'#D97706',reported:'#059669'};
+    var labStatus=o.labStatus||'registered';
+    var labBadge='<span style="font-size:9px;font-family:var(--mono);font-weight:600;padding:1px 5px;border-radius:4px;background:var(--surface2);color:'+labColors[labStatus]+'">'
+      +labStatus.charAt(0).toUpperCase()+'</span>';
     var cc=o.collectionCharge||0;
-    var mainRow='<tr>'
-      +'<td><div style="font-weight:500">'+ub+esc(o.patientName)+panelBadge+'</div><div style="font-size:10px;color:var(--text3)">'+(o.age?o.age+'yr ':'')+esc(o.sex||'')+'</div></td>'
-      +'<td style="font-size:11px;color:var(--text2);max-width:180px">'+testsCell+'</td>'
-      +'<td>'+src+'</td>'
-      +'<td style="font-family:var(--mono);font-weight:500">'+fmt(o.paidAmount)+'</td>'
-      +'<td style="font-size:11px;font-family:var(--mono)">'+(cc>0?'<span style="color:var(--blue)">+'+cc+'</span>':'&mdash;')+'</td>'
+    var panelNames={jk:'JK Gupta',du:'DU Panel',sh:'Shalini Gupta'};
+    var panelBadge=(o.panel&&o.panel!=='standard'&&panelNames[o.panel])?'<span style="font-size:9px;font-family:var(--mono);background:#EEF2FF;color:#3730A3;border-radius:4px;padding:1px 5px;margin-left:3px">'+panelNames[o.panel]+'</span>':'';
+    var dueCell=due>0?'<span style="font-size:11px;font-family:var(--mono);color:var(--amber)">'+fmt(due)+'</span>':'<span style="color:var(--text3)">—</span>';
+    var mainRow='<tr>'\
+      +'<td><div style="font-weight:500">'+ub+esc(o.patientName)+panelBadge+'</div><div style="font-size:10px;color:var(--text3)">'+(o.age?o.age+'yr ':'')+esc(o.sex||'')+'</div></td>'\
+      +'<td style="font-size:10px;font-family:var(--mono);color:var(--text3)">'+esc(o.serialNo||'—')+'</td>'\
+      +'<td style="font-size:11px;color:var(--text2);max-width:180px">'+preview+moreBtn+'</td>'\
+      +'<td>'+src+'</td>'\
+      +'<td style="font-family:var(--mono);font-weight:500">'+fmt(o.paidAmount)+'</td>'\
+      +'<td>'+dueCell+'</td>'\
+      +'<td style="font-size:11px;font-family:var(--mono)">'+(cc>0?'<span style="color:var(--blue)">+'+cc+'</span>':'—')+'</td>'\
       +(function(){
-        var pm=o.payMode||'';
-        if(pm==='split'&&o.splitPayments){
-          var p=[];
-          if(o.splitPayments.cash>0)p.push('C:'+o.splitPayments.cash.toLocaleString('en-IN'));
-          if(o.splitPayments.upi>0)p.push('U:'+o.splitPayments.upi.toLocaleString('en-IN'));
-          if(o.splitPayments.card>0)p.push('Cd:'+o.splitPayments.card.toLocaleString('en-IN'));
-          return '<td style="font-size:10px;font-family:var(--mono)">'+p.join('<br>')+'</td>';
-        }
-        return '<td style="font-size:11px;font-family:var(--mono);text-transform:uppercase">'+esc(pm)+'</td>';
-      })()
-      +'<td style="font-size:11px;color:var(--text2)">'+esc(o.createdByName||'-')+'</td>'
-      +'<td style="font-size:11px;font-family:var(--mono)">'+(rxp?'<span style="color:var(--blue)">'+rxp+'p</span>':'&mdash;')+'</td>'
-      +'<td>'+sb+'</td>'
-      +'<td style="font-size:11px;font-family:var(--mono);color:var(--text3)">'+time+'</td>'
+          var pm=o.payMode||'';
+          if(pm==='split'&&o.splitPayments){
+            var p=[];
+            if(o.splitPayments.cash>0)p.push('C:'+o.splitPayments.cash.toLocaleString('en-IN'));
+            if(o.splitPayments.upi>0)p.push('U:'+o.splitPayments.upi.toLocaleString('en-IN'));
+            if(o.splitPayments.card>0)p.push('Cd:'+o.splitPayments.card.toLocaleString('en-IN'));
+            return '<td style="font-size:10px;font-family:var(--mono)">'+p.join('<br>')+'</td>';
+          }
+          return '<td style="font-size:11px;font-family:var(--mono);text-transform:uppercase">'+esc(pm)+'</td>';
+        })()\
+      +'<td>'+labBadge+'</td>'\
+      +'<td style="font-size:11px;color:var(--text2)">'+esc(o.createdByName||'-')+'</td>'\
+      +'<td>'+sb+'</td>'\
+      +'<td style="font-size:11px;font-family:var(--mono);color:var(--text3)">'+time+'</td>'\
       +'</tr>';
     var expandRow=hasMore
-      ?'<tr id="xr-'+rid+'" style="display:none"><td colspan="10" style="padding:0 12px 10px;background:var(--surface2)">'
-        +'<div style="font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;padding:6px 0 4px">All tests — '+esc(o.patientName)+'</div>'
-        +fullTests
-        +'</td></tr>'
+      ?'<tr id="xr-'+rid+'" style="display:none"><td colspan="12" style="padding:0 12px 10px;background:var(--surface2)">'\
+        +'<div style="font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;padding:6px 0 4px">All tests — '+esc(o.patientName)+'</div>'\
+        +fullTests+'</td></tr>'
       :'';
     return mainRow+expandRow;
   }).join('');
 }
 
+// ── Departments ───────────────────────────────────────────────────────────
 function renderDepts(){
   var m={};
   allOrders.forEach(function(o){(o.tests||[]).forEach(function(t){var d=t.dept||'Other';m[d]=(m[d]||0)+1;});});
@@ -624,38 +742,40 @@ function renderDepts(){
   var max=depts.length?depts[0].count:1;
   var el=document.getElementById('dlist');
   if(!depts.length){el.innerHTML='<div class="empty">No tests today</div>';return;}
-  el.innerHTML=depts.slice(0,10).map(function(d){
+  el.innerHTML=depts.slice(0,12).map(function(d){
     var pct=Math.round(d.count/max*100);
-    return '<div class="dr"><div style="font-size:12px;width:130px;flex-shrink:0">'+esc(d.dept)+'</div>'
-      +'<div class="dbb"><div class="dbf" style="width:'+pct+'%"></div></div>'
+    return '<div class="dr"><div style="font-size:12px;width:140px;flex-shrink:0">'+esc(d.dept)+'</div>'\
+      +'<div class="dbb"><div class="dbf" style="width:'+pct+'%"></div></div>'\
       +'<div style="font-size:12px;font-family:var(--mono);color:var(--text3);width:24px;text-align:right">'+d.count+'</div></div>';
   }).join('');
 }
 
+// ── Field collections ─────────────────────────────────────────────────────
 function renderField(){
-  var home=allOrders.filter(function(o){return o.source==='Home Collection';});
-  var pend=home.filter(function(o){return !o.fieldStatus&&!o.fieldTransferPending;});
-  var coll=home.filter(function(o){return o.fieldStatus==='collected';});
-  var deliv=home.filter(function(o){return o.fieldStatus==='delivered';});
+  var field=allOrders.filter(function(o){return o.source==='Home Collection'||o.source==='Hospital Collection';});
+  var pend=field.filter(function(o){return !o.fieldStatus&&!o.fieldTransferPending;});
+  var coll=field.filter(function(o){return o.fieldStatus==='collected';});
+  var deliv=field.filter(function(o){return o.fieldStatus==='delivered';});
   set('fpc',pend.length+' pending');set('fcc',coll.length+' collected');set('fdc',deliv.length+' delivered');
   var el=document.getElementById('flist');
-  if(!home.length){el.innerHTML='<div class="empty">No home collections today</div>';return;}
-  el.innerHTML=home.map(function(o){
+  if(!field.length){el.innerHTML='<div class="empty">No field collections today</div>';return;}
+  el.innerHTML=field.map(function(o){
     var st=o.fieldStatus==='delivered'?'<span class="b bg">Delivered</span>'
       :o.fieldStatus==='collected'?'<span class="b bb">Collected</span>'
       :o.fieldTransferPending?'<span class="b bp">Transfer Pending</span>'
       :(o.urgent?'<span class="b br">URGENT</span>':'<span class="b bgo">Pending</span>');
+    var src='<span style="font-size:10px;font-family:var(--mono);color:var(--text3)">'+esc(o.source)+'</span> ';
     var assignee=o.fieldAssignedToName?' &rarr; '+esc(o.fieldAssignedToName):'';
-    var tc=o.fieldTransfers&&o.fieldTransfers.length?' ('+o.fieldTransfers.length+' xfer)':'';
     var cc=o.collectionCharge>0?' &middot; Coll: Rs.'+o.collectionCharge:'';
-    return '<div class="li"><div style="flex:1;min-width:0">'
-      +'<div class="lin">'+esc(o.patientName)+'</div>'
-      +'<div class="lim">'+esc(o.address||'No address')+(o.gps?' &#128205;':'')
-      +' &middot; '+esc(o.createdByName||'-')+assignee+tc+cc+'</div>'
+    return '<div class="li"><div style="flex:1;min-width:0">'\
+      +'<div class="lin">'+src+esc(o.patientName)+'</div>'\
+      +'<div class="lim">'+esc(o.address||'No address')+(o.gps?' 📍':'')
+      +' &middot; '+esc(o.createdByName||'-')+assignee+cc+'</div>'\
       +'</div><div style="text-align:right;flex-shrink:0">'+st+'</div></div>';
   }).join('');
 }
 
+// ── Transfers ─────────────────────────────────────────────────────────────
 function renderTransfers(){
   var pend=allOrders.filter(function(o){return o.fieldTransferPending;});
   var card=document.getElementById('tcard');
@@ -663,13 +783,14 @@ function renderTransfers(){
   card.style.display='block';set('tc',pend.length);
   document.getElementById('tlist').innerHTML=pend.map(function(o){
     var t=o.fieldTransferPending;
-    return '<div class="li"><div style="flex:1;min-width:0">'
-      +'<div class="lin">'+esc(o.patientName)+'</div>'
-      +'<div class="lim">'+esc(t.fromName||'-')+' &rarr; '+esc(t.toName||'-')+' &middot; '+esc(t.reason||'')+'</div>'
+    return '<div class="li"><div style="flex:1;min-width:0">'\
+      +'<div class="lin">'+esc(o.patientName)+'</div>'\
+      +'<div class="lim">'+esc(t.fromName||'-')+' &rarr; '+esc(t.toName||'-')+' &middot; '+esc(t.reason||'')+'</div>'\
       +'</div><div style="flex-shrink:0"><span class="b bpend">Pending</span></div></div>';
   }).join('');
 }
 
+// ── Handovers ─────────────────────────────────────────────────────────────
 function renderHandovers(){
   var el=document.getElementById('holist');
   set('hoc',allHandovers.length);
@@ -679,57 +800,44 @@ function renderHandovers(){
   }).map(function(h){
     var st=h.custodyStatus||'ACCEPTED';
     var bc=st==='PENDING'?'bpend':st==='REJECTED'?'brej':'bacc';
-    var ordersHtml='';
-    if(h.orders&&h.orders.length){
-      ordersHtml='<div style="margin-top:6px;border-top:0.5px solid var(--border);padding-top:6px">'
-        +h.orders.map(function(o){
-          return '<div style="display:flex;justify-content:space-between;font-size:11px;padding:2px 0">'
-            +'<div style="flex:1;min-width:0"><span style="font-weight:500">'+esc(o.patientName)+'</span>'
-            +(o.age?' <span style="color:var(--text3)">'+o.age+'yr</span>':'')
-            +' <span style="color:var(--text3);font-size:10px">'+esc(o.tests||'')+'</span></div>'
-            +'<div style="font-family:var(--mono);color:var(--blue);margin-left:8px;white-space:nowrap">Rs.'+o.cashAmt.toLocaleString('en-IN')+'</div>'
-            +'</div>';
-        }).join('')
-        +'</div>';
-    }
-    return '<div class="li" style="flex-direction:column;align-items:stretch">'
-      +'<div style="display:flex;justify-content:space-between;align-items:flex-start">'
-        +'<div style="flex:1;min-width:0">'
+    return '<div class="li" style="flex-direction:column;align-items:stretch">'\
+      +'<div style="display:flex;justify-content:space-between;align-items:flex-start">'\
+        +'<div style="flex:1;min-width:0">'\
           +(h.type==='refund'
             ?'<div class="lin"><span style="color:#DC2626;font-size:10px;font-family:var(--mono)">REFUND</span> '+esc(h.refundRequestedFromName||'-')+' &rarr; '+esc(h.recordedByName||'-')+'</div>'
-            :'<div class="lin">'+esc(h.recordedByName||'-')+' &rarr; '+esc(h.handoverTo||'-')+'</div>')
-          +'<div class="lim">'+esc(h.time||'')+(h.notes?' &middot; '+esc(h.notes):'')+'</div>'
-        +'</div>'
-        +'<div style="text-align:right;flex-shrink:0;margin-left:8px">'
-          +'<div style="font-family:var(--mono);font-weight:500;font-size:13px">'+(h.type==='refund'?'<span style="color:#DC2626">-</span>':'')+fmt(h.amount)+'</div>'
-          +'<span class="b '+bc+'">'+st+'</span>'
-        +'</div>'
-      +'</div>'
-      +ordersHtml
+            :'<div class="lin">'+esc(h.recordedByName||'-')+' &rarr; '+esc(h.handoverTo||'-')+'</div>')\
+          +'<div class="lim">'+esc(h.time||'')+(h.notes?' &middot; '+esc(h.notes):'')+'</div>'\
+        +'</div>'\
+        +'<div style="text-align:right;flex-shrink:0;margin-left:8px">'\
+          +'<div style="font-family:var(--mono);font-weight:500;font-size:13px">'+(h.type==='refund'?'<span style="color:#DC2626">-</span>':'')+fmt(h.amount)+'</div>'\
+          +'<span class="b '+bc+'">'+st+'</span>'\
+        +'</div>'\
+      +'</div>'\
     +'</div>';
   }).join('');
 }
 
+// ── Activity feed ─────────────────────────────────────────────────────────
 function renderActivity(){
   var evs=[];
   allOrders.forEach(function(o){
     var t=o.createdAt&&o.createdAt.toDate?o.createdAt.toDate():null;
+    var due=o.dueAmount||0;
+    var isCredit=o.payMode==='credit';
+    var isPartial=!isCredit&&due>0;
+    var payStr=isCredit?'Credit'
+      :isPartial?fmt(o.paidAmount)+' paid, '+fmt(due)+' due'
+      :fmt(o.paidAmount);
     var src=o.source&&o.source!=='Walk-in'?' &middot; '+esc(o.source):'';
     var urg=o.urgent?' &middot; URGENT':'';
-    var rx=(o.rxPhotos&&o.rxPhotos.length)?o.rxPhotos.length:(o.rxPhoto?1:0);
-    var rxs=rx?' &middot; '+rx+'p Rx':'';
     var cc=o.collectionCharge>0?' &middot; Coll Rs.'+o.collectionCharge:'';
-    evs.push({at:t,label:esc(o.patientName)+' registered',
-      sub:fmt(o.paidAmount)+' &middot; '+(function(){
-          if(o.payMode==='split'&&o.splitPayments){var p=[];if(o.splitPayments.cash>0)p.push('Cash');if(o.splitPayments.upi>0)p.push('UPI');if(o.splitPayments.card>0)p.push('Card');return p.join('+');}
-          return (o.payMode||'').toUpperCase();
-        })()+src+urg+rxs+cc,
-      color:o.urgent?'#EF4444':'#059669'});
+    var pm=(function(){
+      if(o.payMode==='split'&&o.splitPayments){var p=[];if(o.splitPayments.cash>0)p.push('Cash');if(o.splitPayments.upi>0)p.push('UPI');if(o.splitPayments.card>0)p.push('Card');return p.join('+');}
+      return (o.payMode||'').toUpperCase();
+    })();
+    evs.push({at:t,label:esc(o.patientName)+' registered',sub:payStr+' &middot; '+pm+src+urg+cc,color:o.urgent?'#EF4444':'#059669'});
     (o.amendments||[]).forEach(function(a){
       evs.push({at:null,label:esc(o.patientName)+' order amended',sub:'By '+esc(a.byName||'-')+' &middot; '+esc(a.reason||''),color:'#D97706'});
-    });
-    (o.fieldTransfers||[]).forEach(function(ft){
-      evs.push({at:null,label:'Sample transfer: '+esc(o.patientName),sub:esc(ft.fromName||'-')+' &rarr; '+esc(ft.toName||'-')+' &middot; '+esc(ft.reason||''),color:'#7C3AED'});
     });
   });
   evs.sort(function(a,b){return(b.at?b.at.getTime():0)-(a.at?a.at.getTime():0);});
@@ -738,11 +846,69 @@ function renderActivity(){
   if(!evs.length){el.innerHTML='<div class="empty">No activity today</div>';return;}
   el.innerHTML=evs.slice(0,60).map(function(ev){
     var time=ev.at?ev.at.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'}):'';
-    return '<div class="ai"><div class="ad" style="background:'+ev.color+'"></div>'
-      +'<div style="flex:1"><div style="font-size:12px">'+ev.label+'</div>'
-      +'<div style="font-size:10px;font-family:var(--mono);color:var(--text3)">'+ev.sub+(time?' &middot; '+time:'')+'</div>'
+    return '<div class="ai"><div class="ad" style="background:'+ev.color+'"></div>'\
+      +'<div style="flex:1"><div style="font-size:12px">'+ev.label+'</div>'\
+      +'<div style="font-size:10px;font-family:var(--mono);color:var(--text3)">'+ev.sub+(time?' &middot; '+time:'')+'</div>'\
       +'</div></div>';
   }).join('');
+}
+
+// ── Range summary ─────────────────────────────────────────────────────────
+function renderRangeSummary(){
+  if(!isMultiDay())return;
+  var cash=0,upi=0,card=0,credit=0,partial=0,coll=0;
+  allOrders.forEach(function(o){
+    var paid=o.paidAmount||0; var due=o.dueAmount||0;
+    if(o.payMode==='split'&&o.splitPayments){cash+=(o.splitPayments.cash||0);upi+=(o.splitPayments.upi||0);card+=(o.splitPayments.card||0);}
+    else if(o.payMode==='cash')cash+=paid;
+    else if(o.payMode==='upi')upi+=paid;
+    else if(o.payMode==='card')card+=paid;
+    if(o.payMode==='credit'&&o.status==='pending')credit+=(o.totalAmount||0);
+    if(due>0&&paid>0&&o.payMode!=='credit')partial+=due;
+    coll+=(o.collectionCharge||0);
+  });
+  set('rs-orders',allOrders.length);
+  set('rs-rev',fmt(cash+upi+card));
+  set('rs-cash',fmt(cash));set('rs-upi',fmt(upi));set('rs-card',fmt(card));
+  set('rs-credit',fmt(credit));set('rs-partial',fmt(partial));set('rs-coll',fmt(coll));
+
+  // Day-by-day
+  var byDay={};
+  allOrders.forEach(function(o){
+    var day=o.date||'';
+    if(!byDay[day])byDay[day]={orders:0,rev:0,cash:0,upi:0,card:0,credit:0,coll:0};
+    var b=byDay[day]; b.orders++;
+    var paid=o.paidAmount||0;
+    if(o.payMode==='split'&&o.splitPayments){b.cash+=(o.splitPayments.cash||0);b.upi+=(o.splitPayments.upi||0);b.card+=(o.splitPayments.card||0);}
+    else if(o.payMode==='cash')b.cash+=paid;
+    else if(o.payMode==='upi')b.upi+=paid;
+    else if(o.payMode==='card')b.card+=paid;
+    if(o.payMode==='credit'&&o.status==='pending')b.credit+=(o.totalAmount||0);
+    b.coll+=(o.collectionCharge||0);
+    b.rev=b.cash+b.upi+b.card;
+  });
+  var days=Object.keys(byDay).sort().reverse();
+  set('range-days-title','Daily Breakdown ('+days.length+' days)');
+  var el=document.getElementById('range-days-body');
+  if(!el)return;
+  el.innerHTML='<div class="day-row" style="background:var(--surface2);font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase">'\
+    +'<span style="width:110px">Date</span><span style="width:50px;text-align:right">Orders</span>'\
+    +'<span style="width:100px;text-align:right">Revenue</span><span style="width:80px;text-align:right">Cash</span>'\
+    +'<span style="width:80px;text-align:right">UPI</span><span style="width:80px;text-align:right">Card</span>'\
+    +'<span style="width:90px;text-align:right">Credit</span></div>'\
+    +days.map(function(day){
+      var b=byDay[day]; var isToday=day===td();
+      var dayLabel=new Date(day+'T00:00:00').toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short'});
+      return '<div class="day-row">'\
+        +'<span style="width:110px;font-weight:'+(isToday?'600':'400')+'">'+dayLabel+(isToday?' ★':'')+'</span>'\
+        +'<span style="width:50px;text-align:right;font-family:var(--mono)">'+b.orders+'</span>'\
+        +'<span style="width:100px;text-align:right;font-family:var(--mono);font-weight:500">'+fmt(b.rev)+'</span>'\
+        +'<span style="width:80px;text-align:right;font-family:var(--mono);color:var(--text2)">'+fmt(b.cash)+'</span>'\
+        +'<span style="width:80px;text-align:right;font-family:var(--mono);color:var(--text2)">'+fmt(b.upi)+'</span>'\
+        +'<span style="width:80px;text-align:right;font-family:var(--mono);color:var(--text2)">'+fmt(b.card)+'</span>'\
+        +'<span style="width:90px;text-align:right;font-family:var(--mono);color:var(--amber)">'+fmt(b.credit)+'</span>'\
+        +'</div>';
+    }).join('');
 }
 </script>
 </body>

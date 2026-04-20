@@ -1,0 +1,1530 @@
+{
+  "PA_DATA": {
+    "BIOCHEMISTRY": {
+      "default": {
+        "tube": "R",
+        "color": "#DC2626",
+        "label": "Red / SST",
+        "vol": "3 mL",
+        "sample": "Serum",
+        "timing": "Any time",
+        "fast": false,
+        "prep": "No special preparation",
+        "med_note": "Biotin (Vit B7) supplements >5 mg/day can interfere with immunoassay-based tests. Stop 48h before if possible.",
+        "diet_note": "Avoid heavy exercise 24h before. Stay well hydrated."
+      },
+      "patterns": [
+        {
+          "match": [
+            "BSF",
+            "fasting",
+            "glucose fasting",
+            "GCT",
+            "GTT",
+            "homa",
+            "insulin fasting",
+            "c peptide fasting"
+          ],
+          "data": {
+            "tube": "G",
+            "color": "#4B5563",
+            "label": "Grey (Fluoride)",
+            "vol": "2 mL",
+            "sample": "Plasma",
+            "timing": "After 8-12h fast",
+            "fast": true,
+            "prep": "Patient must fast for 8-12 hours. Water allowed.",
+            "med_avoid": "Avoid insulin/oral hypoglycaemics on the morning of test (take after collection). Steroids, thiazides, beta-blockers elevate glucose.",
+            "diet_avoid": "No food, tea, coffee, juice, or milk for 8-12h. Plain water allowed.",
+            "diet_note": "Avoid heavy exercise or physical exertion the night before."
+          }
+        },
+        {
+          "match": [
+            "BSPP",
+            "pp",
+            "post",
+            "ppbs",
+            "glucose pp",
+            "glucose tolerance",
+            "insulin pp",
+            "c peptide pp"
+          ],
+          "data": {
+            "tube": "G",
+            "color": "#4B5563",
+            "label": "Grey (Fluoride)",
+            "vol": "2 mL",
+            "sample": "Plasma",
+            "timing": "2h after meal",
+            "fast": false,
+            "prep": "Collect exactly 2 hours after a standard meal. Note meal time.",
+            "med_avoid": "Do not take antidiabetic medications until after the 2-hour sample is drawn unless instructed by physician.",
+            "diet_note": "Eat a standard meal (not heavy/high-fat). Note exact meal time on request form."
+          }
+        },
+        {
+          "match": [
+            "BSR",
+            "random",
+            "glucose random"
+          ],
+          "data": {
+            "tube": "G",
+            "color": "#4B5563",
+            "label": "Grey (Fluoride)",
+            "vol": "2 mL",
+            "sample": "Plasma",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "No fasting required."
+          }
+        },
+        {
+          "match": [
+            "cortisol am"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "8-9 AM strictly",
+            "fast": false,
+            "prep": "Collect between 8-9 AM. Patient should be awake for at least 1 hour.",
+            "med_avoid": "Exogenous steroids (hydrocortisone, prednisolone, dexamethasone) suppress cortisol. Note all steroid use on form.",
+            "med_note": "Oral contraceptives increase cortisol-binding globulin — note on form.",
+            "diet_note": "Patient must be awake and calm for at least 1h before 8-9 AM draw."
+          }
+        },
+        {
+          "match": [
+            "cortisol pm"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "4-6 PM strictly",
+            "fast": false,
+            "prep": "Collect between 4-6 PM."
+          }
+        },
+        {
+          "match": [
+            "urine",
+            "acr",
+            "albumin creatinine",
+            "micro albumin",
+            "macr",
+            "upcr",
+            "pcr"
+          ],
+          "data": {
+            "tube": "U",
+            "color": "#D97706",
+            "label": "Urine Container",
+            "vol": "10 mL",
+            "sample": "Urine",
+            "timing": "Midstream",
+            "fast": false,
+            "prep": "Midstream clean-catch urine. First morning preferred for albumin tests."
+          }
+        },
+        {
+          "match": [
+            "24 hr",
+            "24 hour",
+            "24hrs"
+          ],
+          "data": {
+            "tube": "U",
+            "color": "#D97706",
+            "label": "24h Urine Container",
+            "vol": "24h collection",
+            "sample": "24h Urine",
+            "timing": "Complete 24h collection",
+            "fast": false,
+            "prep": "Discard first morning void. Collect ALL urine for 24h. Refrigerate during collection."
+          }
+        },
+        {
+          "match": [
+            "electrolyte",
+            "sodium",
+            "potassium",
+            "chloride",
+            "bicarbonate"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "Avoid prolonged tourniquet. Do not clench fist repeatedly.",
+            "med_note": "Diuretics, ACE inhibitors, ARBs, and laxatives significantly affect electrolytes. Note all medications on form.",
+            "diet_note": "Avoid prolonged tourniquet application and repeated fist clenching — causes pseudo-hyperkalaemia."
+          }
+        },
+        {
+          "match": [
+            "ammonia",
+            "lactate"
+          ],
+          "data": {
+            "tube": "L",
+            "color": "#8B5CF6",
+            "label": "Lavender (EDTA)",
+            "vol": "3 mL",
+            "sample": "Plasma",
+            "timing": "On ice, process within 15 min",
+            "fast": false,
+            "prep": "Transport on ice immediately. Process within 15 minutes of collection. CRITICAL.",
+            "med_note": "Valproate, diuretics, and GI bleeding elevate ammonia. Note on form.",
+            "diet_note": "Avoid high-protein meal 8h before. No smoking 4h before (smoking raises ammonia).",
+            "diet_avoid": "No cigarettes for at least 4h before collection."
+          }
+        },
+        {
+          "match": [
+            "lipid",
+            "cholesterol",
+            "hdl",
+            "ldl",
+            "triglyceride",
+            "vldl"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "After 12h fast",
+            "fast": true,
+            "prep": "12 hour fast required. No alcohol 24h prior. Water allowed.",
+            "med_note": "Statins, fibrates, niacin affect lipid results but do NOT stop — note on form. Oral contraceptives raise triglycerides.",
+            "med_avoid": "Avoid alcohol for at least 24-48h before.",
+            "diet_avoid": "No food for 12h. No alcohol 48h before. Water allowed.",
+            "diet_note": "Avoid high-fat meal the previous night. Avoid strenuous exercise 24h before."
+          }
+        },
+        {
+          "match": [
+            "uric acid",
+            "urate",
+            "gout"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "No special preparation needed.",
+            "med_avoid": "Aspirin (even low-dose) raises uric acid. Thiazide diuretics, ciclosporin also raise levels. Note on form.",
+            "diet_avoid": "Avoid high-purine foods (red meat, organ meats, shellfish, beer) 24h before for accurate baseline.",
+            "diet_note": "Avoid alcohol 24h before."
+          }
+        },
+        {
+          "match": [
+            "creatinine",
+            "urea",
+            "bun",
+            "renal",
+            "kidney",
+            "egfr",
+            "gfr"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "Avoid heavy exercise before collection. Adequate hydration important.",
+            "med_note": "NSAIDs, ACE inhibitors, aminoglycosides, contrast agents affect creatinine. Note nephrotoxic drugs.",
+            "diet_avoid": "Avoid high-protein meal (especially red meat) 24h before creatinine test — causes transient rise.",
+            "diet_note": "Stay well hydrated. Avoid intense exercise 24h before."
+          }
+        },
+        {
+          "match": [
+            "lft",
+            "liver",
+            "sgot",
+            "sgpt",
+            "alt",
+            "ast",
+            "bilirubin",
+            "albumin",
+            "ggt",
+            "alp",
+            "alkaline phosphatase"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Any time, fasting preferred",
+            "fast": false,
+            "prep": "Fasting preferred but not mandatory. Note all medications.",
+            "med_avoid": "Paracetamol (>2g/day), statins, anti-TB drugs, NSAIDs, herbal supplements can elevate LFTs. Note all on form.",
+            "diet_avoid": "Avoid alcohol for at least 48h before. Avoid fatty meal night before.",
+            "diet_note": "Vigorous exercise raises AST/ALT — avoid 24h before."
+          }
+        },
+        {
+          "match": [
+            "iron",
+            "serum iron",
+            "tibc",
+            "transferrin",
+            "ferritin"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Morning fasting preferred",
+            "fast": true,
+            "prep": "Morning fasting sample preferred. Iron levels show diurnal variation — highest in morning.",
+            "med_avoid": "Stop oral iron supplements 24-48h before serum iron/TIBC. Iron injections: wait at least 1 week.",
+            "diet_avoid": "No food for at least 8h before serum iron. Iron-rich foods (meat, spinach) raise levels transiently.",
+            "diet_note": "Serum ferritin is an acute-phase reactant — elevated in infection/inflammation regardless of iron stores. Note any fever/illness."
+          }
+        }
+      ]
+    },
+    "HAEMATOLOGY": {
+      "default": {
+        "tube": "L",
+        "color": "#8B5CF6",
+        "label": "Lavender (EDTA)",
+        "vol": "3 mL",
+        "sample": "Whole Blood",
+        "timing": "Any time",
+        "fast": false,
+        "prep": "Mix gently by inversion 8-10 times. Do not shake.",
+        "med_note": "G-CSF/GM-CSF (filgrastim) causes leucocytosis. Corticosteroids cause neutrophilia. Chemotherapy agents suppress counts. Note all on form.",
+        "diet_note": "No special dietary restriction for routine CBC. Stay well hydrated."
+      },
+      "patterns": [
+        {
+          "match": [
+            "pt",
+            "inr",
+            "prothrombin",
+            "aptt",
+            "pttk",
+            "fibrinogen",
+            "d-dimer",
+            "fdp",
+            "lupus",
+            "dvvt",
+            "factor"
+          ],
+          "data": {
+            "tube": "B",
+            "color": "#2563EB",
+            "label": "Blue (Citrate 3.2%)",
+            "vol": "2.7 mL",
+            "sample": "Plasma",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "Fill tube EXACTLY to mark. Ratio critical (9:1 blood:citrate). Mix gently 4 times.",
+            "med_avoid": "Do NOT stop anticoagulants (warfarin, heparin) — the test monitors them. Note current dose and last dose time.",
+            "med_note": "Antibiotics (especially cephalosporins, metronidazole), aspirin, NSAIDs, and herbal supplements (ginkgo, garlic, fish oil) prolong PT/INR.",
+            "diet_note": "Warfarin patients: maintain consistent Vitamin K intake (leafy greens). Sudden changes in diet alter INR significantly."
+          }
+        },
+        {
+          "match": [
+            "esr"
+          ],
+          "data": {
+            "tube": "L",
+            "color": "#8B5CF6",
+            "label": "Lavender (EDTA)",
+            "vol": "2 mL",
+            "sample": "Whole Blood",
+            "timing": "Process within 1h",
+            "fast": false,
+            "prep": "Must be processed within 1 hour of collection.",
+            "med_note": "Corticosteroids lower ESR. Dextran infusions raise ESR artificially.",
+            "diet_note": "Must be processed within 1 hour of collection — transport promptly."
+          }
+        },
+        {
+          "match": [
+            "malaria",
+            "mp",
+            "pf",
+            "pv"
+          ],
+          "data": {
+            "tube": "L",
+            "color": "#8B5CF6",
+            "label": "Lavender (EDTA) + Slides",
+            "vol": "2 mL + slides",
+            "sample": "Whole Blood + Smear",
+            "timing": "During fever spike preferred",
+            "fast": false,
+            "prep": "Prepare thin and thick smear immediately. Collect during fever spike if possible."
+          }
+        },
+        {
+          "match": [
+            "hba1c",
+            "glycosylated"
+          ],
+          "data": {
+            "tube": "L",
+            "color": "#8B5CF6",
+            "label": "Lavender (EDTA)",
+            "vol": "2 mL",
+            "sample": "Whole Blood",
+            "timing": "Any time, no fasting",
+            "fast": false,
+            "prep": "No fasting required. Reflects 3-month average.",
+            "med_note": "Erythropoietin, iron therapy (when correcting anaemia) lowers HbA1c. Hydroxyurea and dapsone interfere with some assay methods. Note haemoglobin variants (sickle cell, thalassaemia) — affects HPLC method.",
+            "diet_note": "No fasting required. HbA1c reflects 3-month average — single meals do not affect it."
+          }
+        },
+        {
+          "match": [
+            "blood group",
+            "rh",
+            "ict",
+            "dct",
+            "coombs"
+          ],
+          "data": {
+            "tube": "L",
+            "color": "#8B5CF6",
+            "label": "Lavender (EDTA)",
+            "vol": "3 mL",
+            "sample": "Whole Blood",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "Label carefully with patient name and DOB. Critical test."
+          }
+        },
+        {
+          "match": [
+            "d-dimer",
+            "ddimer",
+            "fibrinogen",
+            "d dimer"
+          ],
+          "data": {
+            "tube": "B",
+            "color": "#2563EB",
+            "label": "Blue (Citrate 3.2%)",
+            "vol": "2.7 mL",
+            "sample": "Plasma",
+            "timing": "Any time — acute test",
+            "fast": false,
+            "prep": "Fill tube EXACTLY to mark (9:1 ratio critical). Mix gently 4 times. Process within 4h.",
+            "med_note": "D-dimer is elevated in pregnancy, post-surgery, infection, malignancy — not specific for DVT/PE in these conditions. Note clinical context.",
+            "diet_note": "No dietary restriction. Acute test — no preparation needed."
+          }
+        }
+      ]
+    },
+    "ENDOCRINOLOGY": {
+      "default": {
+        "tube": "R",
+        "color": "#DC2626",
+        "label": "Red / SST",
+        "vol": "3 mL",
+        "sample": "Serum",
+        "timing": "Any time",
+        "fast": false,
+        "prep": "Allow to clot 30 min. Centrifuge before transport.",
+        "med_note": "Biotin supplements >5 mg/day interfere with most immunoassay hormone tests (TSH, FT3, FT4, FSH, LH, prolactin, etc.). Stop biotin for 48-72h before testing.",
+        "diet_note": "Hormone levels show significant diurnal variation. Morning collection standardises results."
+      },
+      "patterns": [
+        {
+          "match": [
+            "fsh",
+            "lh",
+            "prolactin",
+            "progesterone",
+            "estradiol",
+            "testosterone",
+            "dhea",
+            "amh",
+            "inhibin"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Note cycle day",
+            "fast": false,
+            "prep": "Note menstrual cycle day on request form. Prolactin: avoid stress, collect after 30 min rest.",
+            "med_avoid": "Oral contraceptives, hormonal IUDs, HRT suppress FSH/LH. Note cycle day on form.",
+            "med_note": "Clomiphene, GnRH analogues significantly affect FSH/LH. Note all hormonal medications.",
+            "diet_note": "Note day of menstrual cycle on form — critical for interpretation of FSH/LH/oestradiol.",
+            "diet_avoid": "Avoid high-protein meal within 4h."
+          }
+        },
+        {
+          "match": [
+            "prolactin"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Morning, after rest",
+            "fast": false,
+            "prep": "Patient must rest quietly for 30 minutes before collection. Avoid stress, breast stimulation."
+          }
+        },
+        {
+          "match": [
+            "insulin fasting",
+            "insulin random"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "8-12h fast for fasting",
+            "fast": true,
+            "prep": "Fasting insulin: 8-12h fast. Transport on ice. Process within 1h."
+          }
+        },
+        {
+          "match": [
+            "acth"
+          ],
+          "data": {
+            "tube": "L",
+            "color": "#8B5CF6",
+            "label": "Lavender (EDTA) on ICE",
+            "vol": "3 mL",
+            "sample": "Plasma",
+            "timing": "8-9 AM on ice",
+            "fast": false,
+            "prep": "CRITICAL: Collect in chilled EDTA tube. Transport on ice. Process within 30 min. Collect 8-9 AM.",
+            "med_avoid": "Exogenous steroids suppress ACTH — note all corticosteroid use. Even inhaled steroids in high doses can suppress.",
+            "med_note": "Stress, illness, pain, hypoglycaemia all raise ACTH. Collect when patient is calm and well.",
+            "diet_note": "Patient must be fasting (overnight) and at rest. Collect 8-9 AM after lying supine for 30 min.",
+            "diet_avoid": "Overnight fast required."
+          }
+        },
+        {
+          "match": [
+            "renin",
+            "aldosterone"
+          ],
+          "data": {
+            "tube": "L",
+            "color": "#8B5CF6",
+            "label": "Lavender (EDTA)",
+            "vol": "3 mL",
+            "sample": "Plasma",
+            "timing": "Note posture",
+            "fast": false,
+            "prep": "Note patient posture (upright/supine) and duration on form. Collect after specified posture maintained.",
+            "med_avoid": "ACE inhibitors, ARBs, beta-blockers, diuretics, NSAIDs, oral contraceptives — all affect renin/aldosterone. Ideally stop 2-4 weeks before (only if safe — consult physician).",
+            "med_note": "Spironolactone must be stopped for at least 6 weeks. Calcium channel blockers have minimal effect.",
+            "diet_avoid": "Maintain normal sodium diet 3 days before. Low-sodium diet raises renin; high-sodium suppresses it.",
+            "diet_note": "Note posture (upright vs supine) maintained before and during collection on request form."
+          }
+        },
+        {
+          "match": [
+            "vitamin d",
+            "vit d",
+            "25 hydroxy"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "Protect from light after collection.",
+            "med_note": "Current Vitamin D supplementation does not need to be stopped — test reflects true status. Note supplement dose on form.",
+            "diet_note": "Protect sample from light. Obese patients and those with malabsorption syndromes may need higher supplementation — note BMI/history."
+          }
+        },
+        {
+          "match": [
+            "vitamin b12",
+            "b12",
+            "folate"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "No B12 supplements 24h prior. Protect from light.",
+            "med_avoid": "Stop oral B12 supplements 24h before. If on B12 injections, test before the next scheduled injection.",
+            "med_note": "Metformin, PPIs, H2 blockers reduce B12 absorption over time. Note on form. Folate: stop folate supplements 24h before.",
+            "diet_note": "Vegans/vegetarians are at high risk of B12 deficiency — note on form.",
+            "diet_avoid": "No B12-rich foods (meat, eggs, dairy) are required to be avoided — test reflects stores not recent intake."
+          }
+        },
+        {
+          "match": [
+            "beta hcg",
+            "hcg"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "Note LMP on request. Serum more sensitive than urine."
+          }
+        },
+        {
+          "match": [
+            "growth hormone",
+            "gh"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL per sample",
+            "sample": "Serum",
+            "timing": "Note time of each sample",
+            "fast": false,
+            "prep": "Note exact time of each sample. Patient should be at rest. Avoid stress."
+          }
+        },
+        {
+          "match": [
+            "tsh",
+            "thyroid",
+            "ft3",
+            "ft4",
+            "t3",
+            "t4",
+            "free t3",
+            "free t4",
+            "anti tpo",
+            "anti tg",
+            "thyroglobulin"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Morning preferred (8-10 AM)",
+            "fast": false,
+            "prep": "Morning collection preferred. No fasting required. Note thyroid medications.",
+            "med_avoid": "Take thyroid medications (levothyroxine/T4) AFTER blood draw for accurate TSH. If testing dose adequacy, take medication as usual and note time of last dose.",
+            "med_note": "Biotin >5 mg/day: stop 48-72h before. Amiodarone, lithium, steroids, dopamine, heparin — all affect thyroid tests. Note on form. Iodine-containing contrast: wait 4-6 weeks.",
+            "diet_note": "No dietary restriction. Avoid iodine-rich supplements (kelp, seaweed) for 1 week before anti-TPO/thyroglobulin tests."
+          }
+        },
+        {
+          "match": [
+            "insulin fasting",
+            "insulin random",
+            "c peptide",
+            "homa",
+            "homa-ir"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum (on ice)",
+            "timing": "Fasting (8-12h) for fasting insulin",
+            "fast": true,
+            "prep": "Fasting insulin: 8-12h fast. Collect on ice. Process within 1h of collection.",
+            "med_avoid": "Do not inject insulin on morning of test. Oral hypoglycaemics: take after collection for fasting insulin.",
+            "med_note": "Steroids, thiazides, oral contraceptives raise insulin resistance. Note on form.",
+            "diet_avoid": "Strict 8-12h fast. No juice, tea, coffee, or milk. Plain water allowed.",
+            "diet_note": "Avoid vigorous exercise 24h before — exercise lowers insulin levels."
+          }
+        }
+      ]
+    },
+    "SEROLOGY": {
+      "default": {
+        "tube": "R",
+        "color": "#DC2626",
+        "label": "Red / SST",
+        "vol": "3 mL",
+        "sample": "Serum",
+        "timing": "Any time",
+        "fast": false,
+        "prep": "Allow to clot 30 min before centrifuge.",
+        "med_note": "Immunosuppressants (steroids, azathioprine, biologics) may suppress antibody titres — note on form.",
+        "diet_note": "No special dietary restriction for most serology tests."
+      },
+      "patterns": [
+        {
+          "match": [
+            "widal"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "After 5-7 days of fever",
+            "fast": false,
+            "prep": "Best collected after 5-7 days of fever. Note fever duration on form.",
+            "med_avoid": "Do not collect after starting antibiotics — titres may be falsely negative.",
+            "med_note": "Prior typhoid vaccination can give false positive Widal. Recent salmonella infection can cross-react.",
+            "diet_note": "Note fever duration and onset date on request form. Best collected after day 5-7 of untreated fever."
+          }
+        },
+        {
+          "match": [
+            "dengue"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "NS1: first 5 days. IgM: after day 5",
+            "fast": false,
+            "prep": "NS1 antigen: collect in first 5 days of fever. IgM/IgG: after day 5.",
+            "diet_note": "Note exact day of fever onset on form. NS1 is most sensitive in first 5 days; IgM rises after day 5."
+          }
+        },
+        {
+          "match": [
+            "hbsag",
+            "hepatitis b",
+            "hbv",
+            "hcv",
+            "hiv",
+            "vdrl",
+            "syphilis"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "Handle as biohazard. Double bag. Label clearly.",
+            "med_note": "Recent HBV vaccination can cause transient HBsAg positivity (rare). Note vaccination date if recent.",
+            "diet_note": "No dietary restriction. Handle as biohazard. Strict universal precautions."
+          }
+        },
+        {
+          "match": [
+            "torch"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "5 mL",
+            "sample": "Serum",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "Note gestational age if pregnant. Larger volume needed for full panel."
+          }
+        },
+        {
+          "match": [
+            "mantoux"
+          ],
+          "data": {
+            "tube": "NA",
+            "color": "#6B7280",
+            "label": "Not applicable",
+            "vol": "0.1 mL PPD intradermal",
+            "sample": "Intradermal injection",
+            "timing": "Read at 48-72h",
+            "fast": false,
+            "prep": "Intradermal injection of 0.1 mL PPD on forearm. Read result at 48-72 hours. Mark site."
+          }
+        },
+        {
+          "match": [
+            "ra factor",
+            "rheumatoid",
+            "rf",
+            "ana",
+            "anca",
+            "anti ccp",
+            "complement",
+            "c3",
+            "c4",
+            "ch50"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "No special preparation. Note all immunosuppressive medications on form.",
+            "med_note": "Methotrexate, hydroxychloroquine, biologics (adalimumab, rituximab) significantly affect ANA/RF/complement levels. Note dose and last administration date.",
+            "diet_note": "No dietary restriction."
+          }
+        },
+        {
+          "match": [
+            "crp",
+            "c reactive protein",
+            "procalcitonin",
+            "il-6",
+            "interleukin"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "Acute phase test — no preparation needed.",
+            "med_note": "Steroids and NSAIDs lower CRP and may mask infection/inflammation. Note on form.",
+            "diet_note": "Obesity causes mild chronic CRP elevation. Recent vigorous exercise also raises CRP transiently."
+          }
+        }
+      ]
+    },
+    "CLINICAL PATHOLOGY": {
+      "default": {
+        "tube": "U",
+        "color": "#D97706",
+        "label": "Urine Container",
+        "vol": "10 mL",
+        "sample": "Urine",
+        "timing": "First morning preferred",
+        "fast": false,
+        "prep": "Midstream clean-catch. First morning specimen preferred.",
+        "diet_note": "First morning midstream urine preferred. Avoid excess Vitamin C supplements 24h before.",
+        "med_note": "Rifampicin turns urine orange-red. Nitrofurantoin, metronidazole cause false positive nitrite. Vitamin C (ascorbic acid) >500 mg/day causes false negative glucose and blood in dipstick. Note all medications."
+      },
+      "patterns": [
+        {
+          "match": [
+            "stool",
+            "faecal",
+            "fecal"
+          ],
+          "data": {
+            "tube": "S",
+            "color": "#92400E",
+            "label": "Stool Container",
+            "vol": "5 g",
+            "sample": "Stool",
+            "timing": "Fresh specimen",
+            "fast": false,
+            "prep": "Fresh specimen within 1 hour. Do not contaminate with urine or water.",
+            "med_note": "Antibiotics may suppress pathogens — collect before starting antibiotics if possible.",
+            "diet_note": "Collect fresh specimen within 1 hour. Do not contaminate with urine or toilet water."
+          }
+        },
+        {
+          "match": [
+            "semen"
+          ],
+          "data": {
+            "tube": "NA",
+            "color": "#6B7280",
+            "label": "Sterile wide-mouth container",
+            "vol": "Complete ejaculate",
+            "sample": "Semen",
+            "timing": "2-5 days abstinence",
+            "fast": false,
+            "prep": "2-5 days sexual abstinence. Collect by masturbation. Keep at body temperature. Deliver within 30 min.",
+            "med_note": "Anabolic steroids, testosterone therapy, chemotherapy, alpha-blockers, antidepressants (SSRIs), antihypertensives (calcium channel blockers) affect semen parameters. Note all on form.",
+            "diet_avoid": "Avoid alcohol for at least 5 days before. Avoid hot baths, saunas, tight underwear for 2 weeks before (heat affects sperm quality).",
+            "diet_note": "2-5 days abstinence strictly. Longer abstinence (>7 days) reduces motility."
+          }
+        },
+        {
+          "match": [
+            "upt",
+            "pregnancy"
+          ],
+          "data": {
+            "tube": "U",
+            "color": "#D97706",
+            "label": "Urine Container",
+            "vol": "10 mL",
+            "sample": "Urine",
+            "timing": "First morning",
+            "fast": false,
+            "prep": "First morning urine. Most concentrated. HCG highest in morning."
+          }
+        },
+        {
+          "match": [
+            "occult blood",
+            "fobt",
+            "fit",
+            "faecal occult",
+            "fecal occult",
+            "stool occult"
+          ],
+          "data": {
+            "tube": "S",
+            "color": "#92400E",
+            "label": "Stool Container (FOBT)",
+            "vol": "Small sample (pea-sized)",
+            "sample": "Stool",
+            "timing": "3 consecutive days preferred",
+            "fast": false,
+            "prep": "Collect on 3 consecutive days for best sensitivity. Use applicator stick — do not contaminate with urine or water.",
+            "med_avoid": "STOP for at least 3 days before: Aspirin, NSAIDs (ibuprofen, naproxen, diclofenac), iron supplements, Vitamin C supplements >250 mg/day. These cause false positives (aspirin/NSAIDs) or false negatives (Vit C).",
+            "med_note": "Anticoagulants (warfarin, aspirin) may cause GI bleeding — inform physician before stopping.",
+            "diet_avoid": "For guaiac-based FOBT (gFOBT): avoid red meat, liver, processed meats, turnips, horseradish, cantaloupe for 3 days before. These cause false positives. FIT test: no dietary restriction.",
+            "diet_note": "High-fibre diet 2-3 days before is recommended. Stay well hydrated. Confirm with lab whether gFOBT or FIT method is being used."
+          }
+        },
+        {
+          "match": [
+            "urine routine",
+            "urine r/m",
+            "urinalysis",
+            "urine rm"
+          ],
+          "data": {
+            "tube": "U",
+            "color": "#D97706",
+            "label": "Urine Container",
+            "vol": "10 mL",
+            "sample": "Urine",
+            "timing": "First morning midstream",
+            "fast": false,
+            "prep": "Midstream clean-catch. Clean genitalia before collection. First morning specimen preferred.",
+            "med_note": "Vitamin C supplements >500 mg/day cause false negative glucose and haemoglobin on dipstick. Rifampicin colours urine orange. Note all medications.",
+            "diet_avoid": "Avoid Vitamin C supplements >500 mg/day for 24h before.",
+            "diet_note": "Stay well hydrated but avoid excessive water intake just before (dilutes sample). First morning most concentrated."
+          }
+        }
+      ]
+    },
+    "MICROBIOLOGY": {
+      "default": {
+        "tube": "Sw",
+        "color": "#059669",
+        "label": "Culture Swab / Container",
+        "vol": "As appropriate",
+        "sample": "Varies",
+        "timing": "Before antibiotics",
+        "fast": false,
+        "prep": "Collect BEFORE starting antibiotics if possible.",
+        "med_avoid": "Collect ALL culture samples BEFORE starting antibiotics. Even a single dose significantly reduces sensitivity.",
+        "med_note": "Note all antibiotics already given with dose and timing on form.",
+        "diet_note": "Most culture samples require no dietary restriction. Clinical context and prior antibiotics are critical."
+      },
+      "patterns": [
+        {
+          "match": [
+            "blood culture"
+          ],
+          "data": {
+            "tube": "Sw",
+            "color": "#059669",
+            "label": "Blood Culture Bottles (Aerobic + Anaerobic)",
+            "vol": "8-10 mL per bottle",
+            "sample": "Blood",
+            "timing": "During fever spike",
+            "fast": false,
+            "prep": "CRITICAL: Strict asepsis. Disinfect skin 2 min. Collect during fever spike or rigors. Inoculate aerobic bottle first.",
+            "med_avoid": "Collect before first antibiotic dose. If already on antibiotics, note on form and use resin-containing culture bottles which neutralise antibiotics.",
+            "diet_note": "Collect during fever spike or rigors for maximum bacteraemia. Two sets from two different sites increases sensitivity."
+          }
+        },
+        {
+          "match": [
+            "urine culture",
+            "urine c/s"
+          ],
+          "data": {
+            "tube": "U",
+            "color": "#D97706",
+            "label": "Sterile Urine Container",
+            "vol": "10 mL midstream",
+            "sample": "Urine",
+            "timing": "First morning, midstream",
+            "fast": false,
+            "prep": "Clean genitalia. Discard first stream. Collect midstream in sterile container. First morning specimen best.",
+            "med_avoid": "Collect before starting antibiotics. If on antibiotics, note on form — sensitivity will be reduced.",
+            "diet_note": "First morning midstream specimen. Clean genitalia with sterile wipe. Do not refrigerate >2h — transport immediately."
+          }
+        },
+        {
+          "match": [
+            "sputum"
+          ],
+          "data": {
+            "tube": "Sp",
+            "color": "#6B7280",
+            "label": "Sterile Sputum Container",
+            "vol": "3-5 mL",
+            "sample": "Sputum",
+            "timing": "Early morning",
+            "fast": false,
+            "prep": "Early morning. Deep cough — not saliva. Rinse mouth with water first. 3 consecutive morning samples for AFB.",
+            "diet_note": "Rinse mouth with plain water (not antiseptic mouthwash) before collection. Deep cough — must be sputum not saliva. Early morning specimen most concentrated.",
+            "diet_avoid": "Do not use antiseptic mouthwash before collection — kills organisms."
+          }
+        },
+        {
+          "match": [
+            "afb",
+            "tuberculosis",
+            "tb pcr",
+            "genexpert",
+            "quantiferon"
+          ],
+          "data": {
+            "tube": "L",
+            "color": "#8B5CF6",
+            "label": "Special TB tube / Sterile container",
+            "vol": "Varies",
+            "sample": "Varies by site",
+            "timing": "Early morning",
+            "fast": false,
+            "prep": "Early morning specimen. For QFT: collect in 3 specific tubes (nil, antigen, mitogen). Process within 16h.",
+            "med_note": "Note current anti-TB medications and duration of treatment. Genexpert/PCR is less affected by prior treatment than culture.",
+            "diet_note": "Three consecutive early morning specimens significantly increase AFB detection sensitivity."
+          }
+        },
+        {
+          "match": [
+            "pus",
+            "wound"
+          ],
+          "data": {
+            "tube": "Sw",
+            "color": "#059669",
+            "label": "Sterile Swab / Container",
+            "vol": "Swab or aspirate",
+            "sample": "Pus / Wound",
+            "timing": "Before antibiotics",
+            "fast": false,
+            "prep": "Aspirate preferred over swab. Clean wound surface first. Collect from deepest part."
+          }
+        }
+      ]
+    },
+    "CYTOLOGY": {
+      "default": {
+        "tube": "T",
+        "color": "#7C3AED",
+        "label": "Fixative / CytoLyt",
+        "vol": "As appropriate",
+        "sample": "Cells/Fluid",
+        "timing": "Any time",
+        "fast": false,
+        "prep": "Fix immediately after collection.",
+        "diet_note": "Fix specimen immediately. Delay in fixation causes drying artefact and unsatisfactory smear."
+      },
+      "patterns": [
+        {
+          "match": [
+            "lbc",
+            "liquid based",
+            "pap"
+          ],
+          "data": {
+            "tube": "T",
+            "color": "#7C3AED",
+            "label": "LBC Vial (CytoLyt/PreservCyt)",
+            "vol": "Cervical sample in vial",
+            "sample": "Cervical cells",
+            "timing": "Mid-cycle (day 14 preferred)",
+            "fast": false,
+            "prep": "No intercourse/douching 48h prior. Not during menstruation. Broom device in vial — swirl 10 times.",
+            "med_note": "Vaginal oestrogen cream or pessaries: stop 48h before. Antifungal vaginal preparations: stop 48h before.",
+            "diet_avoid": "No intercourse, douching, or vaginal medication 48h before. Not during menstruation.",
+            "diet_note": "Mid-cycle collection (day 14) preferred for best cellularity. Bring previous Pap/LBC reports."
+          }
+        },
+        {
+          "match": [
+            "fnac",
+            "fine needle"
+          ],
+          "data": {
+            "tube": "T",
+            "color": "#7C3AED",
+            "label": "Slides + Fixative",
+            "vol": "Aspirate",
+            "sample": "Tissue aspirate",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "Prepare smear immediately. Air-dry one slide, fix other in 95% alcohol. Label both.",
+            "med_avoid": "Anticoagulants (warfarin, heparin, clopidogrel, aspirin): ideally stop 5-7 days before aspiration to reduce haematoma risk. Consult physician before stopping.",
+            "diet_note": "No fasting required for superficial FNAC. Deep aspirations may require local protocol."
+          }
+        },
+        {
+          "match": [
+            "fluid"
+          ],
+          "data": {
+            "tube": "T",
+            "color": "#7C3AED",
+            "label": "Sterile Container + EDTA",
+            "vol": "50+ mL",
+            "sample": "Body fluid",
+            "timing": "Fresh — process within 1h",
+            "fast": false,
+            "prep": "Send entire specimen. Process within 1 hour. Also send EDTA aliquot for cell count."
+          }
+        }
+      ]
+    },
+    "HISTOPATHOLOGY": {
+      "default": {
+        "tube": "T",
+        "color": "#7C3AED",
+        "label": "10% Formalin Container",
+        "vol": "Adequate formalin (10x tissue vol)",
+        "sample": "Tissue",
+        "timing": "Fix immediately",
+        "fast": false,
+        "prep": "Place in 10% formalin immediately. Volume of formalin must be 10x tissue volume. Label container, not lid.",
+        "med_note": "Prior radiotherapy/chemotherapy causes tissue changes that must be noted on form. Note all neoadjuvant treatment.",
+        "diet_note": "Volume of formalin must be 10x tissue volume. Label container — never the lid. Include clinical details on form.",
+        "diet_avoid": "Do not use saline or water — use only 10% neutral buffered formalin."
+      }
+    },
+    "GENETICS": {
+      "default": {
+        "tube": "L",
+        "color": "#8B5CF6",
+        "label": "Lavender (EDTA)",
+        "vol": "5 mL",
+        "sample": "Whole Blood",
+        "timing": "Any time",
+        "fast": false,
+        "prep": "Do not freeze. Transport at room temperature. Karyotype: 10 mL preferred.",
+        "med_note": "Most DNA-based tests are unaffected by medications. Note any recent blood transfusion — transfused DNA can contaminate sample for up to 3 months.",
+        "diet_note": "Do NOT freeze sample. Transport at room temperature. Note recent transfusion history."
+      },
+      "patterns": [
+        {
+          "match": [
+            "cvs",
+            "amnio",
+            "amniocent"
+          ],
+          "data": {
+            "tube": "T",
+            "color": "#7C3AED",
+            "label": "Sterile container",
+            "vol": "15-20 mL amniotic fluid / CVS tissue",
+            "sample": "Amniotic fluid / CVS",
+            "timing": "As per gestational age",
+            "fast": false,
+            "prep": "Procedure sample — send immediately at room temperature. Label with GA and procedure date."
+          }
+        },
+        {
+          "match": [
+            "nipt"
+          ],
+          "data": {
+            "tube": "NA",
+            "color": "#6B7280",
+            "label": "Streck tube (Cell-free DNA)",
+            "vol": "10 mL",
+            "sample": "Maternal blood",
+            "timing": "After 10 weeks GA",
+            "fast": false,
+            "prep": "Streck (cell-free DNA preservation) tube mandatory. Note GA on form. Do not refrigerate or freeze.",
+            "med_note": "Streck tube mandatory — no substitute. Do not refrigerate or freeze. Note exact gestational age and LMP date.",
+            "diet_note": "Recent blood transfusion within 3 months may affect cell-free DNA result. Note on form."
+          }
+        }
+      ]
+    },
+    "ULTRASONOGRAPHY": {
+      "default": {
+        "tube": "NA",
+        "color": "#6B7280",
+        "label": "Not applicable",
+        "vol": "N/A",
+        "sample": "N/A",
+        "timing": "As scheduled",
+        "fast": false,
+        "prep": "No blood sample required."
+      },
+      "patterns": [
+        {
+          "match": [
+            "abdomen",
+            "kub",
+            "whole abdomen",
+            "upper abdomen",
+            "lower abdomen"
+          ],
+          "data": {
+            "tube": "NA",
+            "color": "#6B7280",
+            "label": "Not applicable",
+            "vol": "N/A",
+            "sample": "N/A",
+            "timing": "4-6h fasting",
+            "fast": true,
+            "prep": "4-6 hours fasting for abdominal USG. Full bladder needed for pelvic/lower abdomen scan.",
+            "med_note": "Metformin: some protocols require stopping 48h before if contrast is anticipated. Check with radiology.",
+            "diet_avoid": "No food for 4-6h. No carbonated drinks or legumes 24h before (cause bowel gas obscuring view). Gas-forming vegetables (cabbage, cauliflower, beans) to be avoided.",
+            "diet_note": "Full urinary bladder needed for pelvic/lower abdomen — drink 4-5 glasses of water 1h before and do not void."
+          }
+        },
+        {
+          "match": [
+            "pelvis",
+            "tvs",
+            "gynae",
+            "lower abdomen",
+            "pvru",
+            "follicular",
+            "endometrial"
+          ],
+          "data": {
+            "tube": "NA",
+            "color": "#6B7280",
+            "label": "Not applicable",
+            "vol": "N/A",
+            "sample": "N/A",
+            "timing": "Full bladder for TAS",
+            "fast": false,
+            "prep": "Full bladder for transabdominal. Empty bladder for TVS. Note cycle day for follicular study.",
+            "diet_avoid": "For transabdominal: full bladder required — drink 1 litre of water 1h before and do not void.",
+            "diet_note": "For TVS: empty bladder. Note last menstrual period date and cycle day for follicular study."
+          }
+        },
+        {
+          "match": [
+            "nt",
+            "nuchal",
+            "obstetric",
+            "obs",
+            "fetal",
+            "anomaly",
+            "level 2",
+            "doppler obs",
+            "biophysical"
+          ],
+          "data": {
+            "tube": "NA",
+            "color": "#6B7280",
+            "label": "Not applicable",
+            "vol": "N/A",
+            "sample": "N/A",
+            "timing": "As per gestational age",
+            "fast": false,
+            "prep": "Note exact gestational age. NT scan: 11-13+6 weeks only. Bring previous scan reports.",
+            "diet_note": "NT scan window: 11 weeks 0 days to 13 weeks 6 days strictly. Bring previous scan reports and referral. Partial bladder preferred."
+          }
+        },
+        {
+          "match": [
+            "thyroid"
+          ],
+          "data": {
+            "tube": "NA",
+            "color": "#6B7280",
+            "label": "Not applicable",
+            "vol": "N/A",
+            "sample": "N/A",
+            "timing": "Any time",
+            "fast": false,
+            "prep": "No preparation needed. Remove neck jewellery."
+          }
+        }
+      ]
+    },
+    "X-RAY DIGITAL": {
+      "default": {
+        "tube": "NA",
+        "color": "#6B7280",
+        "label": "Not applicable",
+        "vol": "N/A",
+        "sample": "N/A",
+        "timing": "Any time",
+        "fast": false,
+        "prep": "Remove metal objects, jewellery. Inform if pregnant."
+      }
+    },
+    "X-RAY ROUTINE": {
+      "default": {
+        "tube": "NA",
+        "color": "#6B7280",
+        "label": "Not applicable",
+        "vol": "N/A",
+        "sample": "N/A",
+        "timing": "Any time",
+        "fast": false,
+        "prep": "Remove metal objects. Inform radiographer if pregnant."
+      },
+      "patterns": [
+        {
+          "match": [
+            "barium",
+            "hsg",
+            "ivp",
+            "mcu",
+            "rgu"
+          ],
+          "data": {
+            "tube": "NA",
+            "color": "#6B7280",
+            "label": "Not applicable",
+            "vol": "N/A",
+            "sample": "N/A",
+            "timing": "As per booking",
+            "fast": true,
+            "prep": "Specific preparation required. Confirm with department at time of booking."
+          }
+        }
+      ]
+    },
+    "CARDIOLOGY": {
+      "default": {
+        "tube": "NA",
+        "color": "#6B7280",
+        "label": "Not applicable",
+        "vol": "N/A",
+        "sample": "N/A",
+        "timing": "Any time",
+        "fast": false,
+        "prep": "Wear comfortable clothing. Remove chest jewellery.",
+        "med_note": "Continue regular cardiac medications unless specifically instructed otherwise by referring physician.",
+        "diet_note": "Wear comfortable, loose-fitting clothing. Remove metal jewellery from chest area."
+      },
+      "patterns": [
+        {
+          "match": [
+            "tmt",
+            "stress"
+          ],
+          "data": {
+            "tube": "NA",
+            "color": "#6B7280",
+            "label": "Not applicable",
+            "vol": "N/A",
+            "sample": "N/A",
+            "timing": "Morning preferred",
+            "fast": true,
+            "prep": "Light meal 3h before. No heavy exercise 12h prior. Wear comfortable shoes. Continue regular medications unless told otherwise.",
+            "med_avoid": "Beta-blockers (atenolol, metoprolol, bisoprolol) significantly blunt heart rate response — may need to hold for 24-48h if testing functional capacity. Consult physician. Digoxin causes ST changes — note on form.",
+            "med_note": "Continue anti-anginal medications unless testing for ischaemia — in which case physician decides. Note all cardiac medications with doses.",
+            "diet_avoid": "No food for at least 3h before. Avoid caffeine (tea, coffee, cola) for 12h before.",
+            "diet_note": "Comfortable walking shoes mandatory. Avoid smoking for at least 3h before. Wear loose trousers/track pants."
+          }
+        },
+        {
+          "match": [
+            "holter"
+          ],
+          "data": {
+            "tube": "NA",
+            "color": "#6B7280",
+            "label": "Not applicable",
+            "vol": "N/A",
+            "sample": "N/A",
+            "timing": "Full 24-48h recording",
+            "fast": false,
+            "prep": "No bath/shower during recording. Note activities and symptoms in diary. Avoid magnets and metal detectors.",
+            "diet_avoid": "No hot bath or shower during recording. Avoid magnets, electric blankets, and metal detectors.",
+            "diet_note": "Maintain normal activity. Keep diary of activities, symptoms, and times. Avoid electric shavers."
+          }
+        },
+        {
+          "match": [
+            "troponin",
+            "hs troponin"
+          ],
+          "data": {
+            "tube": "R",
+            "color": "#DC2626",
+            "label": "Red / SST",
+            "vol": "3 mL",
+            "sample": "Serum",
+            "timing": "At presentation + 3h + 6h",
+            "fast": false,
+            "prep": "Serial samples at 0, 3, and 6 hours. Mark exact time on each tube. URGENT.",
+            "med_note": "Serial sampling mandatory: 0h, 3h, and 6h. Mark exact time on each tube. Renal impairment causes troponin elevation independent of cardiac cause — note creatinine.",
+            "diet_note": "Urgent test — no preparation. Strenuous exercise and myocarditis also raise troponin."
+          }
+        }
+      ]
+    },
+    "SPIROMETRY": {
+      "default": {
+        "tube": "NA",
+        "color": "#6B7280",
+        "label": "Not applicable",
+        "vol": "N/A",
+        "sample": "N/A",
+        "timing": "Any time",
+        "fast": false,
+        "prep": "No bronchodilator 4-6h prior (unless testing response). No smoking 4h prior. Loose clothing.",
+        "med_avoid": "Short-acting bronchodilators (salbutamol): hold 4-6h before pre-bronchodilator test. Long-acting (salmeterol, formoterol): hold 12h. Ultra-long-acting (indacaterol, olodaterol): hold 24h. Anticholinergics (ipratropium): hold 6-8h. Tiotropium: hold 24h.",
+        "med_note": "If testing bronchodilator response, do NOT take bronchodilator — patient must be off it as per above. If testing lung function on treatment, take medications as usual.",
+        "diet_avoid": "No heavy meal for 2h before. No alcohol 4h before.",
+        "diet_note": "No smoking for at least 4h before. Wear loose, comfortable clothing. No strenuous exercise 30 min before."
+      }
+    },
+    "OPD PACKAGE": {
+      "default": {
+        "tube": "R",
+        "color": "#DC2626",
+        "label": "Multiple tubes as per package",
+        "vol": "Varies",
+        "sample": "Serum + other",
+        "timing": "Fasting preferred",
+        "fast": true,
+        "prep": "8-12h fasting for most packages. Water allowed. Bring previous reports.",
+        "med_note": "List all current medications on form — packages include tests that are medication-sensitive (thyroid, lipids, glucose, LFT).",
+        "diet_avoid": "Strict 8-12h fasting for all packages including glucose, lipid, and LFT components. No tea, coffee, juice, or milk. Water allowed.",
+        "diet_note": "Come between 7-10 AM fasting. Bring previous reports. Take regular medications AFTER blood draw unless specifically told otherwise by physician."
+      }
+    },
+    "MISC": {
+      "default": {
+        "tube": "R",
+        "color": "#DC2626",
+        "label": "Red / SST",
+        "vol": "3 mL",
+        "sample": "Serum",
+        "timing": "Any time",
+        "fast": false,
+        "prep": "Check specific requirements with lab."
+      }
+    }
+  },
+  "PA_ERRORS": {
+    "hemolysis": {
+      "tests": [
+        "potassium",
+        "k+",
+        "ldh",
+        "ck",
+        "ast",
+        "sgot",
+        "iron",
+        "magnesium",
+        "phosphorus"
+      ],
+      "msg": "Hemolysis-sensitive test. Avoid prolonged tourniquet, difficult venipuncture, vigorous mixing."
+    },
+    "timing": {
+      "tests": [
+        "cortisol",
+        "acth",
+        "growth hormone",
+        "renin",
+        "aldosterone",
+        "prolactin"
+      ],
+      "msg": "Time-sensitive test. Record exact collection time on tube."
+    },
+    "fasting": {
+      "tests": [
+        "bsf",
+        "fasting",
+        "lipid",
+        "cholesterol",
+        "triglyceride",
+        "hdl",
+        "ldl",
+        "insulin fasting",
+        "c peptide fasting",
+        "homa"
+      ],
+      "msg": "Fasting required (8-12h). Confirm patient has fasted."
+    },
+    "ice": {
+      "tests": [
+        "ammonia",
+        "lactate",
+        "acth",
+        "insulin",
+        "parathyroid",
+        "pth",
+        "renin"
+      ],
+      "msg": "Requires cold chain. Transport on ice immediately."
+    },
+    "protect_light": {
+      "tests": [
+        "vitamin d",
+        "bilirubin",
+        "vitamin b12",
+        "beta carotene",
+        "porphyrin"
+      ],
+      "msg": "Protect from light. Wrap in foil after collection."
+    },
+    "order": {
+      "tests": [
+        "blood culture",
+        "culture"
+      ],
+      "msg": "Collect before starting antibiotics if possible."
+    }
+  },
+  "PA_PREP": {
+    "fasting_blood": "OnePLUS Lab - Patient Instructions\n\nYour tests require FASTING:\n- Fast for 8-12 hours\n- Water is allowed\n- Take regular medications with water unless advised otherwise\n- Come between 7-10 AM\n\nOnePLUS Ultrasound Lab, Pitampura\n011-4248 0101",
+    "urine_routine": "OnePLUS Lab - Patient Instructions\n\nFor URINE test:\n- Collect first morning urine\n- Clean the area before collecting\n- Collect midstream (let first stream go)\n- Bring in clean container\n\nOnePLUS Ultrasound Lab, Pitampura\n011-4248 0101",
+    "urine_24h": "OnePLUS Lab - Patient Instructions\n\n24-HOUR URINE COLLECTION:\n1. Day 1 morning: Discard first urine\n2. Collect ALL urine for 24 hours in the large container provided\n3. Keep container in refrigerator\n4. Day 2 morning: Add last urine, bring to lab\n5. Note start and end time\n\nOnePLUS Ultrasound Lab, Pitampura\n011-4248 0101",
+    "semen": "OnePLUS Lab - Patient Instructions\n\nFor SEMEN ANALYSIS:\n- Maintain 2-5 days sexual abstinence\n- Collect by masturbation in sterile container\n- Do NOT use condom or lubricant\n- Keep at body temperature\n- Deliver to lab within 30 minutes\n\nOnePLUS Ultrasound Lab, Pitampura\n011-4248 0101",
+    "usg_abdomen": "OnePLUS Lab - Patient Instructions\n\nFor ABDOMINAL ULTRASOUND:\n- Fast for 4-6 hours (no food/drinks)\n- Water is allowed\n- Wear loose, comfortable clothing\n\nFor PELVIC/LOWER ABDOMEN USG:\n- Drink 4-6 glasses of water 1 hour before\n- Do NOT urinate before the scan\n- Full bladder is needed\n\nOnePLUS Ultrasound Lab, Pitampura\n011-4248 0101",
+    "hormone": "OnePLUS Lab - Patient Instructions\n\nFor HORMONE tests:\n- Note: For female hormones, mention Day of menstrual cycle\n- No special fasting required unless specified\n- Come to lab in the morning\n\nOnePLUS Ultrasound Lab, Pitampura\n011-4248 0101",
+    "culture": "OnePLUS Lab - Patient Instructions\n\nFor CULTURE tests:\n- Collect BEFORE starting antibiotics if possible\n- For URINE culture: clean area, discard first stream, collect midstream\n- Bring to lab immediately\n- Keep at room temperature (not refrigerated)\n\nOnePLUS Ultrasound Lab, Pitampura\n011-4248 0101",
+    "echo_tmt": "OnePLUS Lab - Patient Instructions\n\nFor TMT/STRESS TEST:\n- Light meal 3 hours before test\n- No heavy exercise 12 hours prior\n- Wear comfortable clothes and shoes\n- Continue regular heart medications unless told otherwise\n- Bring previous ECG/reports\n\nOnePLUS Ultrasound Lab, Pitampura\n011-4248 0101",
+    "pft": "OnePLUS Lab - Patient Instructions\n\nFor SPIROMETRY/PFT:\n- No bronchodilator inhaler 4-6 hours before\n- No smoking 4 hours before\n- Wear loose, comfortable clothing\n- Eat light meal (avoid heavy meal)\n\nOnePLUS Ultrasound Lab, Pitampura\n011-4248 0101",
+    "lbc_pap": "OnePLUS Lab - Patient Instructions\n\nFor PAP SMEAR / LBC:\n- Do NOT collect during menstruation\n- No intercourse 48 hours before\n- No douching or vaginal medication 48 hours before\n- Mid-cycle (Day 14) is ideal\n\nOnePLUS Ultrasound Lab, Pitampura\n011-4248 0101"
+  }
+}

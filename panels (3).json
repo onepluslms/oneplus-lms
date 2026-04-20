@@ -1,0 +1,5467 @@
+{
+    "OPD PACKAGE|ANC (ANTENATAL PROFILE)": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "OPD PACKAGE|ANEMIA PROFILE": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "OPD PACKAGE|ARTHRITIS PROFILE": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "OPD PACKAGE|AUTOIMMUNE ENCEPHALITIS PANEL": {
+        "jk": 18000,
+        "du": 18000,
+        "sh": 18000
+    },
+    "OPD PACKAGE|AUTOIMMUNE HEPATITIS PANEL": {
+        "jk": 6700,
+        "du": 6700,
+        "sh": 6700
+    },
+    "OPD PACKAGE|BAD OBSTETRIC HISTORY PANEL, BASIC": {
+        "jk": 6500,
+        "du": 6500,
+        "sh": 6500
+    },
+    "OPD PACKAGE|BAD OBSTETRIC HISTORY PANEL, EXTENDED": {
+        "jk": 8000,
+        "du": 8000,
+        "sh": 8000
+    },
+    "OPD PACKAGE|BAL BHARATI": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "OPD PACKAGE|BASIC PANEL (DR.SUDHIR SURI)": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "OPD PACKAGE|BOH (BAD OBSTETRIC HISTORY) PROFILE": {
+        "jk": 5500,
+        "du": 5500,
+        "sh": 5500
+    },
+    "OPD PACKAGE|CANCER SCREENING PROFILE TEST FEMALE": {
+        "jk": 15500,
+        "du": 15500,
+        "sh": 15500
+    },
+    "OPD PACKAGE|COAGULATION PROFILE": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 900
+    },
+    "OPD PACKAGE|COAGULATION PROFILE DR.SHALINI GUPTA": {
+        "jk": null,
+        "du": null,
+        "sh": 700
+    },
+    "OPD PACKAGE|COMPREHENSIVE HEALTH CHECK UP": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "OPD PACKAGE|COVID PACKAGE": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "OPD PACKAGE|DIABETES PROFILE 1": {
+        "jk": null,
+        "du": null,
+        "sh": 2200
+    },
+    "OPD PACKAGE|EXEC CARDIAC/HYPERTENSIVE CHECKUP (50 PARAMETERS)+ECHO": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "OPD PACKAGE|EXECUTIVE @HOME CHECKUP: (~65 PARAMETERS)": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "OPD PACKAGE|EXECUTIVE CARDIAC/HYPERTENSIVE CHECKUP (50 PARAMETERS)+TMT": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "OPD PACKAGE|EXECUTIVE CHECKUP - MINI": {
+        "jk": null,
+        "du": null,
+        "sh": 1600
+    },
+    "OPD PACKAGE|EXECUTIVE PROFILE ADHUNIK": {
+        "jk": null,
+        "du": null,
+        "sh": 2400
+    },
+    "OPD PACKAGE|EXECUTIVE PROFILE WITH (HBA1C,MICROALBUMINUREA)": {
+        "jk": null,
+        "du": null,
+        "sh": 2800
+    },
+    "OPD PACKAGE|EXECUTIVE PROFILE WITH (HBA1C,MICROALBUMINUREA,VIT D3)": {
+        "jk": null,
+        "du": null,
+        "sh": 3800
+    },
+    "OPD PACKAGE|EXTENDED COAGULATION PROFILE": {
+        "jk": 8500,
+        "du": 8500,
+        "sh": 8500
+    },
+    "OPD PACKAGE|EXTENDED EXECUTIVE CHECKUP": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "OPD PACKAGE|FEMALE HORMONAL PROFILE": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "OPD PACKAGE|FEMALE INFERTILITY": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "OPD PACKAGE|FEVER PANEL (30 PARAMETERS)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "OPD PACKAGE|FEVER PANEL (30) SAVITRI HOSPITAL": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "OPD PACKAGE|FEVER PANEL 1 (25 PARAMETERS)": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "OPD PACKAGE|FEVER PANEL 2 (25 PARAMETERS)": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "OPD PACKAGE|HEALTH PACKAGE (MEGHA MUKHIJA)": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "OPD PACKAGE|HIRSUTISM PROFILE": {
+        "jk": 4100,
+        "du": 4100,
+        "sh": 4100
+    },
+    "OPD PACKAGE|LBC, LIQUID BASED CYTOLOGY+ HPV PCR QUALITATIVE": {
+        "jk": 2950,
+        "du": 2950,
+        "sh": 2950
+    },
+    "OPD PACKAGE|MALE INFERTILITY": {
+        "jk": 2200,
+        "du": 2200,
+        "sh": 2200
+    },
+    "OPD PACKAGE|N PRE-OPERATIVE PROFILE": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "OPD PACKAGE|N- EXECUTIVE HEALTH CHECK UP(70 PARAMETERS)": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "OPD PACKAGE|N- EXECUTIVE HOME CHECKUP (65 PARAMETERS)": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "OPD PACKAGE|N- GENERAL HEALTH 40 PARAMETER": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "OPD PACKAGE|N-ANEMIA PROFILE": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "OPD PACKAGE|ONEPLUS EXCLUSIVE MALE": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "OPD PACKAGE|ONEPLUS EXCLUSIVE FEMALE": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "OPD PACKAGE|PACKAGE. ( DR. GOURAV BALLA)": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "OPD PACKAGE|PCOD PROFILE": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "OPD PACKAGE|ROUTINE HEALTH CHECKUP DR. J.K. GUPTA": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "OPD PACKAGE|ROYAL SUNDARAM -CLASSIC": {
+        "jk": 340,
+        "du": 340,
+        "sh": 340
+    },
+    "OPD PACKAGE|ROYAL SUNDARAM -ELITE": {
+        "jk": 2140,
+        "du": 2140,
+        "sh": 2140
+    },
+    "OPD PACKAGE|ROYAL SUNDARAM -SUPREME": {
+        "jk": 840,
+        "du": 840,
+        "sh": 840
+    },
+    "OPD PACKAGE|THALASSEMIA PROFILE": {
+        "jk": 1600,
+        "du": 1600,
+        "sh": 1600
+    },
+    "OPD PACKAGE|USG GUIDED F.N.A.C": {
+        "jk": 3850,
+        "du": 3850,
+        "sh": 3850
+    },
+    "OPD PACKAGE|VASCULITIS PANEL": {
+        "jk": 8000,
+        "du": 8000,
+        "sh": 8000
+    },
+    "OPD PACKAGE|VITAL SET 1 UNIV. SOMPO": {
+        "jk": 1980,
+        "du": 1980,
+        "sh": 1980
+    },
+    "OPD PACKAGE|WHOLE BODY CHECKUP": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "OPD PACKAGE|WHOLE BODY CHECKUP (DR. J. K. GUPTA)": {
+        "jk": 2600,
+        "du": null,
+        "sh": null
+    },
+    "BIOCHEMISTRY|QUANTIFERON - TB GOLD": {
+        "jk": 2800,
+        "du": 2800,
+        "sh": 2800
+    },
+    "BIOCHEMISTRY|ACID PHOSPHATASE": {
+        "jk": 350,
+        "du": 350,
+        "sh": 350
+    },
+    "BIOCHEMISTRY|ACID PHOSPHATASE PROSTATIC": {
+        "jk": 350,
+        "du": 350,
+        "sh": 350
+    },
+    "BIOCHEMISTRY|ACTH": {
+        "jk": 1700,
+        "du": 1700,
+        "sh": 1700
+    },
+    "BIOCHEMISTRY|ADA SERUM": {
+        "jk": 700,
+        "du": 700,
+        "sh": 630
+    },
+    "BIOCHEMISTRY|ALBUMIN": {
+        "jk": 120,
+        "du": 120,
+        "sh": 120
+    },
+    "BIOCHEMISTRY|ALCOHOL (ETHANOL)": {
+        "jk": 750,
+        "du": 750,
+        "sh": 750
+    },
+    "BIOCHEMISTRY|ALDEHYDE": {
+        "jk": 300,
+        "du": 300,
+        "sh": 300
+    },
+    "BIOCHEMISTRY|ALDOLASE": {
+        "jk": 700,
+        "du": 700,
+        "sh": 700
+    },
+    "BIOCHEMISTRY|ALDOSTERONE, PLASMA": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "BIOCHEMISTRY|ALKALINE PHOSPHATASE": {
+        "jk": 150,
+        "du": 150,
+        "sh": 120
+    },
+    "BIOCHEMISTRY|AMMONIA": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "BIOCHEMISTRY|AMYLASE": {
+        "jk": 500,
+        "du": 500,
+        "sh": 300
+    },
+    "BIOCHEMISTRY|ANCA -PR3 (SERIN PROTEINASE 3 ANTIBODIES)": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "BIOCHEMISTRY|ANDROSTENEDIONE": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "BIOCHEMISTRY|ASO QUANTITATIVE": {
+        "jk": 550,
+        "du": 550,
+        "sh": 550
+    },
+    "BIOCHEMISTRY|BILIRUBIN TOTAL,DIRECT,INDIRECT": {
+        "jk": 250,
+        "du": 250,
+        "sh": 180
+    },
+    "BIOCHEMISTRY|BILIRUBIN, DIRECT": {
+        "jk": 130,
+        "du": 130,
+        "sh": 130
+    },
+    "BIOCHEMISTRY|BILIRUBIN, INDIRECT": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|BILIRUBIN,TOTAL": {
+        "jk": 130,
+        "du": 130,
+        "sh": 100
+    },
+    "BIOCHEMISTRY|BLOOD ALLERGY PROFILE": {
+        "jk": 9500,
+        "du": 9500,
+        "sh": 9500
+    },
+    "BIOCHEMISTRY|BRUCELLA AGGLUTINATION TEST": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "BIOCHEMISTRY|BSF (BLOOD SUGAR FASTING)": {
+        "jk": 80,
+        "du": 30,
+        "sh": 60
+    },
+    "BIOCHEMISTRY|BSPP (BLOOD SUGAR PP)": {
+        "jk": 80,
+        "du": 30,
+        "sh": 60
+    },
+    "BIOCHEMISTRY|BSR (BLOOD SUGAR RANDOM)": {
+        "jk": 80,
+        "du": 30,
+        "sh": 60
+    },
+    "BIOCHEMISTRY|BUN (BLOOD UREA NITROGEN)": {
+        "jk": 200,
+        "du": 150,
+        "sh": 110
+    },
+    "BIOCHEMISTRY|BUN/CREATININE RATIO": {
+        "jk": 240,
+        "du": 240,
+        "sh": 240
+    },
+    "BIOCHEMISTRY|C PEPTIDE (FASTING)": {
+        "jk": 1050,
+        "du": 1050,
+        "sh": 1050
+    },
+    "BIOCHEMISTRY|C PEPTIDE (PP)": {
+        "jk": 1050,
+        "du": 1050,
+        "sh": 1050
+    },
+    "BIOCHEMISTRY|C-ANCA": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "BIOCHEMISTRY|CALCITONIN": {
+        "jk": 2200,
+        "du": 2200,
+        "sh": 2200
+    },
+    "BIOCHEMISTRY|CALCIUM": {
+        "jk": 200,
+        "du": 150,
+        "sh": 130
+    },
+    "BIOCHEMISTRY|CATECHOLAMINES (PLASMA)": {
+        "jk": 7500,
+        "du": 7500,
+        "sh": 7500
+    },
+    "BIOCHEMISTRY|CERULOPLASMIN": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "BIOCHEMISTRY|CHLORIDE (CL-)": {
+        "jk": 200,
+        "du": 200,
+        "sh": 200
+    },
+    "BIOCHEMISTRY|CHOLESTEROL": {
+        "jk": 250,
+        "du": 150,
+        "sh": 150
+    },
+    "BIOCHEMISTRY|CHYLE EXAMINATION": {
+        "jk": 450,
+        "du": 450,
+        "sh": 450
+    },
+    "BIOCHEMISTRY|CK (CREATINE KINASE)": {
+        "jk": 350,
+        "du": 350,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|COPPER , SERUM": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "BIOCHEMISTRY|COPPER 24 HOUR URINE": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "BIOCHEMISTRY|CORTISOL FREE 24HRS URINE": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "BIOCHEMISTRY|CPK": {
+        "jk": 350,
+        "du": 350,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|CPK-MB": {
+        "jk": 500,
+        "du": 500,
+        "sh": 300
+    },
+    "BIOCHEMISTRY|CREATININE": {
+        "jk": 200,
+        "du": 50,
+        "sh": 120
+    },
+    "BIOCHEMISTRY|CREATININE CLEARANCE TEST": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "BIOCHEMISTRY|CRP (C-REACTIVE PROTEIN)": {
+        "jk": 450,
+        "du": 400,
+        "sh": 400
+    },
+    "BIOCHEMISTRY|CYSTATIN C": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "BIOCHEMISTRY|DHEA DEHYDROEPIANDROSTERONE": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "BIOCHEMISTRY|DRUG ALLERGY PROFILE": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "BIOCHEMISTRY|DRUGS OF ABUSE: 7 DRUGS URINE SCREEN": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "BIOCHEMISTRY|E-GFR (GLOMERULAR FILTRATION RATE)": {
+        "jk": 200,
+        "du": 200,
+        "sh": 200
+    },
+    "BIOCHEMISTRY|ELECTROLYTES(NA/K)": {
+        "jk": 400,
+        "du": 400,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|EPSTEIN BARR VIRUS (EBV) IGG + IGM": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "BIOCHEMISTRY|EXTENDED LIPID PROFILE": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "BIOCHEMISTRY|FLUID FOR ADA": {
+        "jk": 700,
+        "du": 700,
+        "sh": 630
+    },
+    "BIOCHEMISTRY|FLUID FOR ALBUMIN": {
+        "jk": 150,
+        "du": 150,
+        "sh": 150
+    },
+    "BIOCHEMISTRY|FLUID FOR AMYLASE": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "BIOCHEMISTRY|FLUID FOR CREATININE": {
+        "jk": 120,
+        "du": 120,
+        "sh": 120
+    },
+    "BIOCHEMISTRY|FLUID FOR LDH": {
+        "jk": 400,
+        "du": 400,
+        "sh": 350
+    },
+    "BIOCHEMISTRY|FLUID FOR PROTEIN": {
+        "jk": 300,
+        "du": 300,
+        "sh": 300
+    },
+    "BIOCHEMISTRY|FLUID FOR UREA": {
+        "jk": 150,
+        "du": 150,
+        "sh": 150
+    },
+    "BIOCHEMISTRY|FOOD ALLERGY VAG & NON VEGETARIAN": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "BIOCHEMISTRY|FOOD ALLERGY VEGETARIAN": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "BIOCHEMISTRY|GAMMA GT(GGT)": {
+        "jk": 300,
+        "du": 300,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|GASTRIN LEVEL": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1300
+    },
+    "BIOCHEMISTRY|GCT SINGLE SAMPLE (GLUCOSE CHALLENGE TEST 50GM/1 HR)": {
+        "jk": 100,
+        "du": 100,
+        "sh": 60
+    },
+    "BIOCHEMISTRY|GCT SINGLE SAMPLE (GLUCOSE CHALLENGE TEST 75GM/2 HR)": {
+        "jk": 100,
+        "du": 100,
+        "sh": 60
+    },
+    "BIOCHEMISTRY|GCT TWO SAMPLE (GLUCOSE CHALLENGE TEST 75GM/2 HR))": {
+        "jk": 200,
+        "du": 200,
+        "sh": 160
+    },
+    "BIOCHEMISTRY|GLOBULIN": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|GLUCOSE POST BREAKFAST": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "BIOCHEMISTRY|GLUCOSE POST DINNER": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "BIOCHEMISTRY|GLUCOSE POST LUNCH": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "BIOCHEMISTRY|GLUCOSE PP(100 GM.GLUCOSE 2HRS)": {
+        "jk": 100,
+        "du": 100,
+        "sh": 60
+    },
+    "BIOCHEMISTRY|GLUCOSE PP(50 GM. GLUCOSE AFTER 1HRS )": {
+        "jk": 100,
+        "du": 100,
+        "sh": 60
+    },
+    "BIOCHEMISTRY|GLUCOSE PP(AFTER BREAKFAST)": {
+        "jk": 100,
+        "du": 100,
+        "sh": 60
+    },
+    "BIOCHEMISTRY|GLUCOSE TOLERANCE TEST (GTT) PREGNANCY,100G GLUCOSE": {
+        "jk": 240,
+        "du": 240,
+        "sh": 240
+    },
+    "BIOCHEMISTRY|GTT 2 SAMPLE (GLUCOSE TOLERANCE TEST)": {
+        "jk": 200,
+        "du": 200,
+        "sh": 120
+    },
+    "BIOCHEMISTRY|GTT 3 SAMPLE (GLUCOSE TOLERANCE TEST )": {
+        "jk": 300,
+        "du": 300,
+        "sh": 180
+    },
+    "BIOCHEMISTRY|GTT 4 SAMPLE (GLUCOSE TOLERANCE TEST)": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "BIOCHEMISTRY|GTT 5 SAMPLE (GLUCOSE TOLERANCE TEST )": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "BIOCHEMISTRY|GTT 6 SAMPLE ( GLUCOSE TOLERANCE TEST)": {
+        "jk": 600,
+        "du": 600,
+        "sh": 360
+    },
+    "BIOCHEMISTRY|HBA1C (GLYCOSYLATED HB)": {
+        "jk": 450,
+        "du": 500,
+        "sh": 400
+    },
+    "BIOCHEMISTRY|HDL CHOLESTEROL": {
+        "jk": 250,
+        "du": 300,
+        "sh": 200
+    },
+    "BIOCHEMISTRY|HELICOBACTER PYLORI PANEL IGA + IGG": {
+        "jk": 3200,
+        "du": 3200,
+        "sh": 3200
+    },
+    "BIOCHEMISTRY|HLA -B27": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "BIOCHEMISTRY|HOMA-IR": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "BIOCHEMISTRY|HOMOCYSTEINE QUANTITATIVE SERUM": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 830
+    },
+    "BIOCHEMISTRY|HS CRP": {
+        "jk": 750,
+        "du": 750,
+        "sh": 500
+    },
+    "BIOCHEMISTRY|INORGANIC PHOSPHORUS": {
+        "jk": 150,
+        "du": 150,
+        "sh": 120
+    },
+    "BIOCHEMISTRY|IONIZED CALCIUM": {
+        "jk": 600,
+        "du": 600,
+        "sh": 150
+    },
+    "BIOCHEMISTRY|IRON": {
+        "jk": 450,
+        "du": 350,
+        "sh": 200
+    },
+    "BIOCHEMISTRY|IRON PROFILE": {
+        "jk": 450,
+        "du": 700,
+        "sh": 500
+    },
+    "BIOCHEMISTRY|KAPPA/LAMBDA LIGHT CHAINS FREE(SERUM)": {
+        "jk": 7500,
+        "du": 7500,
+        "sh": 7500
+    },
+    "BIOCHEMISTRY|KETONE BODY (BETA HYDROXYBUTYRATE), SERUM": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "BIOCHEMISTRY|KFT(KIDNEY FUNCTION TEST)": {
+        "jk": 700,
+        "du": 260,
+        "sh": 700
+    },
+    "BIOCHEMISTRY|LACTATE": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "BIOCHEMISTRY|LDH SERUM": {
+        "jk": 400,
+        "du": 400,
+        "sh": 350
+    },
+    "BIOCHEMISTRY|LDL CHOLESTEROL": {
+        "jk": 350,
+        "du": 350,
+        "sh": 300
+    },
+    "BIOCHEMISTRY|LFT(LIVER FUNCTION TEST)": {
+        "jk": 600,
+        "du": 260,
+        "sh": 650
+    },
+    "BIOCHEMISTRY|LIPASE": {
+        "jk": 600,
+        "du": 600,
+        "sh": 450
+    },
+    "BIOCHEMISTRY|LIPID PROFILE": {
+        "jk": 600,
+        "du": 230,
+        "sh": 650
+    },
+    "BIOCHEMISTRY|LIPIDOGRAM": {
+        "jk": null,
+        "du": null,
+        "sh": 650
+    },
+    "BIOCHEMISTRY|LIPOPROTEIN A LP(A)": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "BIOCHEMISTRY|LIVER KIDNEY MICROSOMAL(LKM)": {
+        "jk": 1600,
+        "du": 1600,
+        "sh": 1600
+    },
+    "BIOCHEMISTRY|MAGNESIUM": {
+        "jk": 500,
+        "du": 500,
+        "sh": 300
+    },
+    "BIOCHEMISTRY|PHENYTOIN": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "BIOCHEMISTRY|PLASMA RENIN, DIRECT": {
+        "jk": 5500,
+        "du": 5500,
+        "sh": 5500
+    },
+    "BIOCHEMISTRY|POTASSIUM(K+)": {
+        "jk": 200,
+        "du": 58,
+        "sh": 150
+    },
+    "BIOCHEMISTRY|PROTEIN ELECTROPHORESIS, 24-HOUR URINE": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "BIOCHEMISTRY|QUANTIFERON -TB GOLD/PLATINUM)": {
+        "jk": 3200,
+        "du": 3200,
+        "sh": 3200
+    },
+    "BIOCHEMISTRY|RA FACTOR QUANTITATIVE (NEPHELOMETRY METHOD)": {
+        "jk": 450,
+        "du": 450,
+        "sh": 400
+    },
+    "BIOCHEMISTRY|S. FRUCTOSAMINE": {
+        "jk": 550,
+        "du": 550,
+        "sh": 550
+    },
+    "BIOCHEMISTRY|SCA(SPINOCEREBELLER ATAXIA) PANAL": {
+        "jk": 18000,
+        "du": 18000,
+        "sh": 18000
+    },
+    "BIOCHEMISTRY|SCRUB TYPHUS (TSUTSUGAMUSHI) ANTIBODY IGM, EIA": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "BIOCHEMISTRY|SERUM ASCITES ALBUMIN GRADIENT (SAAG)": {
+        "jk": 300,
+        "du": 300,
+        "sh": 300
+    },
+    "BIOCHEMISTRY|SERUM BICARBONATE": {
+        "jk": 700,
+        "du": 700,
+        "sh": 700
+    },
+    "BIOCHEMISTRY|SERUM BILE ACID": {
+        "jk": 1750,
+        "du": 800,
+        "sh": 1750
+    },
+    "BIOCHEMISTRY|SGOT(AST)": {
+        "jk": 150,
+        "du": 150,
+        "sh": 120
+    },
+    "BIOCHEMISTRY|SGPT(ALT)": {
+        "jk": 150,
+        "du": 150,
+        "sh": 120
+    },
+    "BIOCHEMISTRY|SM/RNP ANTIBODIES, SERUM": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "BIOCHEMISTRY|SODIUM (NA+)": {
+        "jk": 150,
+        "du": 58,
+        "sh": 150
+    },
+    "BIOCHEMISTRY|STONE ANALYSIS": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "BIOCHEMISTRY|TIBC (TOTAL IRON BINDING CAPACITY)": {
+        "jk": 450,
+        "du": 600,
+        "sh": 400
+    },
+    "BIOCHEMISTRY|TOTAL PROTEIN": {
+        "jk": 200,
+        "du": 200,
+        "sh": 200
+    },
+    "BIOCHEMISTRY|TPMT (THIOPURINE METHYL TRANSFERASE) GENOTYPING": {
+        "jk": 6000,
+        "du": 6000,
+        "sh": 6000
+    },
+    "BIOCHEMISTRY|TRANSFERRIN": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "BIOCHEMISTRY|TRIGLYCERIDE": {
+        "jk": 250,
+        "du": 300,
+        "sh": 200
+    },
+    "BIOCHEMISTRY|TROPONIN I HIGH SENSITIVE": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "BIOCHEMISTRY|TRYPTASE": {
+        "jk": 9500,
+        "du": 9500,
+        "sh": 9500
+    },
+    "BIOCHEMISTRY|UIBC": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "BIOCHEMISTRY|UREA": {
+        "jk": 200,
+        "du": 50,
+        "sh": 110
+    },
+    "BIOCHEMISTRY|URIC ACID": {
+        "jk": 150,
+        "du": 150,
+        "sh": 120
+    },
+    "BIOCHEMISTRY|URINE FOR ALBUMIN CREATININE RATIO (SPOT)": {
+        "jk": 300,
+        "du": 300,
+        "sh": 300
+    },
+    "BIOCHEMISTRY|URINE FOR ALBUMIN SPOT": {
+        "jk": 120,
+        "du": 120,
+        "sh": 120
+    },
+    "BIOCHEMISTRY|URINE FOR CALCIUM (24 HRS)": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|URINE FOR CALCIUM (SPOT)": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|URINE FOR CREATININE (24 HRS)": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|URINE FOR CREATININE(SPOT)": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|URINE FOR GLUCOSE RANDOM (24 HRS)": {
+        "jk": 200,
+        "du": 200,
+        "sh": 200
+    },
+    "BIOCHEMISTRY|URINE FOR MICRO ALBUMIN (24 HRS)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "BIOCHEMISTRY|URINE FOR MICRO ALBUMIN (SPOT)": {
+        "jk": 450,
+        "du": 450,
+        "sh": 450
+    },
+    "BIOCHEMISTRY|URINE FOR MICRO ALBUMIN CREATININE RATIO (SPOT)": {
+        "jk": 650,
+        "du": 650,
+        "sh": 650
+    },
+    "BIOCHEMISTRY|URINE FOR MICRO ALBUMIN CREATININE RATIO(24 HRS)": {
+        "jk": 650,
+        "du": 650,
+        "sh": 650
+    },
+    "BIOCHEMISTRY|URINE FOR MICROALBUMIN /ALBUMIN(24 HRS)": {
+        "jk": 450,
+        "du": 450,
+        "sh": 450
+    },
+    "BIOCHEMISTRY|URINE FOR POTASSIUM (24 HRS)": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|URINE FOR POTASSIUM SPOT": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|URINE FOR PP(GLUCOSE)": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "BIOCHEMISTRY|URINE FOR PROTEIN (SPOT)": {
+        "jk": 300,
+        "du": 300,
+        "sh": 300
+    },
+    "BIOCHEMISTRY|URINE FOR PROTEIN 24HRS": {
+        "jk": 450,
+        "du": 450,
+        "sh": 450
+    },
+    "BIOCHEMISTRY|URINE FOR PROTEIN CALCIUM RATIO": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "BIOCHEMISTRY|URINE FOR PROTEIN CREATININE RATIO (SPOT)": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "BIOCHEMISTRY|URINE FOR PROTEIN CREATININE RATIO 24 HRS": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "BIOCHEMISTRY|URINE FOR SODIUM (24 HRS)": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|URINE FOR SODIUM SPOT": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|URINE FOR UREA 24HRS.": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|URINE FOR UREA(SPOT)": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|URINE FOR URIC ACID (24 HRS)": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|URINE FOR URIC ACID (SPOT)": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "BIOCHEMISTRY|VLDL CHOLESTEROL": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "BIOCHEMISTRY|ZINC": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "ENDOCRINOLOGY|KARYOTYPING PRODUCTS OF CONCEPTION": {
+        "jk": 7500,
+        "du": 7500,
+        "sh": 7500
+    },
+    "ENDOCRINOLOGY|17 HYDROXY PROGESTERONE": {
+        "jk": 1400,
+        "du": 1400,
+        "sh": 800
+    },
+    "ENDOCRINOLOGY|2ND TRIMESTER PRE-ECCLAMPSIA SCREENING": {
+        "jk": 8500,
+        "du": 8500,
+        "sh": 8500
+    },
+    "ENDOCRINOLOGY|5-ALPHA-DIHYDROTESTOSTERONE 5ALPHA -DHT": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ENDOCRINOLOGY|ACE - ANGIOTENSIN CONVERTING ENZYME": {
+        "jk": 1100,
+        "du": 1100,
+        "sh": 1100
+    },
+    "ENDOCRINOLOGY|ACETYL CHOLINE RECEPTOR BINDING ANTIBODY": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ENDOCRINOLOGY|AFP (ALPHA FETOPROTEIN)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "ENDOCRINOLOGY|ALDOSTERONE/RENIN RATIO (SUPINE)": {
+        "jk": 6700,
+        "du": 6700,
+        "sh": 6700
+    },
+    "ENDOCRINOLOGY|ALDOSTERONE/RENIN RATIO (UPRIGHT)": {
+        "jk": 6700,
+        "du": 6700,
+        "sh": 6700
+    },
+    "ENDOCRINOLOGY|ALPHA-1 ANTITRYPSIN": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ENDOCRINOLOGY|AMENORRHEA PROFILE": {
+        "jk": 2300,
+        "du": 2300,
+        "sh": 2300
+    },
+    "ENDOCRINOLOGY|AMH (ANTI MULLERIAN HORMONE)": {
+        "jk": 1850,
+        "du": 1850,
+        "sh": 1850
+    },
+    "ENDOCRINOLOGY|ANA (ANTI NUCLEAR ANTIBODY)": {
+        "jk": 800,
+        "du": 800,
+        "sh": 630
+    },
+    "ENDOCRINOLOGY|ANA 17 PROFILE IMMUNOBLOT": {
+        "jk": 6000,
+        "du": 6000,
+        "sh": 6000
+    },
+    "ENDOCRINOLOGY|ANA/ANF (HEP2/IFA)": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ENDOCRINOLOGY|ANTI CARDIOLIPIN ANTIBODY IGA": {
+        "jk": 850,
+        "du": 850,
+        "sh": 850
+    },
+    "ENDOCRINOLOGY|ANTI CARDIOLIPIN ANTIBODY IGG": {
+        "jk": 850,
+        "du": 850,
+        "sh": 850
+    },
+    "ENDOCRINOLOGY|ANTI CARDIOLIPIN ANTIBODY IGM": {
+        "jk": 850,
+        "du": 850,
+        "sh": 850
+    },
+    "ENDOCRINOLOGY|ANTI CCP": {
+        "jk": 1750,
+        "du": 1750,
+        "sh": 1500
+    },
+    "ENDOCRINOLOGY|ANTI DNASE B; ANTIDEOXYRIBONUCLEASE B": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ENDOCRINOLOGY|ANTI DS DNA ANTIBODY": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|ANTI HAV(IGG)": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|ANTI HAV(IGM)": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 900
+    },
+    "ENDOCRINOLOGY|ANTI HBC IGM": {
+        "jk": 1100,
+        "du": 1100,
+        "sh": 1100
+    },
+    "ENDOCRINOLOGY|ANTI HBC TOTAL": {
+        "jk": 1100,
+        "du": 1100,
+        "sh": 1100
+    },
+    "ENDOCRINOLOGY|ANTI HBE AB": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "ENDOCRINOLOGY|ANTI HBE AG": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "ENDOCRINOLOGY|ANTI HBSAB": {
+        "jk": 750,
+        "du": 750,
+        "sh": 750
+    },
+    "ENDOCRINOLOGY|ANTI HEV(IGG)": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|ANTI HEV(IGM)": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|ANTI HISTONE ANTIBODIES (AHA)": {
+        "jk": 1600,
+        "du": 1600,
+        "sh": 1600
+    },
+    "ENDOCRINOLOGY|ANTI JO -1 ANTIBODY": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ENDOCRINOLOGY|ANTI MITOCHONDRIAL ANTIBODY(AMA)": {
+        "jk": 2400,
+        "du": 2400,
+        "sh": 2400
+    },
+    "ENDOCRINOLOGY|ANTI PHOSPHOLIPID ANTIBODY IGA": {
+        "jk": 850,
+        "du": 850,
+        "sh": 850
+    },
+    "ENDOCRINOLOGY|ANTI PHOSPHOLIPID ANTIBODY IGG": {
+        "jk": 850,
+        "du": 850,
+        "sh": 850
+    },
+    "ENDOCRINOLOGY|ANTI PHOSPHOLIPID ANTIBODY IGM": {
+        "jk": 850,
+        "du": 850,
+        "sh": 850
+    },
+    "ENDOCRINOLOGY|ANTI SMOOTH MUSCLE ANTIBODY(ASMA)": {
+        "jk": 2300,
+        "du": 2300,
+        "sh": 2300
+    },
+    "ENDOCRINOLOGY|ANTI THYROGLOBULIN ANTIBODY (TG)": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|ANTI THYROID PEROXIDASE (TPO)": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|ANTITHROMBIN III": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ENDOCRINOLOGY|APOLIPOROTEIN- A1": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|APOLIPOROTEIN- B": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|ASCA (ANTI-SACCHAROMYCES CEREVISIAE ANTIBODIES , IGA": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ENDOCRINOLOGY|ASCA (ANTI-SACCHAROMYCES CEREVISIAE ANTIBODIES , IGG": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ENDOCRINOLOGY|BETA 2 GLYCOPROTEIN IGA": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|BETA 2 GLYCOPROTEIN IGG": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|BETA 2 GLYCOPROTEIN IGM": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|BETA 2 GLYCOPROTEIN PANEL IGG+IGA+IGM": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ENDOCRINOLOGY|BETA 2 MICROGLOBULIN (SERUM)": {
+        "jk": 1400,
+        "du": 1400,
+        "sh": 1400
+    },
+    "ENDOCRINOLOGY|BETA HCG (QUANTITATIVE)": {
+        "jk": 650,
+        "du": 700,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|BNP; B - TYPE NATRIURETIC PEPTIDE": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "ENDOCRINOLOGY|BRUCELLA IGG ANTIBODY": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1300
+    },
+    "ENDOCRINOLOGY|BRUCELLA IGM ANTIBODY": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1300
+    },
+    "ENDOCRINOLOGY|CA 125": {
+        "jk": 1000,
+        "du": 1200,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|CA 15.3 (BREAST CANCER MARKER)": {
+        "jk": 1350,
+        "du": 1350,
+        "sh": 1350
+    },
+    "ENDOCRINOLOGY|CA 27.29": {
+        "jk": 8000,
+        "du": 8000,
+        "sh": 8000
+    },
+    "ENDOCRINOLOGY|CA 72.4": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ENDOCRINOLOGY|CA19.9": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ENDOCRINOLOGY|CEA (CARCINO EMBRYONIC ANTIGEN)": {
+        "jk": 750,
+        "du": 750,
+        "sh": 630
+    },
+    "ENDOCRINOLOGY|CHROMOSOMAL MICROARRAY 750K (BLOOD)": {
+        "jk": 22000,
+        "du": 22000,
+        "sh": 22000
+    },
+    "ENDOCRINOLOGY|CMV IGG": {
+        "jk": 600,
+        "du": 600,
+        "sh": 500
+    },
+    "ENDOCRINOLOGY|CMV IGG AVIDITY": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|CMV IGM": {
+        "jk": 600,
+        "du": 600,
+        "sh": 500
+    },
+    "ENDOCRINOLOGY|COMPREHENSIVE BLOOD ALLERGY PROFILE (IMMUNO CAP)": {
+        "jk": 15000,
+        "du": 15000,
+        "sh": 15000
+    },
+    "ENDOCRINOLOGY|CORTISOL (AM)": {
+        "jk": 550,
+        "du": 550,
+        "sh": 450
+    },
+    "ENDOCRINOLOGY|CORTISOL (PM)": {
+        "jk": 550,
+        "du": 550,
+        "sh": 450
+    },
+    "ENDOCRINOLOGY|CORTISOL STIMULATION BY ACTH": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ENDOCRINOLOGY|COUPLE MICROARRAY 750 K": {
+        "jk": 36000,
+        "du": 36000,
+        "sh": 36000
+    },
+    "ENDOCRINOLOGY|DES-GAMMA CARBOXY PROTHROMBIN (DCP)/PIVKA II, SERUM": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ENDOCRINOLOGY|DHEA SULPHATE (DHEAS)": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 800
+    },
+    "ENDOCRINOLOGY|DIGOXIN": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|DOUBLE MARKER AND PE": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ENDOCRINOLOGY|DOUBLE MARKER(DUAL) + PRE ECLAMPSIA SCREENING": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ENDOCRINOLOGY|E2(ESTRADIOL)": {
+        "jk": 600,
+        "du": 600,
+        "sh": 450
+    },
+    "ENDOCRINOLOGY|EFTS (ENHANCED FTS)": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ENDOCRINOLOGY|ENA PROFILE": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ENDOCRINOLOGY|ENDOMYSIAL ANTIBODY IGA": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ENDOCRINOLOGY|EPSTEIN BARR VIRUS (EBV) IGG": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ENDOCRINOLOGY|EPSTEIN BARR VIRUS (EBV) IGM": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ENDOCRINOLOGY|EXTENDED QF-PCR (POC)": {
+        "jk": 10000,
+        "du": 10000,
+        "sh": 10000
+    },
+    "ENDOCRINOLOGY|FACTOR V LEIDEN": {
+        "jk": 6000,
+        "du": 6000,
+        "sh": 6000
+    },
+    "ENDOCRINOLOGY|FERRITIN": {
+        "jk": 700,
+        "du": 700,
+        "sh": 550
+    },
+    "ENDOCRINOLOGY|FIBRINOGEN LEVELS": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|FIRST TRIMESTER QUAD SCREENING": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ENDOCRINOLOGY|FISH FOR 5 CHROMOSOMES": {
+        "jk": 6000,
+        "du": 6000,
+        "sh": 6000
+    },
+    "ENDOCRINOLOGY|FOLATE (FOLIC ACID)": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|FREE T3": {
+        "jk": 300,
+        "du": 300,
+        "sh": 250
+    },
+    "ENDOCRINOLOGY|FREE T4": {
+        "jk": 300,
+        "du": 300,
+        "sh": 250
+    },
+    "ENDOCRINOLOGY|FREE THYROID PROFILE": {
+        "jk": 700,
+        "du": 750,
+        "sh": 700
+    },
+    "ENDOCRINOLOGY|FSH(FOLLICLE STIMULATING HORMONE)": {
+        "jk": 500,
+        "du": 550,
+        "sh": 450
+    },
+    "ENDOCRINOLOGY|FTA-ABS( FLUORESCENT TREPONEMAL ANTIBODY ABSORPTION)": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ENDOCRINOLOGY|GAD-65 (GLUTAMIC ACID DECARBOXYLASE- 65), IGG": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ENDOCRINOLOGY|GALACTOMANNAN (ASPERGILLUS ANTIGEN), SERUM": {
+        "jk": 5100,
+        "du": 5100,
+        "sh": 5100
+    },
+    "ENDOCRINOLOGY|GLIADIN DEAMIDATED ANTIBODIES PANEL, IGA & IGG": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ENDOCRINOLOGY|GROWTH HORMONE": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|GROWTH HORMONE 30MINTS": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|GROWTH HORMONE 60MINTS": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|GROWTH HORMONE 90MINTS": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|GROWTH HORMONE STIMULATION TEST": {
+        "jk": 3200,
+        "du": 3200,
+        "sh": 3200
+    },
+    "ENDOCRINOLOGY|GROWTH HORMONE SUPPRESSION BY GLUCOSE": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|HBA1/HBA2 GENE DELETION/DUPLICATION STUDY BY MLPA FOR ALPHA THALASSEMIA": {
+        "jk": 12000,
+        "du": 12000,
+        "sh": 12000
+    },
+    "ENDOCRINOLOGY|HBB GENE TARGET MUTATION ANALYSIS": {
+        "jk": 8000,
+        "du": 8000,
+        "sh": 8000
+    },
+    "ENDOCRINOLOGY|HBV DNA PCR - QUALITATIVE": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ENDOCRINOLOGY|HBV DNA PCR - QUANTITATIVE": {
+        "jk": 8000,
+        "du": 8000,
+        "sh": 8000
+    },
+    "ENDOCRINOLOGY|HCV ( HEPATITIS C VIRUS) IGG": {
+        "jk": 1450,
+        "du": 1450,
+        "sh": 1450
+    },
+    "ENDOCRINOLOGY|HCV ( HEPATITIS C VIRUS) IGM": {
+        "jk": 1250,
+        "du": 1250,
+        "sh": 1250
+    },
+    "ENDOCRINOLOGY|HCV ( HEPATITIS C VIRUS) TOTAL": {
+        "jk": 1250,
+        "du": 1250,
+        "sh": 1250
+    },
+    "ENDOCRINOLOGY|HCV RNA QUANTITATIVE": {
+        "jk": 5500,
+        "du": 5500,
+        "sh": 5500
+    },
+    "ENDOCRINOLOGY|HE 4 (HUMAN EPIDIDYMIS PROTEIN 4)": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ENDOCRINOLOGY|HIAA 24 HRS. URINE (HYDROXY INDOLE ACETIC ACID)": {
+        "jk": 3800,
+        "du": 3800,
+        "sh": 3800
+    },
+    "ENDOCRINOLOGY|HSV IGG AND IGM HERPES SIMPLEX 1+2 VIRUS": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ENDOCRINOLOGY|HSV IGG HERPES SIMPLEX 1+2 VIRUS": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|HSV IGM HERPES SIMPLEX 1+2 VIRUS": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|HYPERSENSITIVITY PNEUMONITIS (HP) PANEL EXTENDED": {
+        "jk": 12000,
+        "du": 12000,
+        "sh": 12000
+    },
+    "ENDOCRINOLOGY|IGE (SERUM)": {
+        "jk": 750,
+        "du": 800,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|IGF BP3": {
+        "jk": 7500,
+        "du": 7500,
+        "sh": 7500
+    },
+    "ENDOCRINOLOGY|IGF-1": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ENDOCRINOLOGY|IGG SUBCLASS 4": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ENDOCRINOLOGY|IL-6 (INTERLEUKIN 6)": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ENDOCRINOLOGY|IMMUNOFIXATION ELECTROPHORESIS (SERUM)": {
+        "jk": 6700,
+        "du": 6700,
+        "sh": 6700
+    },
+    "ENDOCRINOLOGY|IMMUNOGLOBULIN A ( IGA)SERUM": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|IMMUNOGLOBULIN G ( IGG) SERUM": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|IMMUNOGLOBULIN M ( IGM) SERUM": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|INHIBIN B": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ENDOCRINOLOGY|INSULIN RANDOM": {
+        "jk": 650,
+        "du": 700,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|INSULIN(FASTING)": {
+        "jk": 650,
+        "du": 700,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|INSULIN(PP)": {
+        "jk": 650,
+        "du": 700,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|INTRINSIC FACTOR ANTIBODY": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ENDOCRINOLOGY|LEPTOSPIRA ANTIBODY IGG": {
+        "jk": 1400,
+        "du": 1400,
+        "sh": 1400
+    },
+    "ENDOCRINOLOGY|LEPTOSPIRA ANTIBODY IGM": {
+        "jk": 1400,
+        "du": 1400,
+        "sh": 1400
+    },
+    "ENDOCRINOLOGY|LH AND FSH": {
+        "jk": 1000,
+        "du": 1100,
+        "sh": 900
+    },
+    "ENDOCRINOLOGY|LH(LUTEINIZING HORMONE)": {
+        "jk": 500,
+        "du": 550,
+        "sh": 450
+    },
+    "ENDOCRINOLOGY|LITHIUM": {
+        "jk": 550,
+        "du": 550,
+        "sh": 550
+    },
+    "ENDOCRINOLOGY|MICROARRAY (315K)": {
+        "jk": 17000,
+        "du": 17000,
+        "sh": 17000
+    },
+    "ENDOCRINOLOGY|MICROARRAY (750K)": {
+        "jk": 20000,
+        "du": 20000,
+        "sh": 20000
+    },
+    "ENDOCRINOLOGY|MUMPS VIRUS ANTIBODIES IGG": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "ENDOCRINOLOGY|MUMPS VIRUS ANTIBODIES IGM": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "ENDOCRINOLOGY|NEURON SPECIFIC ENOLASE(NSE)SERUM": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ENDOCRINOLOGY|NEW BORN SCREENING EXTENDED": {
+        "jk": 5500,
+        "du": 5500,
+        "sh": 5500
+    },
+    "ENDOCRINOLOGY|P-ANCA": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ENDOCRINOLOGY|PAPP - A": {
+        "jk": 830,
+        "du": 830,
+        "sh": 830
+    },
+    "ENDOCRINOLOGY|PENTA SCREENING": {
+        "jk": 5500,
+        "du": 5500,
+        "sh": 5500
+    },
+    "ENDOCRINOLOGY|PHADIATOP ALLERGY BY IMMUNO CAP": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|PHENOBARBITONE": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|PROCALCITONIN": {
+        "jk": 2800,
+        "du": 2800,
+        "sh": 2800
+    },
+    "ENDOCRINOLOGY|PROGESTERONE": {
+        "jk": 600,
+        "du": 600,
+        "sh": 500
+    },
+    "ENDOCRINOLOGY|PROLACTIN": {
+        "jk": 500,
+        "du": 550,
+        "sh": 450
+    },
+    "ENDOCRINOLOGY|PROLACTIN ( POOLED SAMPLE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "ENDOCRINOLOGY|PROTEIN C FUNCTIONAL": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ENDOCRINOLOGY|PROTEIN S FUNCTIONAL": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ENDOCRINOLOGY|PSA FREE": {
+        "jk": 900,
+        "du": 900,
+        "sh": 800
+    },
+    "ENDOCRINOLOGY|PSA FREE/PSA TOTAL RATIO": {
+        "jk": 1700,
+        "du": 1700,
+        "sh": 1700
+    },
+    "ENDOCRINOLOGY|PSA TOTAL": {
+        "jk": 800,
+        "du": 800,
+        "sh": 550
+    },
+    "ENDOCRINOLOGY|PTH (INTACT)": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ENDOCRINOLOGY|QF-PCR": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ENDOCRINOLOGY|QUADRUPLE MARKER (INTEGRATED)": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ENDOCRINOLOGY|QUADRUPLE TEST": {
+        "jk": 3200,
+        "du": 3200,
+        "sh": 3200
+    },
+    "ENDOCRINOLOGY|RUBELLA (IGG)": {
+        "jk": 600,
+        "du": 600,
+        "sh": 500
+    },
+    "ENDOCRINOLOGY|RUBELLA IGG AVIDITY": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|RUBELLA IGM": {
+        "jk": 600,
+        "du": 600,
+        "sh": 500
+    },
+    "ENDOCRINOLOGY|RUBELLA IGM & IGG": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|RUBELLA VIRUS RNA DETECTION QUALITATIVE,PCR": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ENDOCRINOLOGY|SCL-70 (SCLERODERMA) ANTIBODY": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1300
+    },
+    "ENDOCRINOLOGY|SELENIUM, SERUM": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ENDOCRINOLOGY|SERUM CHROMOGRANIN A": {
+        "jk": 7500,
+        "du": 7500,
+        "sh": 7500
+    },
+    "ENDOCRINOLOGY|SERUM EPO ( ERYTHROPOIETIN)": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ENDOCRINOLOGY|SHBG SEX HORMONE BINDING GLOBULIN": {
+        "jk": 2350,
+        "du": 2350,
+        "sh": 2350
+    },
+    "ENDOCRINOLOGY|SM(SMITH) ANTIBODY IGG": {
+        "jk": 1100,
+        "du": 1100,
+        "sh": 1100
+    },
+    "ENDOCRINOLOGY|SSA OR RO ANTIBODY": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ENDOCRINOLOGY|SSB OR LA ANTIBODY": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ENDOCRINOLOGY|T3": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "ENDOCRINOLOGY|T3 AND T4": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "ENDOCRINOLOGY|T4": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "ENDOCRINOLOGY|TARGET MUTATION ANALYSIS (2 VARIANTS)": {
+        "jk": 15000,
+        "du": 15000,
+        "sh": 15000
+    },
+    "ENDOCRINOLOGY|TESTOSTERONE - TOTAL": {
+        "jk": 600,
+        "du": 700,
+        "sh": 500
+    },
+    "ENDOCRINOLOGY|TESTOSTERONE FREE": {
+        "jk": 1850,
+        "du": 1850,
+        "sh": 1850
+    },
+    "ENDOCRINOLOGY|THYROID PROFILE(T3,T4,TSH)": {
+        "jk": 300,
+        "du": 700,
+        "sh": 700
+    },
+    "ENDOCRINOLOGY|TORCH IGG": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|TORCH IGG & IGM": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 2400
+    },
+    "ENDOCRINOLOGY|TORCH IGM": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 1200
+    },
+    "ENDOCRINOLOGY|TOXOPLASMA IGG": {
+        "jk": 600,
+        "du": 600,
+        "sh": 500
+    },
+    "ENDOCRINOLOGY|TOXOPLASMA IGG AVIDITY": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "ENDOCRINOLOGY|TOXOPLASMA IGG+IGM": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|TOXOPLASMA IGM": {
+        "jk": 600,
+        "du": 600,
+        "sh": 500
+    },
+    "ENDOCRINOLOGY|TRIPLE TEST": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2600
+    },
+    "ENDOCRINOLOGY|TSH": {
+        "jk": 150,
+        "du": 104,
+        "sh": 300
+    },
+    "ENDOCRINOLOGY|TSH RECEPTOR ANTIBODY": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ENDOCRINOLOGY|TSH ULTRASENSITIVE": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "ENDOCRINOLOGY|TTG IGA (TISSUE TRANSGLUTAMINASE ANTIBODY)": {
+        "jk": 1100,
+        "du": 1100,
+        "sh": 1050
+    },
+    "ENDOCRINOLOGY|U1RNP IGG ANTIBODIES, SERUM": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ENDOCRINOLOGY|VALPROIC ACID (VALPROATE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 750
+    },
+    "ENDOCRINOLOGY|VARICELLA ZOSTER VIRUS ANTIBODIES IGG": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|VARICELLA ZOSTER VIRUS ANTIBODIES IGM": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|VITAMIN A (RETINOL)": {
+        "jk": 6000,
+        "du": 6000,
+        "sh": 6000
+    },
+    "ENDOCRINOLOGY|VITAMIN B12": {
+        "jk": 800,
+        "du": 290,
+        "sh": 1000
+    },
+    "ENDOCRINOLOGY|VITAMIN B12, ACTIVE; HOLOTRANSCOBALAMIN": {
+        "jk": 1600,
+        "du": 1600,
+        "sh": 1600
+    },
+    "ENDOCRINOLOGY|VITAMIN D, 1, 25-DIHYDROXY": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ENDOCRINOLOGY|VITAMIN D25 HYDROXY": {
+        "jk": 1300,
+        "du": 650,
+        "sh": 1500
+    },
+    "ENDOCRINOLOGY|WEIL FELIX TEST": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "HAEMATOLOGY|ABSOLUTE EOSINOPHIL COUNT": {
+        "jk": 150,
+        "du": 150,
+        "sh": 150
+    },
+    "HAEMATOLOGY|ABSOLUTE NEUTROPHIL COUNT": {
+        "jk": 150,
+        "du": 150,
+        "sh": 120
+    },
+    "HAEMATOLOGY|AEC/TEC (ABSOLUTE EOSINOPHIL COUNT)": {
+        "jk": 150,
+        "du": 150,
+        "sh": 150
+    },
+    "HAEMATOLOGY|APTT/PTTK(ACTIVATED PARTIAL THROMBOPLASTIN TIME)": {
+        "jk": 450,
+        "du": 500,
+        "sh": 350
+    },
+    "HAEMATOLOGY|BLOOD GROUP RH TYPE": {
+        "jk": 100,
+        "du": 150,
+        "sh": 100
+    },
+    "HAEMATOLOGY|BT (BLEEDING TIME )": {
+        "jk": 200,
+        "du": 200,
+        "sh": 100
+    },
+    "HAEMATOLOGY|BT/CT": {
+        "jk": 400,
+        "du": 400,
+        "sh": 200
+    },
+    "HAEMATOLOGY|C3 COMPLEMENT": {
+        "jk": 650,
+        "du": 650,
+        "sh": 650
+    },
+    "HAEMATOLOGY|C4 COMPLEMENT": {
+        "jk": 650,
+        "du": 650,
+        "sh": 650
+    },
+    "HAEMATOLOGY|CBC (COMPLETE BLOOD COUNT)": {
+        "jk": 300,
+        "du": 350,
+        "sh": 350
+    },
+    "HAEMATOLOGY|CD19": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "HAEMATOLOGY|CD20": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "HAEMATOLOGY|COMPLETE HAEMOGRAM": {
+        "jk": 350,
+        "du": 450,
+        "sh": 400
+    },
+    "HAEMATOLOGY|CT (CLOTTING TIME)": {
+        "jk": 200,
+        "du": 200,
+        "sh": 100
+    },
+    "HAEMATOLOGY|D-DIMER": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "HAEMATOLOGY|DCT (DIRECT COOMB TEST)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 300
+    },
+    "HAEMATOLOGY|DLC(DIFFERENTIAL)": {
+        "jk": 100,
+        "du": 150,
+        "sh": 100
+    },
+    "HAEMATOLOGY|ESR": {
+        "jk": 100,
+        "du": 150,
+        "sh": 120
+    },
+    "HAEMATOLOGY|FACTOR VIII FUNCTIONAL": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "HAEMATOLOGY|FDP (FIBRINOGEN DEGRADATION PRODUCTS)": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "HAEMATOLOGY|FLUID FOR DLC": {
+        "jk": 150,
+        "du": 150,
+        "sh": 150
+    },
+    "HAEMATOLOGY|FLUID FOR TLC": {
+        "jk": 150,
+        "du": 150,
+        "sh": 150
+    },
+    "HAEMATOLOGY|G6PD": {
+        "jk": 700,
+        "du": 700,
+        "sh": 600
+    },
+    "HAEMATOLOGY|HAEMOGRAM": {
+        "jk": 350,
+        "du": 200,
+        "sh": null
+    },
+    "HAEMATOLOGY|HB ELECTROPHORESIS (HPLC)": {
+        "jk": 1000,
+        "du": 506,
+        "sh": 1000
+    },
+    "HAEMATOLOGY|HB (HAEMOGLOBIN)": {
+        "jk": 100,
+        "du": 120,
+        "sh": 100
+    },
+    "HAEMATOLOGY|HEMATOCRIT (PCV)": {
+        "jk": 150,
+        "du": 150,
+        "sh": 100
+    },
+    "HAEMATOLOGY|HLA - B5 (B*51/52)": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "HAEMATOLOGY|HS TROPONIN-T (HIGH SENSITIVE)": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "HAEMATOLOGY|ICT (INDIRECT COOMB TEST)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 450
+    },
+    "HAEMATOLOGY|JAK 2 V617F REFLEX TO JAK 2 EXON 12 MUTATION DETECTION": {
+        "jk": 9000,
+        "du": 9000,
+        "sh": 9000
+    },
+    "HAEMATOLOGY|LUPUS ANTICOAGULANT (LAC) BY DRVVT": {
+        "jk": 1900,
+        "du": 1900,
+        "sh": 1200
+    },
+    "HAEMATOLOGY|MALARIA PARASITE (MP)": {
+        "jk": 100,
+        "du": 150,
+        "sh": 120
+    },
+    "HAEMATOLOGY|MALARIA PV AND PF ANTIGEN": {
+        "jk": 550,
+        "du": 600,
+        "sh": 400
+    },
+    "HAEMATOLOGY|MCH": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "HAEMATOLOGY|MCHC": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "HAEMATOLOGY|MCV": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "HAEMATOLOGY|MEAN PLATELET VOLUME": {
+        "jk": 350,
+        "du": 350,
+        "sh": 350
+    },
+    "HAEMATOLOGY|MTHFR (METHYL TETRAHYDRO FOLATE REDUCTASE) GENE MUTATION, PCR": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "HAEMATOLOGY|NK CELLS": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "HAEMATOLOGY|NT-PRO BNP (N TERMINAL PRO B TYPE NATRIURETIC PEPTIDE)": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "HAEMATOLOGY|OSMOTIC FRAGILITY TEST": {
+        "jk": 700,
+        "du": 700,
+        "sh": 700
+    },
+    "HAEMATOLOGY|PCT": {
+        "jk": 150,
+        "du": 150,
+        "sh": 100
+    },
+    "HAEMATOLOGY|PDW": {
+        "jk": 150,
+        "du": 150,
+        "sh": 100
+    },
+    "HAEMATOLOGY|PERIPHERAL SMEAR": {
+        "jk": 150,
+        "du": 200,
+        "sh": 200
+    },
+    "HAEMATOLOGY|PLATELET COUNT": {
+        "jk": 150,
+        "du": 150,
+        "sh": 150
+    },
+    "HAEMATOLOGY|PNH (PAROXYSMAL NOCTURNAL HEMOGLOBINURIA) CONFIRMATION TEST": {
+        "jk": 7500,
+        "du": 7500,
+        "sh": 7500
+    },
+    "HAEMATOLOGY|PROTEIN ELECTROPHORESIS": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 800
+    },
+    "HAEMATOLOGY|PROTHROMBIN GENE MUTATION": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "HAEMATOLOGY|PROTHROMBIN TIME(PT INR)": {
+        "jk": 450,
+        "du": 350,
+        "sh": 250
+    },
+    "HAEMATOLOGY|PRP (PLATELET-RICH PLASMA)": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "HAEMATOLOGY|RBC COUNT": {
+        "jk": 150,
+        "du": 150,
+        "sh": 100
+    },
+    "HAEMATOLOGY|RDW-CV": {
+        "jk": 150,
+        "du": 150,
+        "sh": 100
+    },
+    "HAEMATOLOGY|RETICULOCYTE COUNT": {
+        "jk": 300,
+        "du": 300,
+        "sh": 200
+    },
+    "HAEMATOLOGY|THALASSEMIA GENE MUTATION TRIO": {
+        "jk": 24000,
+        "du": 24000,
+        "sh": 24000
+    },
+    "HAEMATOLOGY|THROMBOPHILIA PROFILE": {
+        "jk": 16000,
+        "du": 16000,
+        "sh": 16000
+    },
+    "HAEMATOLOGY|TLC(TOTAL LEUCOCYTE COUNT)": {
+        "jk": 100,
+        "du": 150,
+        "sh": 100
+    },
+    "HAEMATOLOGY|TRANSFERRIN SATURATION": {
+        "jk": 600,
+        "du": 600,
+        "sh": 400
+    },
+    "HAEMATOLOGY|TROP I (TROPONIN I)": {
+        "jk": 1550,
+        "du": 1550,
+        "sh": 1550
+    },
+    "HAEMATOLOGY|TROP T (TROPONIN T)": {
+        "jk": 1550,
+        "du": 1550,
+        "sh": 1550
+    },
+    "HAEMATOLOGY|TROPONIN T HIGH SENSITIVE": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "HAEMATOLOGY|VON WILLEBRAND FACTOR ACTIVITY": {
+        "jk": 10000,
+        "du": 10000,
+        "sh": 10000
+    },
+    "HAEMATOLOGY|VON WILLEBRAND FACTOR ANTIGEN": {
+        "jk": 10000,
+        "du": 10000,
+        "sh": 10000
+    },
+    "CLINICAL PATHOLOGY|SPERM DNA FRAGMENTATION TEST": {
+        "jk": 5500,
+        "du": 5500,
+        "sh": 5500
+    },
+    "CLINICAL PATHOLOGY|CANNABINOIDS (DELTA-9-THC METABOLITES) / MARIJUANA, SCREEN, URINE": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "CLINICAL PATHOLOGY|CATECHOLAMINES 24 HRS URINE": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "CLINICAL PATHOLOGY|FECAL CALPROTECTIN QUALITATIVE": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "CLINICAL PATHOLOGY|FECAL CALPROTECTIN QUANTITATIVE": {
+        "jk": 3700,
+        "du": 3700,
+        "sh": 3700
+    },
+    "CLINICAL PATHOLOGY|FLUID ROUTINE EXAMINATION (BIO, MICRO)": {
+        "jk": 950,
+        "du": 950,
+        "sh": 950
+    },
+    "CLINICAL PATHOLOGY|MEMETANEPHRINE 24 HRS URINE": {
+        "jk": 3400,
+        "du": 3400,
+        "sh": 3400
+    },
+    "CLINICAL PATHOLOGY|SEMEN FRUCTOSE, QUALITATIVE": {
+        "jk": 250,
+        "du": 250,
+        "sh": 250
+    },
+    "CLINICAL PATHOLOGY|SEMEN ROUTINE ANALYSIS (MANUAL/MICROSCOPY)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 400
+    },
+    "CLINICAL PATHOLOGY|SPERM WASH/SEMEN WASH": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1300
+    },
+    "CLINICAL PATHOLOGY|STOOL PH": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "CLINICAL PATHOLOGY|STOOL HANGING DROP": {
+        "jk": 150,
+        "du": 150,
+        "sh": 150
+    },
+    "CLINICAL PATHOLOGY|STOOL OCCULT BLOOD": {
+        "jk": 150,
+        "du": 150,
+        "sh": 150
+    },
+    "CLINICAL PATHOLOGY|STOOL ROTAVIRUS ANTIGEN": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "CLINICAL PATHOLOGY|STOOL ROUTINE(MANUAL METHOD/MICROSCOPY)": {
+        "jk": 150,
+        "du": 150,
+        "sh": 100
+    },
+    "CLINICAL PATHOLOGY|URETHRAL SMEAR (GRAM STAIN)": {
+        "jk": 390,
+        "du": 390,
+        "sh": 390
+    },
+    "CLINICAL PATHOLOGY|URINE BENCE JONES PROTEINS": {
+        "jk": 600,
+        "du": 600,
+        "sh": 250
+    },
+    "CLINICAL PATHOLOGY|URINE FOR ALBUMIN CREATININE RATIO(24 HRS)": {
+        "jk": 350,
+        "du": 350,
+        "sh": 350
+    },
+    "CLINICAL PATHOLOGY|URINE FOR BILE SALT": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "CLINICAL PATHOLOGY|URINE FOR BILE SALT AND BILE PIGMENT (BS/BP)": {
+        "jk": 250,
+        "du": 250,
+        "sh": 200
+    },
+    "CLINICAL PATHOLOGY|URINE FOR BS/PP": {
+        "jk": 250,
+        "du": 250,
+        "sh": 200
+    },
+    "CLINICAL PATHOLOGY|URINE FOR CHYLE TEST": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "CLINICAL PATHOLOGY|URINE FOR LEUCOCYTES": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "CLINICAL PATHOLOGY|URINE FOR PH": {
+        "jk": 120,
+        "du": 120,
+        "sh": 50
+    },
+    "CLINICAL PATHOLOGY|URINE FOR PORPHOBILINOGEN, QUALITATIVE": {
+        "jk": 3800,
+        "du": 3800,
+        "sh": 3800
+    },
+    "CLINICAL PATHOLOGY|URINE FOR PORPHOBILINOGEN, QUANTATIVE (24 HRS)": {
+        "jk": 3800,
+        "du": 3800,
+        "sh": 3800
+    },
+    "CLINICAL PATHOLOGY|URINE FOR TB-PCR": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "CLINICAL PATHOLOGY|URINE FOR UROBILINOGEN": {
+        "jk": 150,
+        "du": 150,
+        "sh": 100
+    },
+    "CLINICAL PATHOLOGY|URINE KETONE AND SUGAR": {
+        "jk": 200,
+        "du": 200,
+        "sh": 200
+    },
+    "CLINICAL PATHOLOGY|URINE KETONE BODY": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "CLINICAL PATHOLOGY|URINE OSMOLALITY": {
+        "jk": null,
+        "du": null,
+        "sh": 750
+    },
+    "CLINICAL PATHOLOGY|URINE PREGNANCY TEST": {
+        "jk": 150,
+        "du": 150,
+        "sh": 100
+    },
+    "CLINICAL PATHOLOGY|URINE PROTEIN": {
+        "jk": 80,
+        "du": 80,
+        "sh": 250
+    },
+    "CLINICAL PATHOLOGY|URINE ROUTINE (STRIP/MICROSCOPY)": {
+        "jk": 100,
+        "du": 40,
+        "sh": 100
+    },
+    "CLINICAL PATHOLOGY|URINE SUGAR": {
+        "jk": 70,
+        "du": 80,
+        "sh": 50
+    },
+    "CLINICAL PATHOLOGY|URINE SUGAR 1 HRS": {
+        "jk": 80,
+        "du": 80,
+        "sh": 80
+    },
+    "CLINICAL PATHOLOGY|URINE SUGAR 2 HRS": {
+        "jk": 80,
+        "du": 80,
+        "sh": 80
+    },
+    "CLINICAL PATHOLOGY|URINE SUGAR 3 HRS": {
+        "jk": 80,
+        "du": 80,
+        "sh": 80
+    },
+    "CLINICAL PATHOLOGY|URINE SUGAR F": {
+        "jk": 80,
+        "du": 80,
+        "sh": 80
+    },
+    "CLINICAL PATHOLOGY|VMA 24 HOURS URINE": {
+        "jk": 3800,
+        "du": 3800,
+        "sh": 3800
+    },
+    "CLINICAL PATHOLOGY|VMA RANDOM URINE": {
+        "jk": 3800,
+        "du": 3800,
+        "sh": 3800
+    },
+    "SEROLOGY|AMOEBIC SEROLOGY IGG SERUM": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "SEROLOGY|ANTI HCV ANTIBODIES": {
+        "jk": 1250,
+        "du": 1250,
+        "sh": 600
+    },
+    "SEROLOGY|ANTI MEASLES ANTIBODY (IGG)": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "SEROLOGY|ANTI MEASLES ANTIBODY (IGM)": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "SEROLOGY|ANTI SPERM ANTIBODY": {
+        "jk": 1100,
+        "du": 1100,
+        "sh": 1100
+    },
+    "SEROLOGY|ASPERGILLUS ANTIBODY IGG": {
+        "jk": 1900,
+        "du": 1900,
+        "sh": 1900
+    },
+    "SEROLOGY|ASPERGILLUS ANTIBODY IGG IGM": {
+        "jk": 3800,
+        "du": 3800,
+        "sh": 3800
+    },
+    "SEROLOGY|ASPERGILLUS IGM ANTIBODY": {
+        "jk": 1700,
+        "du": 1700,
+        "sh": 1700
+    },
+    "SEROLOGY|CD3,CD4&CD8 COUNTS": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "SEROLOGY|CHIKUNGUNYA ANTIBODY (IGM)": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 800
+    },
+    "SEROLOGY|CHIKUNGUNYA IGM ELISA": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "SEROLOGY|CHIKUNGUNYA PCR": {
+        "jk": 2200,
+        "du": 2200,
+        "sh": 2200
+    },
+    "SEROLOGY|CHLAMYDIA TRACHOMATIS IGG ANTIBODY": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "SEROLOGY|CHLAMYDIA TRACHOMATIS IGM ANTIBODY": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "SEROLOGY|DENGUE IGG": {
+        "jk": 600,
+        "du": 1000,
+        "sh": 600
+    },
+    "SEROLOGY|DENGUE IGG & IGM": {
+        "jk": 1200,
+        "du": 2000,
+        "sh": 1200
+    },
+    "SEROLOGY|DENGUE IGG (ELISA)": {
+        "jk": 1200,
+        "du": 1000,
+        "sh": 500
+    },
+    "SEROLOGY|DENGUE IGM": {
+        "jk": 600,
+        "du": 1000,
+        "sh": 600
+    },
+    "SEROLOGY|DENGUE IGM (ELISA)": {
+        "jk": 1200,
+        "du": 1000,
+        "sh": 500
+    },
+    "SEROLOGY|DENGUE NS1 & IGM & IGG": {
+        "jk": 1800,
+        "du": 2500,
+        "sh": 1500
+    },
+    "SEROLOGY|DENGUE NS1 (IMMUNOCHROMATOGRAPHY)": {
+        "jk": 600,
+        "du": 1500,
+        "sh": 600
+    },
+    "SEROLOGY|DENGUE NS1 ANTIGEN(ELISA)": {
+        "jk": 1000,
+        "du": 1500,
+        "sh": 1000
+    },
+    "SEROLOGY|ECHINOCOCCUS (HYDATID SEROLOGY) SERUM": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "SEROLOGY|HBSAG": {
+        "jk": 450,
+        "du": 500,
+        "sh": 400
+    },
+    "SEROLOGY|HBSAG ELISA": {
+        "jk": 1000,
+        "du": 600,
+        "sh": 600
+    },
+    "SEROLOGY|HCV GENOTYPE": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "SEROLOGY|HELICOBACTER PYLORI (H. PYLORI) IGA": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "SEROLOGY|HEPATITIS B PROFILE": {
+        "jk": null,
+        "du": null,
+        "sh": 3600
+    },
+    "SEROLOGY|HIV 1 & 2 ( P 24 ANTIGEN)": {
+        "jk": 600,
+        "du": 600,
+        "sh": 600
+    },
+    "SEROLOGY|HIV 1&2 WESTERN BLOT": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "SEROLOGY|HIV ELISA": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "SEROLOGY|HIV I & II ANTIBODY (IMMUNOCHROMATOGRAPHY)": {
+        "jk": 450,
+        "du": 550,
+        "sh": 400
+    },
+    "SEROLOGY|HIV RNA QUANTITIVE REAL TIME PCR": {
+        "jk": 6000,
+        "du": 6000,
+        "sh": 6000
+    },
+    "SEROLOGY|MANTOUX TEST": {
+        "jk": 150,
+        "du": 200,
+        "sh": 150
+    },
+    "SEROLOGY|TPHA (TREPONEMA PALLIDUM HEMAGGLUTINATION)": {
+        "jk": 650,
+        "du": 650,
+        "sh": 650
+    },
+    "SEROLOGY|TYPHIDOT IGG": {
+        "jk": 250,
+        "du": 400,
+        "sh": 250
+    },
+    "SEROLOGY|TYPHIDOT IGM": {
+        "jk": 250,
+        "du": 400,
+        "sh": 250
+    },
+    "SEROLOGY|VDRL": {
+        "jk": 350,
+        "du": 200,
+        "sh": 150
+    },
+    "SEROLOGY|WIDAL TEST": {
+        "jk": 150,
+        "du": 300,
+        "sh": 200
+    },
+    "SEROLOGY|WIDAL TEST TUBE METHOD": {
+        "jk": 200,
+        "du": 200,
+        "sh": 200
+    },
+    "MICROBIOLOGY|AFB STAIN": {
+        "jk": 200,
+        "du": 300,
+        "sh": 300
+    },
+    "MICROBIOLOGY|AFB CULTURE (MYCOBACTERIA)": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "MICROBIOLOGY|BLOOD CULTURE AND SENSITIVITY": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "MICROBIOLOGY|COVID RT-PCR": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "MICROBIOLOGY|CULTURE AND SENSITIVITY OTHERS": {
+        "jk": 550,
+        "du": 550,
+        "sh": 550
+    },
+    "MICROBIOLOGY|CULTURE AND SENSITIVITY THROAT SWAB": {
+        "jk": 550,
+        "du": 550,
+        "sh": 550
+    },
+    "MICROBIOLOGY|CULTURE AND SENSITIVITY( BACTEC METHOD)": {
+        "jk": 700,
+        "du": 700,
+        "sh": 700
+    },
+    "MICROBIOLOGY|FECAL ELASTASE": {
+        "jk": 5500,
+        "du": 5500,
+        "sh": 5500
+    },
+    "MICROBIOLOGY|FLUID FOR AFB STAIN": {
+        "jk": 300,
+        "du": 300,
+        "sh": 150
+    },
+    "MICROBIOLOGY|FUNGAL CULTURE AND SENSITIVITY": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1000
+    },
+    "MICROBIOLOGY|FUNGAL STAIN": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "MICROBIOLOGY|GENEXPERT": {
+        "jk": 3600,
+        "du": 3600,
+        "sh": 3600
+    },
+    "MICROBIOLOGY|GRAM STAIN": {
+        "jk": 200,
+        "du": 300,
+        "sh": 150
+    },
+    "MICROBIOLOGY|HIGH VAGINAL SWAB CULTURE SENSITIVITY": {
+        "jk": 750,
+        "du": 750,
+        "sh": 750
+    },
+    "MICROBIOLOGY|KOH STAINING": {
+        "jk": 200,
+        "du": 200,
+        "sh": 200
+    },
+    "MICROBIOLOGY|PAIRED BLOOD CULTURE & SENSITIVITY": {
+        "jk": 1100,
+        "du": 1100,
+        "sh": 1100
+    },
+    "MICROBIOLOGY|PUS CULTURE AND SENSITIVITY": {
+        "jk": 550,
+        "du": 250,
+        "sh": 500
+    },
+    "MICROBIOLOGY|PUS FOR AFB STAIN": {
+        "jk": 200,
+        "du": 300,
+        "sh": 300
+    },
+    "MICROBIOLOGY|PUS FOR GRAM STAIN": {
+        "jk": 200,
+        "du": 200,
+        "sh": 200
+    },
+    "MICROBIOLOGY|SEMEN CULTURE AND SENSITIVITY": {
+        "jk": 800,
+        "du": 800,
+        "sh": 500
+    },
+    "MICROBIOLOGY|SPUTUM CULTURE AND SENSITIVITY": {
+        "jk": 800,
+        "du": 250,
+        "sh": 500
+    },
+    "MICROBIOLOGY|SPUTUM FOR AFB STAIN": {
+        "jk": 200,
+        "du": 300,
+        "sh": 300
+    },
+    "MICROBIOLOGY|SPUTUM ROUTINE EXAMINATION": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "MICROBIOLOGY|STOOL CULTURE AND SENSITIVITY": {
+        "jk": 800,
+        "du": 800,
+        "sh": 500
+    },
+    "MICROBIOLOGY|STOOL H. PYLORI ANTIGEN": {
+        "jk": 1600,
+        "du": 1600,
+        "sh": 1600
+    },
+    "MICROBIOLOGY|STOOL REDUCING SUBSTANCES": {
+        "jk": 100,
+        "du": 100,
+        "sh": 100
+    },
+    "MICROBIOLOGY|TB PCR -(PRODUCT OF CONCEPTION )": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "MICROBIOLOGY|TB- PCR(MENSTRUAL BLOOD)": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "MICROBIOLOGY|TB-PCR": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "MICROBIOLOGY|THROAT SWAB FOR GRAM STAIN": {
+        "jk": 300,
+        "du": 300,
+        "sh": 300
+    },
+    "MICROBIOLOGY|URINE CULTURE AND SENSITIVITY": {
+        "jk": 550,
+        "du": 800,
+        "sh": 400
+    },
+    "MICROBIOLOGY|URINE FOR AFB STAIN": {
+        "jk": 200,
+        "du": 300,
+        "sh": 300
+    },
+    "MICROBIOLOGY|URINE FOR GRAMS STAIN": {
+        "jk": 200,
+        "du": 300,
+        "sh": 300
+    },
+    "CYTOLOGY|CYTOLOGY FOR FUNGAL ELEMENTS": {
+        "jk": 200,
+        "du": 200,
+        "sh": 200
+    },
+    "CYTOLOGY|CYTOLOGY FOR MALIGNANT CELLS": {
+        "jk": 850,
+        "du": 850,
+        "sh": 400
+    },
+    "CYTOLOGY|ENDOMETRIAL ASPIRATE CYTOLOGY": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "CYTOLOGY|FLUID FOR CYTOLOGY": {
+        "jk": 700,
+        "du": 700,
+        "sh": 700
+    },
+    "CYTOLOGY|FLUID FOR CYTOLOGY BOTH SIDE": {
+        "jk": 1400,
+        "du": 1400,
+        "sh": 1400
+    },
+    "CYTOLOGY|FLUID FOR PAP": {
+        "jk": 850,
+        "du": 850,
+        "sh": 850
+    },
+    "CYTOLOGY|FLUID FOR WET MOUNT EXAMINATION": {
+        "jk": 700,
+        "du": 700,
+        "sh": 700
+    },
+    "CYTOLOGY|FNAC": {
+        "jk": 1000,
+        "du": 400,
+        "sh": 850
+    },
+    "CYTOLOGY|FNAC (BOTH BREAST)": {
+        "jk": 1700,
+        "du": 1700,
+        "sh": 1700
+    },
+    "CYTOLOGY|FNAC (BOTH TESTES)": {
+        "jk": 1700,
+        "du": 1700,
+        "sh": 1700
+    },
+    "CYTOLOGY|FNAC FROM MULTIPLE SITES": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "CYTOLOGY|FNAC SLIDE": {
+        "jk": 300,
+        "du": 300,
+        "sh": 300
+    },
+    "CYTOLOGY|FNAC TWO SITES": {
+        "jk": 1700,
+        "du": 1700,
+        "sh": 1700
+    },
+    "CYTOLOGY|HPV QUALITATIVE PCR": {
+        "jk": 1750,
+        "du": 1750,
+        "sh": 1750
+    },
+    "CYTOLOGY|LBC, LIQUID BASED CYTOLOGY": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "CYTOLOGY|PAP SMEAR": {
+        "jk": 850,
+        "du": 850,
+        "sh": 400
+    },
+    "CYTOLOGY|SCRAPING CYTOLOGY (BUCCAL/ORAL)": {
+        "jk": 850,
+        "du": 850,
+        "sh": 850
+    },
+    "CYTOLOGY|SPUTUM FOR CYTOLOGY": {
+        "jk": 700,
+        "du": 700,
+        "sh": 700
+    },
+    "CYTOLOGY|URINE FOR CYTOLOGY": {
+        "jk": 700,
+        "du": 700,
+        "sh": 700
+    },
+    "CYTOLOGY|URINE FOR MALIGNANT CELLS": {
+        "jk": 850,
+        "du": 850,
+        "sh": 400
+    },
+    "CYTOLOGY|VAGINAL CYTOLOGY": {
+        "jk": 850,
+        "du": 850,
+        "sh": 600
+    },
+    "CYTOLOGY|VAGINAL SWAB ASPIRATION AND CYTOLOGY": {
+        "jk": 850,
+        "du": 850,
+        "sh": 600
+    },
+    "CYTOLOGY|WET MOUNT EXAMINATION": {
+        "jk": 150,
+        "du": 150,
+        "sh": 150
+    },
+    "HISTOPATHOLOGY|BIOPSY AFB STAIN": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "HISTOPATHOLOGY|BIOPSY APPENDIX": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "HISTOPATHOLOGY|BIOPSY B/L BREAST": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "HISTOPATHOLOGY|BIOPSY B/L MASTECTOMY": {
+        "jk": 2800,
+        "du": 2800,
+        "sh": 2800
+    },
+    "HISTOPATHOLOGY|BIOPSY BREAST": {
+        "jk": 1400,
+        "du": 1400,
+        "sh": 1400
+    },
+    "HISTOPATHOLOGY|BIOPSY BREAST LUMP": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "HISTOPATHOLOGY|BIOPSY CERVICAL": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "HISTOPATHOLOGY|BIOPSY ENDOMETRIUM": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "HISTOPATHOLOGY|BIOPSY ENDOSCOPIC": {
+        "jk": 800,
+        "du": 800,
+        "sh": 500
+    },
+    "HISTOPATHOLOGY|BIOPSY FALLOPIAN TUBES": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "HISTOPATHOLOGY|BIOPSY FIBROIDS": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "HISTOPATHOLOGY|BIOPSY GALL BLADDER": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "HISTOPATHOLOGY|BIOPSY GASTRO/COLONO": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "HISTOPATHOLOGY|BIOPSY LARGE COMPLEX": {
+        "jk": 4200,
+        "du": 4200,
+        "sh": 4200
+    },
+    "HISTOPATHOLOGY|BIOPSY LARGE COMPLEX / CANCER SPECIMEN": {
+        "jk": 4200,
+        "du": 4200,
+        "sh": 4200
+    },
+    "HISTOPATHOLOGY|BIOPSY LARGE TISSUE": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "HISTOPATHOLOGY|BIOPSY MEDIUM TISSUE": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "HISTOPATHOLOGY|BIOPSY PRODUCTS OF CONCEPTION": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "HISTOPATHOLOGY|BIOPSY PROSTATE": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "HISTOPATHOLOGY|BIOPSY SKIN": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "HISTOPATHOLOGY|BIOPSY SLIDES SECOND OPINION": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "HISTOPATHOLOGY|BIOPSY SMALL TISSUE": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "HISTOPATHOLOGY|BIOPSY SMALL TISSUE 1 SEC": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "HISTOPATHOLOGY|BIOPSY SMALL TISSUE 2 SEC": {
+        "jk": 1600,
+        "du": 1600,
+        "sh": 1600
+    },
+    "HISTOPATHOLOGY|BIOPSY TRUCUT": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "HISTOPATHOLOGY|BIOPSY TRUCUT /CORE": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "HISTOPATHOLOGY|BIOPSY USG GUIDED KIDNEY": {
+        "jk": 3800,
+        "du": 3800,
+        "sh": 3800
+    },
+    "HISTOPATHOLOGY|BIOPSY UTERUS": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "HISTOPATHOLOGY|BREAST CANCER PANEL 4": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "HISTOPATHOLOGY|ER PR HER 2 NEU (IHC ON BIOPSY)": {
+        "jk": 6000,
+        "du": 6000,
+        "sh": 6000
+    },
+    "HISTOPATHOLOGY|HISTOPATHOLOGY KIDNEY BIOPSY PANEL 1": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "HISTOPATHOLOGY|HISTOPATHOLOGY, SPECIAL STAIN, ACID FAST (Z.N STAIN)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "HISTOPATHOLOGY|HISTOPATHOLOGY, SPECIAL STAIN, GIEMSA": {
+        "jk": 550,
+        "du": 550,
+        "sh": 550
+    },
+    "HISTOPATHOLOGY|TISSUE KARYOTYPING": {
+        "jk": 6500,
+        "du": 6500,
+        "sh": 6500
+    },
+    "ULTRASONOGRAPHY|BETA THALASSEMIA MUTATION-AMNIO/CVS": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|CARRIER SCREENING FOR SMA (MLPA)": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|CF GENE SEQUENCING": {
+        "jk": 28000,
+        "du": 28000,
+        "sh": 28000
+    },
+    "ULTRASONOGRAPHY|CFTR MUTATION": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|CHORIONIC VILLOUS SAMPLING (KT+FISH)": {
+        "jk": 23000,
+        "du": 23000,
+        "sh": 23000
+    },
+    "ULTRASONOGRAPHY|CLINICAL EXOME SEQUENCING": {
+        "jk": 35000,
+        "du": 35000,
+        "sh": 35000
+    },
+    "ULTRASONOGRAPHY|CMV PCR AMNIOCENTESIS": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "ULTRASONOGRAPHY|CVS/CHORIONIC VILLOUS SAMPLING": {
+        "jk": 12000,
+        "du": 12000,
+        "sh": 12000
+    },
+    "ULTRASONOGRAPHY|DMD MUTATION ANALYSIS": {
+        "jk": 9000,
+        "du": 9000,
+        "sh": 9000
+    },
+    "ULTRASONOGRAPHY|DOPPLER ILIAC VESSELS": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|EXTENDED NIPT": {
+        "jk": 22000,
+        "du": 22000,
+        "sh": 22000
+    },
+    "ULTRASONOGRAPHY|FETAL REDUCTION (DOUBLE)": {
+        "jk": 30000,
+        "du": 30000,
+        "sh": 30000
+    },
+    "ULTRASONOGRAPHY|FETAL REDUCTION (SINGLE)": {
+        "jk": 15000,
+        "du": 15000,
+        "sh": 15000
+    },
+    "ULTRASONOGRAPHY|FETAL REDUCTION WITH NT NB SCAN": {
+        "jk": 17000,
+        "du": 17000,
+        "sh": 17000
+    },
+    "ULTRASONOGRAPHY|FETAL SEQ. POC": {
+        "jk": 10000,
+        "du": 10000,
+        "sh": 10000
+    },
+    "ULTRASONOGRAPHY|FISH (PRODUCTS OF CONCEPTION)": {
+        "jk": 12000,
+        "du": 12000,
+        "sh": 12000
+    },
+    "ULTRASONOGRAPHY|GENETIC CONSULTATION": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ULTRASONOGRAPHY|GENETIC CONSULTATION FOLLOW UP": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ULTRASONOGRAPHY|KARYOTYPE POC BY NGS": {
+        "jk": 10000,
+        "du": 10000,
+        "sh": 10000
+    },
+    "ULTRASONOGRAPHY|KARYOTYPE- AMNIO/CVS (CULTURE)": {
+        "jk": 6500,
+        "du": 6500,
+        "sh": 6500
+    },
+    "ULTRASONOGRAPHY|KARYOTYPING (+/- FISH) PRODUCTS OF CONCEPTION": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|LIMITED OBSTETRIC DOPPLER": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ULTRASONOGRAPHY|LIMITED OBSTETRIC SCAN": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "ULTRASONOGRAPHY|LIMITED STUDY DOPPLER TWINS": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|LIVER ELASTOGRAPHY (FIBROSCAN)": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ULTRASONOGRAPHY|LIVER FAT QUANTIFICATION": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|MAMMOGRAPHY+ULTRASOUND BOTH BREAST": {
+        "jk": 5500,
+        "du": 5500,
+        "sh": 5500
+    },
+    "ULTRASONOGRAPHY|MICROARRAY PRODUCTS OF CONCEPTION": {
+        "jk": 18000,
+        "du": 18000,
+        "sh": 18000
+    },
+    "ULTRASONOGRAPHY|MLPA FOR BWS": {
+        "jk": 15000,
+        "du": 15000,
+        "sh": 15000
+    },
+    "ULTRASONOGRAPHY|NCV BOTH LOWER LIMBS": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|NEWBORN SCREENING 7 + HEMOGLOBINOPATHIES": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|NEWBORN SCREENING PANEL 7": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|NIPT (5 CHROMOSOMES)": {
+        "jk": 12000,
+        "du": 12000,
+        "sh": 12000
+    },
+    "ULTRASONOGRAPHY|NIPT (ALL CHROMOSOMES)": {
+        "jk": 14000,
+        "du": 14000,
+        "sh": 14000
+    },
+    "ULTRASONOGRAPHY|NT NB SCAN TRIPLET & SINGLE REDUCTION": {
+        "jk": 21000,
+        "du": 21000,
+        "sh": 21000
+    },
+    "ULTRASONOGRAPHY|ONLINE CONSULTATION": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ULTRASONOGRAPHY|PROCEDURE + WES + CNV + QF PCR + MCC (AMNIOTIC FLUID)": {
+        "jk": 40000,
+        "du": 40000,
+        "sh": 40000
+    },
+    "ULTRASONOGRAPHY|PROCEDURE + WES + CNV + QF PCR + MCC (CVS)": {
+        "jk": 30000,
+        "du": 30000,
+        "sh": 30000
+    },
+    "ULTRASONOGRAPHY|PVRU/POST VOID RESIDUAL URINE": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "ULTRASONOGRAPHY|QF PCR+MCC+MICROARRAY (CMA) 750K": {
+        "jk": 18000,
+        "du": 18000,
+        "sh": 18000
+    },
+    "ULTRASONOGRAPHY|RAPID EXOME SEQUENCING": {
+        "jk": 25000,
+        "du": 25000,
+        "sh": 25000
+    },
+    "ULTRASONOGRAPHY|SINGLE VARIANT ANALYSIS": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|SLEEP STUDY": {
+        "jk": 16000,
+        "du": 16000,
+        "sh": 16000
+    },
+    "ULTRASONOGRAPHY|SMA MUTATUION ANALYSIS": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|SPA DOPPLER": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|TORCH PCR- AMNIO": {
+        "jk": 7500,
+        "du": 7500,
+        "sh": 7500
+    },
+    "ULTRASONOGRAPHY|USG ANKLE": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG AXILLA": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG BREAST": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG CHEST": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "ULTRASONOGRAPHY|USG ELBOW JOINT": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG FETAL ECHO": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ULTRASONOGRAPHY|USG FETAL ECHO TWIN": {
+        "jk": 8000,
+        "du": 8000,
+        "sh": 8000
+    },
+    "ULTRASONOGRAPHY|USG FOOT AND ANKLE": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG HAND": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG UPPER ABDOMEN": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "ULTRASONOGRAPHY|USG 3D GYNAE SCAN": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ULTRASONOGRAPHY|USG 3D GYNEE DOPPLER": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG 3D LOWER ABD": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ULTRASONOGRAPHY|USG 3D/4D ANY REGION": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ULTRASONOGRAPHY|USG ABDOMINAL WALL": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG ACHONDROPLASIA": {
+        "jk": 6000,
+        "du": 6000,
+        "sh": 6000
+    },
+    "ULTRASONOGRAPHY|USG ADD TVS": {
+        "jk": 700,
+        "du": 700,
+        "sh": 700
+    },
+    "ULTRASONOGRAPHY|USG ADDITIONAL 3D/4D/5D": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ULTRASONOGRAPHY|USG ADDITIONAL 3D/4D/5D TWIN": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG ALL 4 LIMBS (ART + VEN)": {
+        "jk": 20000,
+        "du": 20000,
+        "sh": 20000
+    },
+    "ULTRASONOGRAPHY|USG AMNIOCENTESIS": {
+        "jk": 10000,
+        "du": 10000,
+        "sh": 10000
+    },
+    "ULTRASONOGRAPHY|USG AORTO ILIAC DOPPLER": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG BIOPHYSICAL PROFILE": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG BIOPHYSICAL PROFILE TWINS": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|USG BOTH BREAST": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG BOTH CALF": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG BOTH EYE": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG BOTH EYE (R+L)": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG BOTH FOOT AND ANKLE": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG BOTH HIP JOINT": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG BOTH INGUINAL REGION": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG BOTH KNEE": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG BOTH SHOULDER": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG BOTH TENDOACHILLES": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ULTRASONOGRAPHY|USG BOTH TESTIS": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG BOTH WRIST JOINT": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG BRAIN": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG BREAST SINGLE SIDE": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG CARDIAC ACTIVITY": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "ULTRASONOGRAPHY|USG CARDIAC SCREENING": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "ULTRASONOGRAPHY|USG COLOR DOPPLER TWINS": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|USG CRANIUM": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER ILLIAC VESSELES": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER ART & VEN SINGLE LIMB": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER ARTERIAL AND VENOUS BOTH LIMBS": {
+        "jk": 14000,
+        "du": 14000,
+        "sh": 14000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER ARTERIAL BOTH LIMBS": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER ARTERIAL SINGLE LIMB": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER FOR UMBILICAL ARTERY": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OBS + BPS": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OBS + BPS TWINS": {
+        "jk": 9000,
+        "du": 9000,
+        "sh": 9000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OBSTETRICS": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OF CAROTID/NECK": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OF F.P.P. / A.F.I. (TWIN)": {
+        "jk": 6000,
+        "du": 6000,
+        "sh": 6000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OF LEFT HAND": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OF LOWER ABDOMEN": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OF LT ANKLE (HEEL)JT.": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OF NECK VESSELES": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OF PENIS": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OF PORTAL VESSELS": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OF SMALL PARTS": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OF TESTIS": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER OF THYROID": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER SINGLE LIMB ARTERIAL": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER SINGLE LIMB VENOUS": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER SPLENOPORTAL AXIS": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER UPPER LIMB ARTERIAL": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER VENOUS BOTH LIMBS": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|USG DOPPLER VENOUS SINGLE LIMB": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG EARLY ANOMALY SCAN": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG EARLY ANOMALY SCAN TWINS": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|USG EARLY MORPHOLOGY SCAN/EARLY LEVEL II SCAN": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ULTRASONOGRAPHY|USG EARLY PREGNANCY COLOR DOOPLER": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG EARLY PREGNANCY SCAN TVS": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG EXTREMITY": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG EYE (ONE SIDE)": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "ULTRASONOGRAPHY|USG F.W.B FOR AFI": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "ULTRASONOGRAPHY|USG FETAL ECHO TRIPLETS": {
+        "jk": 12000,
+        "du": 12000,
+        "sh": 12000
+    },
+    "ULTRASONOGRAPHY|USG FETAL SPINE": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ULTRASONOGRAPHY|USG FETAL WELL BEING WITH BPS": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG FOLLICULAR STUDY (FIVE DAYS)": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "ULTRASONOGRAPHY|USG FOLLICULR STUDY (ONE DAY)": {
+        "jk": 1100,
+        "du": 1100,
+        "sh": 1100
+    },
+    "ULTRASONOGRAPHY|USG FOR AFI": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "ULTRASONOGRAPHY|USG FOR CERVICAL LENGTH": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "ULTRASONOGRAPHY|USG FOR ENDOMETRIAL THICKNESS": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ULTRASONOGRAPHY|USG FOR FETAL HEART": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "ULTRASONOGRAPHY|USG FOR FETAL HEART TWINS": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ULTRASONOGRAPHY|USG FOR FREE FLUID (ABDOMEN)": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ULTRASONOGRAPHY|USG FWB (EARLY OBS.)": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG GUIDED FLUID ASPIRATION": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG GUIDED FNAC PROCEDURE": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG GUIDED PROCEDURE": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG GYNAE DOPPLER": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ULTRASONOGRAPHY|USG HIP JOINT": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG KNEE": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG KUB": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "ULTRASONOGRAPHY|USG KUB WITH PVR": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "ULTRASONOGRAPHY|USG LEFT TENDOACHILLES": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG LEFT THIGH": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG LEG": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG LEVEL 2": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ULTRASONOGRAPHY|USG LEVEL 2 / ANOMALY SCAN": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG LEVEL 2 TWIN": {
+        "jk": 8000,
+        "du": 8000,
+        "sh": 8000
+    },
+    "ULTRASONOGRAPHY|USG LIMITED STUDY -- OBS.": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ULTRASONOGRAPHY|USG LOCALISED ABDOMEN": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ULTRASONOGRAPHY|USG LOWER ABDOMEN": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "ULTRASONOGRAPHY|USG LOWER ABDOMEN (OBS.) TWINS": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "ULTRASONOGRAPHY|USG LOWER ABDOMEN (TVS)": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG LOWER ABDOMEN OBSTETRIC": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG LOWER ABDOMEN OBSTETRIC EARLY": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG LOWER ABDOMEN TVS (OBS)": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG LOWER ABDOMEN WITH PERINEUM": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG MARKING FOR ASCITIC TAP": {
+        "jk": 700,
+        "du": 700,
+        "sh": 700
+    },
+    "ULTRASONOGRAPHY|USG NECK": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG NEUROSONOGRAM": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG NT/NB (ULTRASOUND OBSTETRICS SCAN)": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG NT/NB TRIPLETS": {
+        "jk": 10500,
+        "du": 10500,
+        "sh": 10500
+    },
+    "ULTRASONOGRAPHY|USG NT/NB TWIN": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "ULTRASONOGRAPHY|USG NT/NF SCAN": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG OBSTETRICS FETAL WELL BEING": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG OBSTETRICS FETAL WELL BEING (TWIN)": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "ULTRASONOGRAPHY|USG ORBIT BOTH": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "ULTRASONOGRAPHY|USG ORBIT SINGLE": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG PAROTID GLAND": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG PENIS": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG PERINEUM": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG POPLITEAL REGION": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG RENAL DOPPLER": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG SCAPULAR JOINT": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG SCROTUM /TESTIS": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG SHOULDER": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG SMALL PARTS": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|USG SOFT TISSUE": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG THYROID": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG TRANSRECTAL (TRUS)": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG TVS FOR SCAR THICKNESS": {
+        "jk": 700,
+        "du": 700,
+        "sh": 700
+    },
+    "ULTRASONOGRAPHY|USG UMBILICAL ARTERY DOPPLER": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "ULTRASONOGRAPHY|USG WHOLE ABDOMEN": {
+        "jk": 2300,
+        "du": 2300,
+        "sh": 2300
+    },
+    "ULTRASONOGRAPHY|USG WHOLE ABDOMEN AND T.V.S": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "ULTRASONOGRAPHY|USG WHOLE ABDOMEN WITH OBS. SCAN": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "ULTRASONOGRAPHY|USG WHOLE ABDOMEN WITH PVR": {
+        "jk": 2300,
+        "du": 2300,
+        "sh": 2300
+    },
+    "ULTRASONOGRAPHY|USG WRIST": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "ULTRASONOGRAPHY|WHOLE EXOME SEQUENCING": {
+        "jk": 30000,
+        "du": 30000,
+        "sh": 30000
+    },
+    "ULTRASONOGRAPHY|WHOLE EXOME SEQUENCING TRIO": {
+        "jk": 45000,
+        "du": 45000,
+        "sh": 45000
+    },
+    "X-RAY DIGITAL|BARIUM DISTAL LOOPOGRAM": {
+        "jk": 6500,
+        "du": 6500,
+        "sh": 6500
+    },
+    "X-RAY DIGITAL|DIGITAL ABDOMEN KUB (CHILD)": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL ABDOMEN AP": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL ABDOMEN ERECT": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL ABDOMEN ERECT & SUPINE": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "X-RAY DIGITAL|DIGITAL ABDOMEN KUB": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "X-RAY DIGITAL|DIGITAL ABDOMEN(SUPINE)": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL BAMEAL SWALLOW": {
+        "jk": 2400,
+        "du": 2400,
+        "sh": 2400
+    },
+    "X-RAY DIGITAL|DIGITAL BARIUM ENEMA(SINGLE/DOUBLE )": {
+        "jk": 3600,
+        "du": 3600,
+        "sh": 3600
+    },
+    "X-RAY DIGITAL|DIGITAL BARIUM MEAL & FOLLOW THROUGH (BMFT)": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "X-RAY DIGITAL|DIGITAL BERIUM MEAL UGIT": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "X-RAY DIGITAL|DIGITAL BOTH ANKLE AP VIEW": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL DISTAL COLOGRAM": {
+        "jk": 2400,
+        "du": 2400,
+        "sh": 2400
+    },
+    "X-RAY DIGITAL|DIGITAL DORSAL SPINE LAT. VIEW": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL I.V.P": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "X-RAY DIGITAL|DIGITAL I.V.P (CONTTRAST EXTRA)": {
+        "jk": 3600,
+        "du": 3600,
+        "sh": 3600
+    },
+    "X-RAY DIGITAL|DIGITAL K.U.B.": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "X-RAY DIGITAL|DIGITAL K.U.B. (CHILD)": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL LEFT IND FINGER AP/LAT": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL NASAL BONE LAT VIEW (BOTH SIDES)": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL SINOGRAM/FISTULAGRAM": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "X-RAY DIGITAL|DIGITAL T-TUBE CHOLANGIOGRAPHY": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "X-RAY DIGITAL|DIGITAL THORACIC LAT VIEW": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL THORACIC SPINE AP/LAT": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "X-RAY DIGITAL|DIGITAL TMP.BONE INTRA-ORBITAL": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL UPP.HALF THORACIC AP": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|DIGITAL UPP.HALF THORACIC AP/LAT": {
+        "jk": 800,
+        "du": 800,
+        "sh": 800
+    },
+    "X-RAY DIGITAL|MAMMOGRAPHY": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "X-RAY DIGITAL|MAMMOGRAPHY SINGLE BREAST": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "X-RAY DIGITAL|MCU + RGU": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "X-RAY DIGITAL|MICTURITION CYSTOURETHROGRAM (MCU)": {
+        "jk": 5500,
+        "du": 5500,
+        "sh": 5500
+    },
+    "X-RAY DIGITAL|NCV BOTH UPPER LIMBS": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "X-RAY DIGITAL|PNS COLD VIEW": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|PNS TOWNS VIEW": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|PNS WATER VIEW": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY DIGITAL|RGU/DIGITAL RETROGRADE URETHRO.(RGU)": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "X-RAY DIGITAL|SONOMAMMOGRAPHY": {
+        "jk": 5500,
+        "du": 5500,
+        "sh": 5500
+    },
+    "X-RAY DIGITAL|XRAY WRIST WITH FOREARM AP & LAT (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY ANKLE JOINT AP (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY ANKLE JOINT AP & LAT (BOTH SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY ANKLE JOINT AP & LAT (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY ANKLE JOINT AP (BOTH SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY ANKLE JOINT LAT (BOTH SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY ANKLE JOINT LAT (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY ARM AP/LAT": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY ARM WITH ELBOW AP & LAT (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY B/L CLAVICLE AP": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY B/L FEET": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY BOTH HIP FROG VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY BOTH SHOULDER JOINT AP & LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY CERVICAL SPINE AP & LAT FLEX & EXT VIEW": {
+        "jk": 1200,
+        "du": 1200,
+        "sh": 1200
+    },
+    "X-RAY DIGITAL|XRAY CERVICAL SPINE AP & LAT VIEW": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY CERVICAL SPINE AP VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY CERVICAL SPINE LAT VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY CERVICODORS0 SPINE AP & LAT VIEW": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY CERVICODORS0 SPINE AP VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY CERVICODORS0 SPINE LAT VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY CLAVICLE AP": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY DORSAL SPINE AP & LAT VIEW": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY DORSAL SPINE AP VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY DORSAL SPINE LAT VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY DORSO LUMBAR SPINE AP LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY ELBOW AP & LAT VIEW (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY ELBOW FLEX/EXT": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY FINGER AP & LAT & OBLIQUE (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY FOOT AP & LAT & OBLIQUE VIEW(BOTH SIDES)": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "X-RAY DIGITAL|XRAY FOOT AP & LAT & OBLIQUE VIEW(SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY FOOT AP & LAT VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY FOOT AP & OBLIQUE VIEW(SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY FOREARM AP & LAT (BOTH SIDES)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY FOREARM AP & LAT (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY HAND AP": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY HAND AP (BOTH SIDES)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY HAND AP & LAT & OBLIQUE (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY HAND AP & LAT (BOTH SIDES)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY HAND AP & LAT (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY HEEL AP & AXIAL(BOTH SIDES)": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "X-RAY DIGITAL|XRAY HEEL AP & AXIAL(SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY HEEL AXIAL VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY HEEL LAT VIEW (BOTH SIDES)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY HEEL LAT VIEW (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY HIP AP & LAT (BOTH SIDES)": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1300
+    },
+    "X-RAY DIGITAL|XRAY HIP AP & LAT (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY HIP JOINT AP & LAT VIEW (BOTH SIDES)": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1300
+    },
+    "X-RAY DIGITAL|XRAY HIP JOINT AP & LAT VIEW (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY HIP JOINT AP VIEW (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY HIP WITH THIGH AP & LAT VIEW (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY HIP WITH THIGH AP VIEW (BOTH SIDES)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY HIP WITH THIGH AP VIEW (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY KNEE JOINT AP & LAT (BOTH SIDES STANDING)": {
+        "jk": 1700,
+        "du": 1700,
+        "sh": 1700
+    },
+    "X-RAY DIGITAL|XRAY KNEE JOINT AP & LAT (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY KNEE JOINT AP (BOTH SIDES)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY KNEE JOINT AP (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY KUB (ONEFILM)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY KUB (TWO FIMS)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY LEG AP & LAT": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY LEG AP VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY LEG FULL LENGTH AP & LAT VIEW (BOTH SIDE)": {
+        "jk": 1700,
+        "du": 1700,
+        "sh": 1700
+    },
+    "X-RAY DIGITAL|XRAY LEG FULL LENGTH AP & LAT VIEW (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY LEG FULL LENGTH AP VIEW (BOTH SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY LEG FULL LENGTH AP VIEW (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY LEG FULL LENGTH LAT VIEW (BOTH SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY LEG FULL LENGTH LAT VIEW (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY LEG LAT VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY LS SPINE EXTENSION & FLEXION": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY LUMBAR SPINE AP & LAT FLEX/EXT VIEW": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1300
+    },
+    "X-RAY DIGITAL|XRAY LUMBAR SPINE AP & LAT & FLEX & EXT VIEW": {
+        "jk": 1700,
+        "du": 1700,
+        "sh": 1700
+    },
+    "X-RAY DIGITAL|XRAY LUMBAR SPINE AP & LAT VIEW": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY LUMBAR SPINE AP & OBLIQUE (BOTH SIDE)": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1300
+    },
+    "X-RAY DIGITAL|XRAY LUMBAR SPINE AP & OBLIQUE (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY LUMBAR SPINE AP VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY LUMBAR SPINE LAT VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY MANDIBLE AP": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY MANDIBLE AP & PA": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY MANDIBLE PA": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY MASTOID BONE BOTH SIDES": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY MASTOID BONE SINGLE SIDE": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY NASAL BONE (BOTH SIDE )": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY NASAL BONE (SINGLE SIDE )": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY ORBIT VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY ORBIT VIEW AP": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY ORBIT VIEW LAT OBLIQUE BOTH SIDE": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY ORBIT VIEW LAT OBLIQUE SINGLE SIDE": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY PELVIS AP": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY PELVIS FROG LAT": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY PELVIS SI-JOINT AP & OBLIQUE (BOTH SIDES)": {
+        "jk": 1300,
+        "du": 1300,
+        "sh": 1300
+    },
+    "X-RAY DIGITAL|XRAY PELVIS SI-JOINT AP & OBLIQUE (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY PELVIS SI-JOINT OBLIQUE (BOTH SIDES)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY RIGHT MANDIBLE LAT OBLIQUE(EACH)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY SACRUM & COCCYGEAL AP & LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY SHOULDER JOINT AP & AXILLA (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY SHOULDER JOINT AP & LAT (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY SHOULDER JOINT AP (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY SHOULDER JOINT WITH ARM AP & LAT (SINGLE SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY SHOULDER JOINT WITH ARM AP (BOTH SIDES)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY SHOULDER JOINT WITH ARM AP (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY SHOULDER WITH CLAVICLE AP (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY SKULL AP": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY SKULL AP & LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY SKULL PA": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY SKYLINE VIEW BOTH SIDES": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY SKYLINE VIEW ONE SIDE": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY SMV VIEW/ BASE OF SKULL": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY SOFT NECK AP & LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY STERNUM BONE AP": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY STERNUM BONE AP & LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY STERNUM BONE LAT": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY STN LAT (ADENOID)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY STRONOCALVICL JOINT AP": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY STYLAOID PROCESS (BONE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY STYLAOID PROCESS LAT (BONE SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY THIGH AP/LATERAL": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY TM JOINT BOTH LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY TM JOINT CLOSE MOUTH": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY TM JOINT LAT SINGLE SIDE": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY TM JOINT OPEN MOUTH": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY TM JOINT OPEN MOUTH (BOTH SIDE)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY WRIST AP & LAT (BOTH SIDES)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY WRIST AP & LAT (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY WRIST AP VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY DIGITAL|XRAY WRIST FLEX & EXT (BOTH SIDES)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY DIGITAL|XRAY WRIST FLEX & EXT (SINGLE SIDE)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|BARIUM COMPLETE GIT": {
+        "jk": 4800,
+        "du": 4800,
+        "sh": 4800
+    },
+    "X-RAY ROUTINE|BARIUM MEAL UGIT": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "X-RAY ROUTINE|BARIUM SWALLOW": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "X-RAY ROUTINE|BARIUM SWALLOW & MEAL": {
+        "jk": 4200,
+        "du": 4200,
+        "sh": 4200
+    },
+    "X-RAY ROUTINE|FLUROSCOPY CHEST": {
+        "jk": 1500,
+        "du": 1500,
+        "sh": 1500
+    },
+    "X-RAY ROUTINE|HSG(HYSTEROSALPHINGOGRAM)": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "X-RAY ROUTINE|I.V.P. (CON.)": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "X-RAY ROUTINE|X RAY PELVIS WITH BOTH HIPS": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "X-RAY ROUTINE|XRAY ABDOMEN ERECT": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY ABDOMEN SUPINE": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY B/L SACROILIAC JOINT AP/OBL": {
+        "jk": 1800,
+        "du": 1800,
+        "sh": 1800
+    },
+    "X-RAY ROUTINE|XRAY BOTH FOOT AP & LAT VIEW": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY BOTH HIP WITH PELVIS AP VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY BOTH SHOULDER AP/LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY BOTH WRIST AP": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY CHEST AP & OBLIQUE": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY CHEST AP OBLIQUE VIEW": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY CHEST AP VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY CHEST APICAL VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY CHEST DECUBITAS VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY CHEST LEFT LATERAL VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY CHEST LEFT OBLIQUE VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY CHEST LORDOTIC VIEW (AP)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY CHEST PA & LAT VIEW": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY CHEST PA AND LEFT OBL VIEW": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY CHEST PA AND RT LAT. VIEW": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY CHEST PA AND RT OBLIQUE": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY CHEST PA VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY CHEST RIGHT LAT.VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY CHEST RIGHT OBLIQUE VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY FILM": {
+        "jk": 300,
+        "du": 300,
+        "sh": 300
+    },
+    "X-RAY ROUTINE|XRAY LEFT KNEE WITH LEG AP/LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY P.N.S (O.M.) AND LAT VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY P.N.S (O.M.) VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY P.N.S SUBMENTOVER. VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY PNS WATERS VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY RIGHT KNEE WITH LEG AP/LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY SACROILIAC JOINT AP/OBLIQUE": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY SOFT TISSUE NECK AP/LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY SOFT TISSUE NECK LAT": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY STERNUM AP VIEW": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY STERNUM AP/LAT": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY STYLOID PROCES (LEFT)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY STYLOID PROCES (RIGHT)": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "X-RAY ROUTINE|XRAY STYLOID PROCESS(BOTH)": {
+        "jk": 900,
+        "du": 900,
+        "sh": 900
+    },
+    "X-RAY ROUTINE|XRAY WRIST OBLIQUE VIEW SINGLE SIDE": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "CARDIOLOGY|DSE/DOBUTAMINE STRESS ECHOCARDIOGRAPHY": {
+        "jk": 5500,
+        "du": 5500,
+        "sh": 5500
+    },
+    "CARDIOLOGY|E.C.G. (HOME VISIT)": {
+        "jk": 400,
+        "du": 400,
+        "sh": 400
+    },
+    "CARDIOLOGY|ECG": {
+        "jk": 500,
+        "du": 500,
+        "sh": 500
+    },
+    "CARDIOLOGY|ECHOCARDIOGRAPHY PEDIATRIC": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "CARDIOLOGY|ECHOCARDIOGRAPHY(2D AND M-MODE)": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "CARDIOLOGY|EEG(ELECTRO ENCEPHALOGRA)": {
+        "jk": 2200,
+        "du": 2200,
+        "sh": 2200
+    },
+    "CARDIOLOGY|HOLTER MONITORING": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "CARDIOLOGY|HOLTER MONITORING (48 HRS.)": {
+        "jk": 7000,
+        "du": 7000,
+        "sh": 7000
+    },
+    "CARDIOLOGY|STRESS ECHO": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "CARDIOLOGY|TMT (STRESS TEST)": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "SPIROMETRY|PFT": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "SPIROMETRY|SPIROMETRY": {
+        "jk": 750,
+        "du": 750,
+        "sh": 750
+    },
+    "MISC|1,3 BETA D GLUCAN": {
+        "jk": 12000,
+        "du": 12000,
+        "sh": 12000
+    },
+    "MISC|ANDROGEN INDEX": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "MISC|BIOTINIDASE ACTIVITY, QUANTITATIVE, BLOOD": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "MISC|CARBAMAZEPINE (TEGRETOL)": {
+        "jk": 1000,
+        "du": 1000,
+        "sh": 1000
+    },
+    "MISC|CENTROMERE ANTIBODY": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "MISC|COVID QUESTIONNAIRE": {
+        "jk": 200,
+        "du": 200,
+        "sh": 200
+    },
+    "MISC|CRYPTOCOCCAL ANTIGEN": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "MISC|DNA STORAGE": {
+        "jk": 2000,
+        "du": 2000,
+        "sh": 2000
+    },
+    "MISC|DOUBLE MARKER/DUAL TEST": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "MISC|ELECTROMYOGRAM (EMG) LOWER LIMBS": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "MISC|ELECTROMYOGRAM (EMG) UPPER LIMBS": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "MISC|HAPTOGLOBIN": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "MISC|HERPES SIMPLEX VIRUS (HSV) TYPE 1 & 2, PCR, QUALITATIVE": {
+        "jk": 7500,
+        "du": 7500,
+        "sh": 7500
+    },
+    "MISC|HISTOPLASMA CAPSULATUM ANTIGEN": {
+        "jk": 15000,
+        "du": 15000,
+        "sh": 15000
+    },
+    "MISC|HPV (HUMAN PAPILLOMA VIRUS) ADVANCED PCR": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "MISC|INHIBIN A": {
+        "jk": 2500,
+        "du": 2500,
+        "sh": 2500
+    },
+    "MISC|INJECTION SYNACTHEN 250 UG": {
+        "jk": 4000,
+        "du": 4000,
+        "sh": 4000
+    },
+    "MISC|INTEGRATED KT/MICROARRAY 315K": {
+        "jk": 15000,
+        "du": 15000,
+        "sh": 15000
+    },
+    "MISC|KARYOTYPE+FISH": {
+        "jk": 15000,
+        "du": 15000,
+        "sh": 15000
+    },
+    "MISC|KARYOTYPE, (CHOROSOME ANALYSIS, BLOOD)": {
+        "jk": 3500,
+        "du": 3500,
+        "sh": 3500
+    },
+    "MISC|KARYOTYPE, COUPLE (CHOROSOME ANALYSIS, BLOOD)": {
+        "jk": 6500,
+        "du": 6500,
+        "sh": 6500
+    },
+    "MISC|LYME DISEASE (BORRELIA BURGDORFERI) ANTIBODIES IGG & IGM": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "MISC|LYMPHOCYTE SUBSET ENUMERATION (TBNK) FOR COVID SEVERITY ASSESSMENT": {
+        "jk": 6000,
+        "du": 6000,
+        "sh": 6000
+    },
+    "MISC|MATERNAL CELL CONTAMINATION (MCC)": {
+        "jk": 3000,
+        "du": 3000,
+        "sh": 3000
+    },
+    "MISC|MEDICAL EXAMINATION REPORT": {
+        "jk": 130,
+        "du": 130,
+        "sh": 130
+    },
+    "MISC|MEDICAL REPORT": {
+        "jk": 130,
+        "du": 130,
+        "sh": 130
+    },
+    "MISC|METANEPHRINES FREE, PLASMA": {
+        "jk": 7500,
+        "du": 7500,
+        "sh": 7500
+    },
+    "MISC|MLPA FOR DMD": {
+        "jk": 10000,
+        "du": 10000,
+        "sh": 10000
+    },
+    "MISC|MLPA FOR SMA": {
+        "jk": 14000,
+        "du": 14000,
+        "sh": 14000
+    },
+    "MISC|NAAT FOR LYMPHOGRANULOMA VENEREUM/CHLAMYDIA TRACHOMATIS PCR": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "MISC|NEUROMYELITIS OPTICA(NMO) AB IGG": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "MISC|PARVOVIRUS B19 ANTIBODIES PANEL, IGG & IGM": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "MISC|PHYSICIAN REPORT": {
+        "jk": 200,
+        "du": 200,
+        "sh": 200
+    },
+    "MISC|ROMA (RISK OF OVARIAN MALIGNANCY), SERUM": {
+        "jk": 4200,
+        "du": 4200,
+        "sh": 4200
+    },
+    "MISC|TOXOPLASMA GONDII QUALITATIVE PCR": {
+        "jk": 4500,
+        "du": 4500,
+        "sh": 4500
+    },
+    "MISC|TUMOR NECROSIS FACTOR (TNF) ALPHA": {
+        "jk": 5000,
+        "du": 5000,
+        "sh": 5000
+    },
+    "HAEMATOLOGY|HBA1C (GLYCOSYLATED HB)": {
+        "jk": 450,
+        "du": 500,
+        "sh": 400
+    }
+}

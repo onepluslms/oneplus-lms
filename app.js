@@ -79,6 +79,8 @@ window.addEventListener('error', function(e) {
   console.error('Global error:', e.message, e.filename, e.lineno);
 });
 
+window.addEventListener('load', function() {
+
 auth.onAuthStateChanged(function(user) {
   clearTimeout(loadTO);
   document.getElementById('loading').style.display = 'none';
@@ -145,14 +147,20 @@ function setRole(r) {
 
 // ── FIRST-TIME SETUP ─────────────────────────────────────────────────────────
 function checkFirstTimeSetup() {
-  db.collection('staff').limit(1).get().then(function(snap) {
-    if (snap.empty) {
-      document.getElementById('form-login').style.display = 'none';
-      document.getElementById('form-setup').style.display = 'block';
-      var fp = document.getElementById('forgot-link');
-      if (fp) fp.style.display = 'none';
-    }
-  }).catch(function() {}); // silent fail — rules may block unauthenticated read
+  try {
+    db.collection('staff').limit(1).get().then(function(snap) {
+      try {
+        if (snap.empty) {
+          var fl = document.getElementById('form-login');
+          var fs = document.getElementById('form-setup');
+          var fp = document.getElementById('forgot-link');
+          if (fl) fl.style.display = 'none';
+          if (fs) fs.style.display = 'block';
+          if (fp) fp.style.display = 'none';
+        }
+      } catch(e2) {}
+    }).catch(function() {}); // rules may block unauthenticated read — silently show login
+  } catch(e) {}
 }
 
 async function doSetup() {
@@ -511,3 +519,6 @@ function startFieldDashWidget() {
 }
 
 
+
+
+}); // end load

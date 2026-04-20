@@ -1,5 +1,5 @@
-// sw.js — oPLUS LMS v20.00
-const CACHE = 'oplus-lms-v20.00';
+// sw.js — oPLUS LMS v20.01
+const CACHE = 'oplus-lms-v20.01';
 const ASSETS = [
   '/oplus-lms/',
   '/oplus-lms/index.html',

@@ -1850,8 +1850,8 @@ if (typeof firebase === 'undefined') {
   throw new Error('Firebase SDK failed to load');
 }
 </script>
+<script src="globals.js"></script>
 <script src="utils.js"></script>
-<script src="app.js"></script>
 <script src="pa.js"></script>
 <script>
 
@@ -2837,7 +2837,7 @@ function renderReview(byPhlebo) {
 function set(id,v){ var el=document.getElementById(id); if(el) el.textContent=v; }
 
 
-var APP_VERSION = 'v20.02';
+var APP_VERSION = 'v20.03';
 // [moved to app.js]
 // ── URGENT FIELD TASK WhatsApp NOTIFICATION ─────────────────────────────
 function sendUrgentFieldWA(order, action) {
@@ -7988,5 +7988,6 @@ async function isStaffAbsent(staffId) {
 
 // [moved to utils.js]
 </script>
+<script src="app.js"></script>
 </body>
 </html>

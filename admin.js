@@ -1,4 +1,4 @@
-// ── admin.js — oPLUS LMS v20.04 ─────────────────────────────────────────
+// ── admin.js — oPLUS LMS v20.05 //4 ─────────────────────────────────────────
 // Staff management, roles, doctor registry, activity log, assign tasks
 
 // ── TASK ASSIGNMENT SCREEN ─────────────────────────────────────────────────
@@ -174,7 +174,7 @@ function renderReview(byPhlebo) {
 function set(id,v){ var el=document.getElementById(id); if(el) el.textContent=v; }
 
 
-var APP_VERSION = 'v20.04';
+var APP_VERSION = 'v20.05';
 // [moved to app.js]
 // ── ACTIVITY LOGGING ─────────────────────────────────────────────────────
 var ACT_ICONS = {
@@ -1576,7 +1576,9 @@ async function saveStaff() {
       if (!pass || pass.length < 6) { err.textContent = 'Password must be at least 6 characters'; btn.disabled=false; btn.textContent='Create Account'; return; }
       if (!pin) { err.textContent = 'PIN is required for new staff'; btn.disabled=false; btn.textContent='Create Account'; return; }
       var _adminEmail2 = curUser.email;
-      var _adminPass2 = document.getElementById('sm-admin-pass') ? document.getElementById('sm-admin-pass').value : '';
+      var _adminPass2 = document.getElementById('sm-admin-pass') ? document.getElementById('sm-admin-pass').value.trim() : '';
+      // Require admin password before creating — prevents session loss if re-sign-in fails
+      if (!_adminPass2) { err.textContent = 'Enter your admin password to create a new account'; btn.disabled=false; btn.textContent='Create Account'; return; }
       var cred = await auth.createUserWithEmailAndPassword(email, pass);
       var staffPhone = (document.getElementById('sm-phone').value||'').trim();
       var pinHash = await hashPin(pin);
@@ -1589,8 +1591,16 @@ async function saveStaff() {
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
         createdBy: curUser.uid
       });
-      // Re-sign admin in (Firebase auto-signs in newly created user)
-      if (_adminPass2) await auth.signInWithEmailAndPassword(_adminEmail2, _adminPass2);
+      // Re-sign admin back in — Firebase auto-signs in the newly created user
+      // If this fails, the Firestore doc is already written; admin just needs to re-login manually
+      try {
+        await auth.signInWithEmailAndPassword(_adminEmail2, _adminPass2);
+      } catch (reSignErr) {
+        toast('Account created but session lost — please log in again', 'warn');
+        logActivity('staff_create', 'Created staff: ' + name + ' (' + smRole + ') — admin re-sign-in failed');
+        auth.signOut();
+        return;
+      }
       toast('Staff account created ✓', 'ok');
       logActivity('staff_create', 'Created staff: ' + name + ' (' + smRole + ')');
     } else {

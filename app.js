@@ -1,4 +1,4 @@
-// ── app.js — oPLUS LMS v20.02 ────────────────────────────────────────────
+// ── app.js — oPLUS LMS v20.05 ────────────────────────────────────────────
 // PIN, auth state, routing, inactivity, dashboard — loads AFTER main script
 
 async function hashPin(pin) {
@@ -231,21 +231,56 @@ function renderDots() {
     document.getElementById('pd'+i).className='pin-dot'+(i<pinBuf.length?' filled':'');
   }
 }
+// ── PIN LOCKOUT STATE ──
+var _pinWrongCount = 0;       // wrong attempts this lock session
+var _pinLockedUntil = 0;      // timestamp ms — 0 = not locked
+var PIN_MAX_ATTEMPTS = 5;     // lock after this many wrong attempts
+var PIN_LOCKOUT_MS   = 60000; // 60-second cooldown
+
 async function checkPin() {
+  var errEl = document.getElementById('pin-err');
+
+  // Lockout active?
+  var now = Date.now();
+  if (_pinLockedUntil > now) {
+    var secs = Math.ceil((_pinLockedUntil - now) / 1000);
+    errEl.textContent = 'Too many attempts — wait ' + secs + 's';
+    pinBuf = ''; renderDots();
+    // Countdown refresh so the message updates every second
+    setTimeout(function(){ if (Date.now() < _pinLockedUntil) { errEl.textContent = 'Too many attempts — wait ' + Math.ceil((_pinLockedUntil - Date.now()) / 1000) + 's'; } else { errEl.textContent = ''; _pinWrongCount = 0; } }, 1000);
+    return;
+  }
+
   var stored = curProfile && curProfile.pin ? curProfile.pin : '';
-  if (!stored) { unlock(); return; }
+  if (!stored) { _pinWrongCount = 0; unlock(); return; }
+
   // Force reset if PIN is still plain text (not hashed)
   if (!isHashed(stored)) {
     pinBuf = '';
     renderDots();
-    document.getElementById('pin-err').textContent = 'Security upgrade: please set a new PIN below';
-    // Self-service PIN reset -- works for all roles
+    errEl.textContent = 'Security upgrade: please set a new PIN below';
     setTimeout(function(){ showSelfPinReset(); }, 300);
     return;
   }
+
   var hashed = await hashPin(pinBuf);
-  if (hashed === stored) { unlock(); }
-  else { document.getElementById('pin-err').textContent='Incorrect PIN'; pinBuf=''; renderDots(); }
+  if (hashed === stored) {
+    _pinWrongCount = 0; _pinLockedUntil = 0;
+    unlock();
+  } else {
+    _pinWrongCount++;
+    pinBuf = ''; renderDots();
+    if (_pinWrongCount >= PIN_MAX_ATTEMPTS) {
+      _pinLockedUntil = Date.now() + PIN_LOCKOUT_MS;
+      errEl.textContent = 'Too many attempts — locked for 60s';
+      logActivity('pin_lockout', 'PIN lockout triggered after ' + _pinWrongCount + ' failed attempts');
+      // Auto-clear message after lockout expires
+      setTimeout(function(){ errEl.textContent = ''; _pinWrongCount = 0; }, PIN_LOCKOUT_MS);
+    } else {
+      var remaining = PIN_MAX_ATTEMPTS - _pinWrongCount;
+      errEl.textContent = 'Incorrect PIN — ' + remaining + ' attempt' + (remaining === 1 ? '' : 's') + ' remaining';
+    }
+  }
 }
 
 // ── INACTIVITY AUTO-LOCK ──────────────────────────────────────────────────
